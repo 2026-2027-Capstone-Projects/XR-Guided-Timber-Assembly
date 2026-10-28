@@ -14,6 +14,7 @@ public class PopupUIManager : MonoBehaviour
 
     private LocalizedString currentLocalizedStringHeader;
     private LocalizedString currentLocalizedStringBody;
+    private XRHoverOutline currentActiveOutline;
 
     private void Awake()
     {
@@ -23,36 +24,57 @@ public class PopupUIManager : MonoBehaviour
             return;
         }
         Instance = this;
-        //DontDestroyOnLoad(gameObject); // Uncomment this line if we want the PopupUIManager to persist across scenes
 
         closeButton.onClick.AddListener(ClosePopup);
         popupPanel.SetActive(false);
     }
 
-    public void ShowPopup(LocalizedString header, LocalizedString body)
+    public void ShowPopup(LocalizedString header, LocalizedString body, XRHoverOutline sourceOutline = null)
     {
+        string errorHeader = null, errorBody = null;
         if (header == null || header.IsEmpty)
         {
             Debug.LogWarning("Assigned header LocalizedString is null or empty.");
-            return;
+            errorHeader = "NO HEADER FOUND";
         }
         else if (body == null || body.IsEmpty)
         {
             Debug.LogWarning("Assigned body LocalizedString is null or empty.");
-            return;
+            errorBody = "NO BODY FOUND";
         }
 
-        UnsubscribeCurrentString();
+        ClearCurrentState();
 
+        currentActiveOutline = sourceOutline;
+        if (currentActiveOutline != null)
+        {
+            currentActiveOutline.SetSelectedOutline(true);
+        }
 
         // Subscribing to StringChanged automatically triggers an asynchronous fetch 
         // and invokes UpdateText immediately upon completion, as well as whenever the active Locale changes.
 
         // Header
-        currentLocalizedStringHeader = header;
-        currentLocalizedStringHeader.StringChanged += UpdateHeader;
+        if (errorHeader != null)
+        {
+            UpdateHeader(errorHeader);
+        }
+        else
+        {
+            currentLocalizedStringHeader = header;
+            currentLocalizedStringHeader.StringChanged += UpdateHeader;
+        }
 
         // Body
+        if (errorBody != null)
+        {
+            UpdateBody(errorBody);
+        }
+        else
+        {
+            currentLocalizedStringBody = body;
+            currentLocalizedStringBody.StringChanged += UpdateBody;
+        }
         currentLocalizedStringBody = body;
         currentLocalizedStringBody.StringChanged += UpdateBody;
 
@@ -61,7 +83,7 @@ public class PopupUIManager : MonoBehaviour
 
     public void ClosePopup()
     {
-        UnsubscribeCurrentString();
+        ClearCurrentState();
         popupPanel.SetActive(false);
     }
 
@@ -75,17 +97,25 @@ public class PopupUIManager : MonoBehaviour
         popupTextBody.text = translatedValue;
     }
 
-    private void UnsubscribeCurrentString()
+    private void ClearCurrentState()
     {
+        // Unsubscribe from the header string
         if (currentLocalizedStringHeader != null)
         {
             currentLocalizedStringHeader.StringChanged -= UpdateHeader;
             currentLocalizedStringHeader = null;
         }
+        // Unsubscribe from the body string
         if (currentLocalizedStringBody != null)
         {
             currentLocalizedStringBody.StringChanged -= UpdateBody;
             currentLocalizedStringBody = null;
+        }
+        // Clear the outline
+        if (currentActiveOutline != null)
+        {
+            currentActiveOutline.SetSelectedOutline(false);
+            currentActiveOutline = null;
         }
     }
 }

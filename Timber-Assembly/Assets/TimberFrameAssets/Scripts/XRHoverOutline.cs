@@ -1,77 +1,98 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Interactables; // Omit .Interactables if using XRI 2.x
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 [RequireComponent(typeof(XRBaseInteractable))]
 public class XRHoverOutline : MonoBehaviour
 {
     private class RendererOutlineState
     {
-        public Material[] BaseMaterials; // Cache of object's base materials
-        public Material[] HoverMaterials; // Cache of object's base materials + [outlineMaterial]
-        public readonly HashSet<XRHoverOutline> ActiveRequesters = new HashSet<XRHoverOutline>();
+        public MeshRenderer OverlayRenderer;
+        public MaterialPropertyBlock PropertyBlock;
+        public readonly HashSet<XRHoverOutline> HoverRequesters = new HashSet<XRHoverOutline>();
+        public readonly HashSet<XRHoverOutline> SelectedRequesters = new HashSet<XRHoverOutline>();
     }
 
-    // Tracks active "outline requesters" per MeshRenderer across all XRHoverOutline instances
-    // Used to ensure two colliders can highlight the same mesh without flickering or disappearance
-    // when moving between them.
     private static readonly Dictionary<MeshRenderer, RendererOutlineState> RendererStates =
         new Dictionary<MeshRenderer, RendererOutlineState>();
 
+    private static readonly int OutlineColorProp = Shader.PropertyToID("_OutlineColor");
+
+    [Header("Outline Setup")]
     [SerializeField] private Material outlineMaterial;
-    [Tooltip("Assign sibling MeshRenderers manually, or leave empty to auto-detect all MeshRenderers under the same parent.")]
     [SerializeField] private MeshRenderer[] targetRenderers;
+
+    [Header("State Colors")]
+    [SerializeField] private Color hoverColor = Color.white;
+    [SerializeField] private Color selectedColor = new Color(1.0f, 0.65f, 0.0f, 1.0f); // Default Orange/Gold
 
     private XRBaseInteractable interactable;
 
-    // Initialize
     private void Awake()
     {
         interactable = GetComponent<XRBaseInteractable>();
 
-        // If not given any targetRenderers, automatically set targetRenderers
         if (targetRenderers == null || targetRenderers.Length == 0)
         {
-            // If this object has a parent, get all MeshRenderers descended from it.
-            // Otherwise, get all MeshRenderers descended from this object
-            targetRenderers = transform.parent != null
-                ? transform.parent.GetComponentsInChildren<MeshRenderer>()
-                : GetComponentsInChildren<MeshRenderer>();
+            if (transform.parent != null)
+            {
+                targetRenderers = transform.parent.GetComponentsInChildren<MeshRenderer>();
+            }
+
+            if (targetRenderers == null || targetRenderers.Length == 0)
+            {
+                targetRenderers = GetComponentsInParent<MeshRenderer>();
+            }
         }
 
         RegisterRenderers();
     }
 
-    /// <summary>
-    /// Initializes and caches the base and outline material arrays for each target renderer,
-    /// storing them in a tracking dictionary so they can be easily toggled for selection or hover effects.
-    /// </summary>
     private void RegisterRenderers()
     {
-        // Guard Clauses: targetRenderers set (manually or automatically) && outlineMaterial set
         if (targetRenderers == null || outlineMaterial == null) return;
 
         for (int i = 0; i < targetRenderers.Length; i++)
         {
-            MeshRenderer renderer = targetRenderers[i];
-            if (renderer == null) continue; // Guard Clause: Skip missing or destroyed renderers
+            MeshRenderer target = targetRenderers[i];
+            if (target == null || target.gameObject.name == "__OutlineOverlay") continue;
 
-            // If this renderer hasn't been registered yet, cache its materials
-            if (!RendererStates.TryGetValue(renderer, out RendererOutlineState state))
+            if (!RendererStates.TryGetValue(target, out RendererOutlineState state))
             {
-                Material[] baseMats = renderer.sharedMaterials;
-                Material[] hoverMats = new Material[baseMats.Length + 1];
-                baseMats.CopyTo(hoverMats, 0);
-                hoverMats[hoverMats.Length - 1] = outlineMaterial;
+                MeshFilter targetFilter = target.GetComponent<MeshFilter>();
+                if (targetFilter == null || targetFilter.sharedMesh == null) continue;
+
+                GameObject overlayObj = new GameObject("__OutlineOverlay");
+                overlayObj.layer = target.gameObject.layer;
+                overlayObj.transform.SetParent(target.transform, false);
+
+                MeshFilter overlayFilter = overlayObj.AddComponent<MeshFilter>();
+                overlayFilter.sharedMesh = targetFilter.sharedMesh;
+
+                MeshRenderer overlayRenderer = overlayObj.AddComponent<MeshRenderer>();
+                overlayRenderer.shadowCastingMode = ShadowCastingMode.Off;
+                overlayRenderer.receiveShadows = false;
+                overlayRenderer.lightProbeUsage = LightProbeUsage.Off;
+                overlayRenderer.reflectionProbeUsage = ReflectionProbeUsage.Off;
+
+                int subMeshCount = targetFilter.sharedMesh.subMeshCount;
+                Material[] overlayMats = new Material[subMeshCount];
+                for (int s = 0; s < subMeshCount; s++)
+                {
+                    overlayMats[s] = outlineMaterial;
+                }
+                overlayRenderer.sharedMaterials = overlayMats;
+                overlayRenderer.enabled = false;
 
                 state = new RendererOutlineState
                 {
-                    BaseMaterials = baseMats,
-                    HoverMaterials = hoverMats
+                    OverlayRenderer = overlayRenderer,
+                    PropertyBlock = new MaterialPropertyBlock()
                 };
 
-                RendererStates[renderer] = state;
+                RendererStates[target] = state;
             }
         }
     }
@@ -86,13 +107,12 @@ public class XRHoverOutline : MonoBehaviour
     {
         interactable.firstHoverEntered.RemoveListener(OnFirstHoverEntered);
         interactable.lastHoverExited.RemoveListener(OnLastHoverExited);
-
-        ReleaseOutline();
+        SetHoverOutline(false);
+        SetSelectedOutline(false);
     }
 
     private void OnDestroy()
     {
-        // Clean up static dictionary entries if the target renderers are destroyed with the scene/prefab
         if (targetRenderers == null) return;
 
         for (int i = 0; i < targetRenderers.Length; i++)
@@ -105,57 +125,67 @@ public class XRHoverOutline : MonoBehaviour
         }
     }
 
-    private void OnFirstHoverEntered(HoverEnterEventArgs args)
-    {
-        RequestOutline();
-    }
+    private void OnFirstHoverEntered(HoverEnterEventArgs args) => SetHoverOutline(true);
+    private void OnLastHoverExited(HoverExitEventArgs args) => SetHoverOutline(false);
 
-    private void OnLastHoverExited(HoverExitEventArgs args)
-    {
-        ReleaseOutline();
-    }
-
-    public void RequestOutline()
+    public void SetHoverOutline(bool active)
     {
         if (targetRenderers == null || outlineMaterial == null) return;
 
         for (int i = 0; i < targetRenderers.Length; i++)
         {
             MeshRenderer renderer = targetRenderers[i];
-            if (renderer == null) continue;
+            if (renderer == null || renderer.gameObject.name == "__OutlineOverlay") continue;
 
-            if (!RendererStates.TryGetValue(renderer, out RendererOutlineState state))
+            if (RendererStates.TryGetValue(renderer, out RendererOutlineState state))
             {
-                RegisterRenderers();
-                state = RendererStates[renderer];
-            }
+                if (active) state.HoverRequesters.Add(this);
+                else state.HoverRequesters.Remove(this);
 
-            bool wasEmpty = state.ActiveRequesters.Count == 0;
-            state.ActiveRequesters.Add(this);
-
-            if (wasEmpty && state.ActiveRequesters.Count > 0)
-            {
-                renderer.sharedMaterials = state.HoverMaterials;
+                EvaluateRendererState(state);
             }
         }
     }
 
-    public void ReleaseOutline()
+    public void SetSelectedOutline(bool active)
     {
-        if (targetRenderers == null) return;
+        if (targetRenderers == null || outlineMaterial == null) return;
 
         for (int i = 0; i < targetRenderers.Length; i++)
         {
             MeshRenderer renderer = targetRenderers[i];
-            if (renderer == null) continue;
+            if (renderer == null || renderer.gameObject.name == "__OutlineOverlay") continue;
 
             if (RendererStates.TryGetValue(renderer, out RendererOutlineState state))
             {
-                if (state.ActiveRequesters.Remove(this) && state.ActiveRequesters.Count == 0)
-                {
-                    renderer.sharedMaterials = state.BaseMaterials;
-                }
+                if (active) state.SelectedRequesters.Add(this);
+                else state.SelectedRequesters.Remove(this);
+
+                EvaluateRendererState(state);
             }
         }
+    }
+
+    private void EvaluateRendererState(RendererOutlineState state)
+    {
+        if (state.OverlayRenderer == null) return;
+
+        bool isSelected = state.SelectedRequesters.Count > 0;
+        bool isHovered = state.HoverRequesters.Count > 0;
+
+        if (!isSelected && !isHovered)
+        {
+            state.OverlayRenderer.enabled = false;
+            return;
+        }
+
+        // Selection state takes visual precedence over hover state
+        Color targetColor = isSelected ? selectedColor : hoverColor;
+
+        state.OverlayRenderer.GetPropertyBlock(state.PropertyBlock);
+        state.PropertyBlock.SetColor(OutlineColorProp, targetColor);
+        state.OverlayRenderer.SetPropertyBlock(state.PropertyBlock);
+
+        state.OverlayRenderer.enabled = true;
     }
 }
