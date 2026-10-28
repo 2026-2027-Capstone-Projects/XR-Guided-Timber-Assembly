@@ -82,6 +82,10 @@ MonoBehaviour:
     m_Localized: 4x4x15
     m_Metadata:
       m_Items: []
+  - m_Id: 325744993640448
+    m_Localized: N/A
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

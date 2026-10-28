@@ -10,6 +10,7 @@ public class PopupUIManager : MonoBehaviour
     [SerializeField] private GameObject popupPanel;
     [SerializeField] private TMP_Text popupTextHeader;
     [SerializeField] private TMP_Text popupTextBody;
+    [SerializeField] private TMP_Text popupTextIdentifier;
     [SerializeField] private Button closeButton;
 
     private LocalizedString currentLocalizedStringHeader;
@@ -29,7 +30,7 @@ public class PopupUIManager : MonoBehaviour
         popupPanel.SetActive(false);
     }
 
-    public void ShowPopup(LocalizedString header, LocalizedString body, XRHoverOutline sourceOutline = null)
+    public void ShowPopup(LocalizedString header, LocalizedString body, PartInfo.ID identifier = PartInfo.ID.None, XRHoverOutline sourceOutline = null)
     {
         string errorHeader = null, errorBody = null;
         if (header == null || header.IsEmpty)
@@ -37,7 +38,7 @@ public class PopupUIManager : MonoBehaviour
             Debug.LogWarning("Assigned header LocalizedString is null or empty.");
             errorHeader = "NO HEADER FOUND";
         }
-        else if (body == null || body.IsEmpty)
+        if (body == null || body.IsEmpty)
         {
             Debug.LogWarning("Assigned body LocalizedString is null or empty.");
             errorBody = "NO BODY FOUND";
@@ -75,8 +76,9 @@ public class PopupUIManager : MonoBehaviour
             currentLocalizedStringBody = body;
             currentLocalizedStringBody.StringChanged += UpdateBody;
         }
-        currentLocalizedStringBody = body;
-        currentLocalizedStringBody.StringChanged += UpdateBody;
+
+        // Identifier
+        popupTextIdentifier.text = PartInfo.ToString(identifier);
 
         popupPanel.SetActive(true);
     }

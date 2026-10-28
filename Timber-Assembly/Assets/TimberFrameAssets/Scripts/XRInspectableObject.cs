@@ -5,19 +5,27 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables; // Omit .Interactables i
 
 [RequireComponent(typeof(Collider))]
 [RequireComponent(typeof(XRSimpleInteractable))]
-public class XRInspectableObject : MonoBehaviour
+public class XRInspectablePart : MonoBehaviour
 {
-    [SerializeField] private LocalizedString localizedInfoTextHeader;
-    [SerializeField] private LocalizedString localizedInfoTextBody;
+    [Tooltip("The ID of this part, used for fetching data.")]
+    [SerializeField] private PartInfo.ID partIdentifier = PartInfo.ID.None;
     [Tooltip("Auto-detected on the same GameObject if left empty.")]
     [SerializeField] private XRHoverOutline hoverOutline;
 
     private XRSimpleInteractable interactable;
+    private LocalizedString localizedInfoTextHeader;
+    private LocalizedString localizedInfoTextBody;
 
     private void Awake()
     {
+        // Cache reference to UX interface
         interactable = GetComponent<XRSimpleInteractable>();
 
+        // Cache the LocalizedStrings
+        localizedInfoTextHeader = PartInfo.GetName(partIdentifier);
+        localizedInfoTextBody = PartInfo.GetDescription(partIdentifier);
+
+        // Set up object outlining, if available
         if (hoverOutline == null)
         {
             hoverOutline = GetComponent<XRHoverOutline>();
@@ -50,7 +58,7 @@ public class XRInspectableObject : MonoBehaviour
     {
         if (PopupUIManager.Instance != null)
         {
-            PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, hoverOutline);
+            PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, partIdentifier, hoverOutline);
         }
     }
 }

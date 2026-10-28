@@ -16,39 +16,39 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: a1c18442350745f4e814e29abb60df84
   m_Entries:
   - m_Id: 3726913970176
-    m_Key: End Column 1
+    m_Key: EC1
     m_Metadata:
       m_Items: []
   - m_Id: 3760002834432
-    m_Key: End Column 2
+    m_Key: EC2
     m_Metadata:
       m_Items: []
   - m_Id: 3762473279488
-    m_Key: Middle Column
+    m_Key: MC
     m_Metadata:
       m_Items: []
   - m_Id: 3817519325184
-    m_Key: Roof Beam
+    m_Key: RB
     m_Metadata:
       m_Items: []
   - m_Id: 3845386280960
-    m_Key: Roof Purlin
+    m_Key: RP
     m_Metadata:
       m_Items: []
   - m_Id: 3896963637248
-    m_Key: Wall Panel
+    m_Key: WP
     m_Metadata:
       m_Items: []
   - m_Id: 3903175401472
-    m_Key: Pin
+    m_Key: TP
     m_Metadata:
       m_Items: []
   - m_Id: 3950822694912
-    m_Key: Side Angle Module
+    m_Key: SAM
     m_Metadata:
       m_Items: []
   - m_Id: 3982271586304
-    m_Key: Top Angle Module
+    m_Key: TAM
     m_Metadata:
       m_Items: []
   - m_Id: 4026588602368
@@ -73,6 +73,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4209795801088
     m_Key: Brackets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 325170562736128
+    m_Key: None
     m_Metadata:
       m_Items: []
   m_Metadata:

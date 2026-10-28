@@ -142,27 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1920259465216
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3982271586304
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 9
+  hoverOutline: {fileID: 0}
 --- !u!114 &7627026916334032096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &231592112313494175
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,27 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &5406876022743285415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,6 +318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &318215747123675772
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,27 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1920259465216
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3982271586304
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 9
+  hoverOutline: {fileID: 0}
 --- !u!114 &2182210919106823370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &410856535276829351
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,27 +622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &7042649209137229973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &578902373565127002
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,27 +782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &8188474180285676545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,6 +798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &620421320310329696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,27 +942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &376982193734520161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,6 +958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &673609244938507267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,27 +1102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &5154917291881429140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,6 +1118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &819147015059223766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1381,27 +1262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &4144182235811280480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,6 +1278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &957956131414172069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,27 +1422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &650538444935342793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1593,6 +1438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &997926928881480220
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,27 +1582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &3970118984872868565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1770,6 +1598,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1074328158599814213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,27 +1742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &4839470831181309081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1947,6 +1758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1328462997058105669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,27 +1902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &246055644461011478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,6 +1918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1387285387149349517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2266,27 +2062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &6274331903283003872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2301,6 +2078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1398898298964507384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,27 +2222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &3277877930189852197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2478,6 +2238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1402985096454670034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,27 +2382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &6807791117120694369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2655,6 +2398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1509993034994277873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2797,27 +2542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &4530304021352777672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2832,6 +2558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1632771676448121091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,27 +2702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &5225512570820818445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3009,6 +2718,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1768471131301280498
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,27 +2862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &1826340497408941696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3186,6 +2878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &1947945439065494256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,27 +3022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &968812699841982631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3363,6 +3038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2046161911452120018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,27 +3182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &2290205223342222819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3540,6 +3198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2056986062514690964
 GameObject:
   m_ObjectHideFlags: 0
@@ -3682,27 +3342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1920259465216
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3982271586304
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 9
+  hoverOutline: {fileID: 0}
 --- !u!114 &3411329549887848217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3717,6 +3358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2101475389836892833
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,27 +3502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &1878340968166458569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3894,6 +3518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2150517360773079076
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,27 +3662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &2356359057640313509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4071,6 +3678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2216940323148082972
 GameObject:
   m_ObjectHideFlags: 0
@@ -4213,27 +3822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &774447257706170914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4248,6 +3838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2259224851595817851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4390,27 +3982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &1866571083501928047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4425,6 +3998,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2289560297969575851
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,27 +4142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &3819860298289824633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4602,6 +4158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2309429369486478979
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,27 +4302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &5069596207185926495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4779,6 +4318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2401867657981480378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4921,27 +4462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &6953612502541239369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4956,6 +4478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2605562360987459435
 GameObject:
   m_ObjectHideFlags: 0
@@ -5098,27 +4622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &4866112841687105516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5133,6 +4638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2722439230288484427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,27 +4782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &7817573944681840228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5310,6 +4798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2751771552697957338
 GameObject:
   m_ObjectHideFlags: 0
@@ -5452,27 +4942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &4227651951544626685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5487,6 +4958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2824481945443973027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5629,27 +5102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &906885726832360687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5664,6 +5118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &2951904376487006417
 GameObject:
   m_ObjectHideFlags: 0
@@ -5806,27 +5262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &4593880836816988940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5841,6 +5278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3061400542694235110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5983,27 +5422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &4331942568953993577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6018,6 +5438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3184865097279671614
 GameObject:
   m_ObjectHideFlags: 0
@@ -6160,27 +5582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &3323582194096618886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6195,6 +5598,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3197463377723692947
 GameObject:
   m_ObjectHideFlags: 0
@@ -6337,27 +5742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &6784444343462517231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6372,6 +5758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3202673812293353494
 GameObject:
   m_ObjectHideFlags: 0
@@ -6514,27 +5902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &7306102649640793570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6549,6 +5918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3218117792417992659
 GameObject:
   m_ObjectHideFlags: 0
@@ -6691,27 +6062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1920259465216
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3982271586304
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 9
+  hoverOutline: {fileID: 0}
 --- !u!114 &2940368529465562473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6726,6 +6078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3338519240423153828
 GameObject:
   m_ObjectHideFlags: 0
@@ -6868,27 +6222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1358923177984
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3760002834432
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 2
+  hoverOutline: {fileID: 0}
 --- !u!114 &1954593230205420665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6903,6 +6238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3441872240804474984
 GameObject:
   m_ObjectHideFlags: 0
@@ -7045,27 +6382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1302279102464
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3726913970176
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 1
+  hoverOutline: {fileID: 0}
 --- !u!114 &5439945506959878448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7080,6 +6398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3502976568158961837
 GameObject:
   m_ObjectHideFlags: 0
@@ -7222,27 +6542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &5754994472254875508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7257,6 +6558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3575532456427753667
 GameObject:
   m_ObjectHideFlags: 0
@@ -7399,27 +6702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &5261417297295202313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7434,6 +6718,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3640944070468967121
 GameObject:
   m_ObjectHideFlags: 0
@@ -7576,27 +6862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &6599028232428849357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7611,6 +6878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3676663543645436452
 GameObject:
   m_ObjectHideFlags: 0
@@ -7753,27 +7022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &6644842267684413831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7788,6 +7038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3698991378405782131
 GameObject:
   m_ObjectHideFlags: 0
@@ -7930,27 +7182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1505027563520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3817519325184
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 4
+  hoverOutline: {fileID: 0}
 --- !u!114 &5187548582576432182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7965,6 +7198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &3938012845802508261
 GameObject:
   m_ObjectHideFlags: 0
@@ -8107,27 +7342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &6020754520745004210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8142,6 +7358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4001101668910414367
 GameObject:
   m_ObjectHideFlags: 0
@@ -8284,27 +7502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &877213361840444314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8319,6 +7518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4217578671263097758
 GameObject:
   m_ObjectHideFlags: 0
@@ -8461,27 +7662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1424979271680
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3762473279488
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 3
+  hoverOutline: {fileID: 0}
 --- !u!114 &8922624396590587182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8496,6 +7678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4272771480191736383
 GameObject:
   m_ObjectHideFlags: 0
@@ -8638,27 +7822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &5945774672220801833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8673,6 +7838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4307514236980499619
 GameObject:
   m_ObjectHideFlags: 0
@@ -8684,6 +7851,8 @@ GameObject:
   - component: {fileID: 5405114479704408350}
   - component: {fileID: 6068453714231554217}
   - component: {fileID: 1865448801304876830}
+  - component: {fileID: 3798589648323037181}
+  - component: {fileID: 4330631077691060678}
   m_Layer: 0
   m_Name: Interactive (1)
   m_TagString: Untagged
@@ -8721,7 +7890,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -8801,6 +7970,36 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
+--- !u!114 &3798589648323037181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4307514236980499619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
+--- !u!114 &4330631077691060678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4307514236980499619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54614915f246eb644a980f4eb9c1dc2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
+  outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
+  targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4621209716016359312
 GameObject:
   m_ObjectHideFlags: 0
@@ -8943,27 +8142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1505027563520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3817519325184
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 4
+  hoverOutline: {fileID: 0}
 --- !u!114 &140195819172036567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8978,6 +8158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4822331407416021855
 GameObject:
   m_ObjectHideFlags: 0
@@ -9120,27 +8302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &819859363454043947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9155,6 +8318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4861606395230556609
 GameObject:
   m_ObjectHideFlags: 0
@@ -9297,27 +8462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &2688682769941993461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9332,6 +8478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4877231735827712999
 GameObject:
   m_ObjectHideFlags: 0
@@ -9474,27 +8622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &1461197706946533499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9509,6 +8638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &4912860393987240991
 GameObject:
   m_ObjectHideFlags: 0
@@ -9651,27 +8782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &7256889654799232604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9686,6 +8798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5048743145828799689
 GameObject:
   m_ObjectHideFlags: 0
@@ -9828,27 +8942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &7790133700740385131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9863,6 +8958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5077989833668327375
 GameObject:
   m_ObjectHideFlags: 0
@@ -10005,27 +9102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &265768826339790511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10040,6 +9118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5136671150590664738
 GameObject:
   m_ObjectHideFlags: 0
@@ -10182,27 +9262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &49850184853888844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10217,6 +9278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5302146998761250456
 GameObject:
   m_ObjectHideFlags: 0
@@ -10359,27 +9422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &801220763008239335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10394,6 +9438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5308526541664231092
 GameObject:
   m_ObjectHideFlags: 0
@@ -10536,27 +9582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &5377407529036681379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10571,6 +9598,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5417069444427197665
 GameObject:
   m_ObjectHideFlags: 0
@@ -10713,27 +9742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &7376428537453464650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10748,6 +9758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5457188183762530519
 GameObject:
   m_ObjectHideFlags: 0
@@ -10890,27 +9902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &7760009310667913571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10925,6 +9918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5482279629105624505
 GameObject:
   m_ObjectHideFlags: 0
@@ -11067,27 +10062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &8450509264310246827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11102,6 +10078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5627246190593600183
 GameObject:
   m_ObjectHideFlags: 0
@@ -11244,27 +10222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &6413104605784098001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11279,6 +10238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5783249848936634116
 GameObject:
   m_ObjectHideFlags: 0
@@ -11421,27 +10382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &7303681389056762466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11456,6 +10398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &5882433886261923891
 GameObject:
   m_ObjectHideFlags: 0
@@ -11598,27 +10542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &1921815692208898593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11633,6 +10558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6102761455759398707
 GameObject:
   m_ObjectHideFlags: 0
@@ -11775,27 +10702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1920259465216
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3982271586304
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 9
+  hoverOutline: {fileID: 0}
 --- !u!114 &4868343950628771173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11810,6 +10718,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6227113417506812090
 GameObject:
   m_ObjectHideFlags: 0
@@ -11952,27 +10862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &5211964191602653714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11987,6 +10878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6246443042437187002
 GameObject:
   m_ObjectHideFlags: 0
@@ -12129,27 +11022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &2132287199991482067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12164,6 +11038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6365579335363218395
 GameObject:
   m_ObjectHideFlags: 0
@@ -12306,27 +11182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &1115307794344476295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12341,6 +11198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6532975149213508117
 GameObject:
   m_ObjectHideFlags: 0
@@ -12483,27 +11342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1424979271680
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3762473279488
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 3
+  hoverOutline: {fileID: 0}
 --- !u!114 &8374956688164076322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12518,6 +11358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6539611703043164933
 GameObject:
   m_ObjectHideFlags: 0
@@ -12660,27 +11502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &6575085733326625436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12695,6 +11518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6630230609647671762
 GameObject:
   m_ObjectHideFlags: 0
@@ -12837,27 +11662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &810859187175330170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12872,6 +11678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6642540628338570780
 GameObject:
   m_ObjectHideFlags: 0
@@ -13014,27 +11822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1505027563520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3817519325184
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 4
+  hoverOutline: {fileID: 0}
 --- !u!114 &4262696332199413677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13049,6 +11838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &6963645885167516704
 GameObject:
   m_ObjectHideFlags: 0
@@ -13191,27 +11982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &6999545729880641455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13226,6 +11998,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7034483871461666760
 GameObject:
   m_ObjectHideFlags: 0
@@ -13276,7 +12050,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -13368,27 +12142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &4064251719667859028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13403,6 +12158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7043568963012120462
 GameObject:
   m_ObjectHideFlags: 0
@@ -13545,27 +12302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &1452536514908812748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13580,6 +12318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7110981553302276560
 GameObject:
   m_ObjectHideFlags: 0
@@ -13722,27 +12462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &6941989030384330590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13757,6 +12478,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7189488152492121857
 GameObject:
   m_ObjectHideFlags: 0
@@ -13899,27 +12622,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1920259465216
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3982271586304
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 9
+  hoverOutline: {fileID: 0}
 --- !u!114 &7262586869882105903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13934,6 +12638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7229456117551043527
 GameObject:
   m_ObjectHideFlags: 0
@@ -14076,27 +12782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &3875381484070910605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14111,6 +12798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7337371021393271467
 GameObject:
   m_ObjectHideFlags: 0
@@ -14253,27 +12942,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1358923177984
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3760002834432
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 2
+  hoverOutline: {fileID: 0}
 --- !u!114 &1554487537788537312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14288,6 +12958,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7427740547949061753
 GameObject:
   m_ObjectHideFlags: 0
@@ -14430,27 +13102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &34664238892295032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14465,6 +13118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7431757679823223366
 GameObject:
   m_ObjectHideFlags: 0
@@ -14607,27 +13262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &5205717312641214493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14642,6 +13278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7495647481704392880
 GameObject:
   m_ObjectHideFlags: 0
@@ -14784,27 +13422,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &2151344225504633807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14819,6 +13438,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7710520586876011983
 GameObject:
   m_ObjectHideFlags: 0
@@ -14961,27 +13582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &6119076574071920188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14996,6 +13598,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7755176646990565761
 GameObject:
   m_ObjectHideFlags: 0
@@ -15138,27 +13742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1505027563520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3817519325184
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 4
+  hoverOutline: {fileID: 0}
 --- !u!114 &4830414364570470103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15173,6 +13758,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &7821297514010749104
 GameObject:
   m_ObjectHideFlags: 0
@@ -15315,27 +13902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &8327544706981022166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15350,6 +13918,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8045731215706283181
 GameObject:
   m_ObjectHideFlags: 0
@@ -15492,27 +14062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1579325464576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3845386280960
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 5
+  hoverOutline: {fileID: 0}
 --- !u!114 &263768247867238343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15527,6 +14078,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8082098795002707068
 GameObject:
   m_ObjectHideFlags: 0
@@ -15669,27 +14222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1874742878208
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3950822694912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
 --- !u!114 &424764393427506334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15704,6 +14238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8130622172082397917
 GameObject:
   m_ObjectHideFlags: 0
@@ -15846,27 +14382,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &7398113102158941886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15881,6 +14398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8246966940193150681
 GameObject:
   m_ObjectHideFlags: 0
@@ -16023,27 +14542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &9128326091331963033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16058,6 +14558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8320415064382080276
 GameObject:
   m_ObjectHideFlags: 0
@@ -16069,6 +14571,8 @@ GameObject:
   - component: {fileID: 7643253842769276132}
   - component: {fileID: 7009492864793568390}
   - component: {fileID: 2097303446871851220}
+  - component: {fileID: 3556195547629053563}
+  - component: {fileID: 2837218428143764172}
   m_Layer: 0
   m_Name: Interactive (2)
   m_TagString: Untagged
@@ -16106,7 +14610,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -16186,6 +14690,36 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
+--- !u!114 &3556195547629053563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8320415064382080276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
+  partIdentifier: 8
+  hoverOutline: {fileID: 0}
+--- !u!114 &2837218428143764172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8320415064382080276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54614915f246eb644a980f4eb9c1dc2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
+  outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
+  targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8364131404644641252
 GameObject:
   m_ObjectHideFlags: 0
@@ -16328,27 +14862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &6720737795153253971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16363,6 +14878,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8368579579927621769
 GameObject:
   m_ObjectHideFlags: 0
@@ -16505,27 +15022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &8507905005520061676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16540,6 +15038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8534793497667807654
 GameObject:
   m_ObjectHideFlags: 0
@@ -16682,27 +15182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &4652698379638454523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16717,6 +15198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8567821847980764951
 GameObject:
   m_ObjectHideFlags: 0
@@ -16859,27 +15342,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1302279102464
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3726913970176
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 1
+  hoverOutline: {fileID: 0}
 --- !u!114 &725333945616602521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16894,6 +15358,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8706495064427515768
 GameObject:
   m_ObjectHideFlags: 0
@@ -17036,27 +15502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1505027563520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3817519325184
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 4
+  hoverOutline: {fileID: 0}
 --- !u!114 &1698019855021628472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17071,6 +15518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8823486297446250166
 GameObject:
   m_ObjectHideFlags: 0
@@ -17213,27 +15662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &2523749144155428571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17248,6 +15678,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8836136888537801468
 GameObject:
   m_ObjectHideFlags: 0
@@ -17390,27 +15822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &6737447944105810826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17425,6 +15838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &8960529439124367910
 GameObject:
   m_ObjectHideFlags: 0
@@ -17567,27 +15982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1505027563520
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3817519325184
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 4
+  hoverOutline: {fileID: 0}
 --- !u!114 &704233336794704586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17602,6 +15998,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &9095485523984250054
 GameObject:
   m_ObjectHideFlags: 0
@@ -17744,27 +16142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1649877852160
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3896963637248
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 6
+  hoverOutline: {fileID: 0}
 --- !u!114 &5959651553682372918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17779,6 +16158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1 &9154007482321477909
 GameObject:
   m_ObjectHideFlags: 0
@@ -17921,27 +16302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  localizedInfoTextHeader:
-    m_TableReference:
-      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
-    m_TableEntryReference:
-      m_KeyId: 1701534900224
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  localizedInfoTextBody:
-    m_TableReference:
-      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
-    m_TableEntryReference:
-      m_KeyId: 3903175401472
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  partIdentifier: 7
+  hoverOutline: {fileID: 0}
 --- !u!114 &4546617932370612183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17956,6 +16318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
   outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
   targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
 --- !u!1001 &5740255601535249150
 PrefabInstance:
   m_ObjectHideFlags: 0
