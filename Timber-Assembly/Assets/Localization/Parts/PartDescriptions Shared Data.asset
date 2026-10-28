@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: PartDescriptions Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: PartDescriptions
+  m_TableCollectionNameGuidString: a1c18442350745f4e814e29abb60df84
+  m_Entries:
+  - m_Id: 3726913970176
+    m_Key: End Column 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3760002834432
+    m_Key: End Column 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3762473279488
+    m_Key: Middle Column
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3817519325184
+    m_Key: Roof Beam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3845386280960
+    m_Key: Roof Purlin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3896963637248
+    m_Key: Wall Panel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3903175401472
+    m_Key: Pin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3950822694912
+    m_Key: Side Angle Module
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3982271586304
+    m_Key: Top Angle Module
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4026588602368
+    m_Key: Dowel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4051897032704
+    m_Key: MPP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4092967657472
+    m_Key: 4x6
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4159665479680
+    m_Key: 4x4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4183505903616
+    m_Key: Roof
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4209795801088
+    m_Key: Brackets
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5676155721461793043
+  references:
+    version: 2
+    RefIds:
+    - rid: 5676155721461793043
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1793082148575
