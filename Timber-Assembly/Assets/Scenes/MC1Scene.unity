@@ -358,6 +358,61 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 441087506}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1190710858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8320415064382080276, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1190710862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190710858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54614915f246eb644a980f4eb9c1dc2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
+  outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
+  targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
+--- !u!114 &1190710863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190710858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
+  localizedInfoTextHeader:
+    m_TableReference:
+      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
+    m_TableEntryReference:
+      m_KeyId: 1874742878208
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedInfoTextBody:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
+    m_TableEntryReference:
+      m_KeyId: 3950822694912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  hoverOutline: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1249617917
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +610,61 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1993303096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4307514236980499619, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1993303100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993303096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54614915f246eb644a980f4eb9c1dc2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRHoverOutline
+  outlineMaterial: {fileID: 2100000, guid: ec6ae2523c70bd44ba465a502fffa911, type: 2}
+  targetRenderers: []
+  hoverColor: {r: 1, g: 1, b: 1, a: 1}
+  selectedColor: {r: 1, g: 0.65, b: 0, a: 1}
+--- !u!114 &1993303101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993303096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
+  localizedInfoTextHeader:
+    m_TableReference:
+      m_TableCollectionName: GUID:6063903301300114c8107ff548683af2
+    m_TableEntryReference:
+      m_KeyId: 1874742878208
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  localizedInfoTextBody:
+    m_TableReference:
+      m_TableCollectionName: GUID:a1c18442350745f4e814e29abb60df84
+    m_TableEntryReference:
+      m_KeyId: 3950822694912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  hoverOutline: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &2092139007
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +802,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1230052185135151540, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1283629233213584844, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -808,6 +922,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6068453714231554217, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6092744512241186187, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -853,6 +971,10 @@ PrefabInstance:
       value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 6881086046421081658, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7009492864793568390, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -911,7 +1033,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4307514236980499619, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1993303101}
+    - targetCorrespondingSourceObject: {fileID: 4307514236980499619, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1993303100}
+    - targetCorrespondingSourceObject: {fileID: 8320415064382080276, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1190710863}
+    - targetCorrespondingSourceObject: {fileID: 8320415064382080276, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1190710862}
   m_SourcePrefab: {fileID: 100100000, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
 --- !u!1001 &5259193853309913791
 PrefabInstance:
