@@ -22,6 +22,78 @@ MonoBehaviour:
     m_Localized: N/A
     m_Metadata:
       m_Items: []
+  - m_Id: 3726913970176
+    m_Localized: The end columns provide support for the end roof beams, as well
+      as uphold the wall panels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3760002834432
+    m_Localized: The end columns provide support for the end roof beams, as well
+      as uphold the wall panels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3762473279488
+    m_Localized: The middle coluimns provide structural support in the middle of
+      the walls, being set between two sets of wall panels and supporting the middle
+      roof beams.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3817519325184
+    m_Localized: The roof beams provide the support upon which the fiberglass roof
+      will be set
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3950822694912
+    m_Localized: The side angle module is the connecting piece betwen the roof beam
+      and columns.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3982271586304
+    m_Localized: The top angle module is the connecting piece between two roof beams
+      and creates the peak of the roof.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4051897032704
+    m_Localized: The MPP is utilized to create the floor of the structure's platform.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4159665479680
+    m_Localized: The 4x4's are used as the side support beams for the floor panels.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4183505903616
+    m_Localized: The fiberglass roof rests on top of the roof beams, to which it
+      is attached via screws.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4209795801088
+    m_Localized: 'The metal brackets are utilized to keep the columns upright and
+      attached to the platform. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3896963637248
+    m_Localized: The wall panels are used to create the wall of the structure, minimizinbg
+      exposure to wind and weather.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3845386280960
+    m_Localized: The roof purlins provide more support for the fiberglass roof to
+      rest on. They slide into the gaps in the upper end of the roof beams.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3903175401472
+    m_Localized: The T-Pins are slid into the holes in the wall panels, they are
+      utilized to hold the wall panels in place and keep them attached to the columns.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4026588602368
+    m_Localized: The dowels are used to secure the side angle module to the coumns.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4092967657472
+    m_Localized: The 4x6 is used as the center support beam for the floor panels.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
