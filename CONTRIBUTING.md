@@ -20,4 +20,4 @@ TBD
 For any files that are not code-related (ie. docs), there exists designated folders for these. Any files or file edits that will not impact code may be pushed to Main without a pull request or approval from another team member. For example, changes to the README will not require a teammate to submit and await approval on a pull request. These changes may be pushed straight to Main or the desired branch. 
 
 ## Getting Help
-For any questions regarding contributions, please email Ethan (robinset@oregonstate.edu). A response can be expected within 1-2 business days.
+For any questions regarding contributions, please email Ethan (robinset@oregonstate.edu). A response can be expected within 1-2 days.
