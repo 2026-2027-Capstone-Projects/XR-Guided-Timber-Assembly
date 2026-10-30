@@ -76,4 +76,9 @@ The team is focusing on making a specific structure for a course at our school. 
 - Write clear, imperative commit messages (e.g., "Add part highlight on hover").
 - In PR descriptions, include: what changed and why, screenshots/recordings for UI or in-XR visual changes, and which headset/device (if any) was used to test.
 
+## Reference documents in the Worktree
+- docs/requirements.md
+- docs/risks.md
+- docs/design.md
+
 
