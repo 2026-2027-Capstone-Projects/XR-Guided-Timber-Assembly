@@ -1,4 +1,6 @@
-# General Project Description and Objectives
+# Requirements
+
+## General Project Description and Objectives
 Timber construction often involves assembling structural components according to precise spatial relationships and construction sequences. Understanding drawings alone may not be sufficient for inexperienced users to immediately understand where components belong, how they should be oriented, and in what order they should be assembled.
 
 This project will develop an XR training system that guides users through the assembly of a representative timber structure. The system will provide interactive visualization and spatial guidance to help users identify components, understand their placement, and complete the assembly sequence correctly.
@@ -6,7 +8,7 @@ This project will develop an XR training system that guides users through the as
 This project is being designed for a professor in the College of Forestry who has a use and need for an XR educational tool for the instruction of timber assembly.
 
 The project builds on ongoing research in augmented and extended reality for timber construction and will focus on creating a robust software platform for guided assembly training.
-## Objectives
+### Objectives
 The final system should include:
 
 An XR application supporting a representative timber assembly task.
