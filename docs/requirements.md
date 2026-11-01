@@ -185,7 +185,7 @@ Dependencies: Issues 5–7.
 Constrained Decisions:
 The team has decided not to implement hand controller design. We are more focused on using controllers instead.
 
-Shared Definition of Done
+## Shared Definition of Done
 
 Changes are committed, reviewed, and merged into the team’s repository.
 Acceptance criteria are demonstrated on the agreed target device.
