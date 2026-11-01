@@ -5,8 +5,6 @@ Timber construction often involves assembling structural components according to
 
 This project will develop an XR training system that guides users through the assembly of a representative timber structure. The system will provide interactive visualization and spatial guidance to help users identify components, understand their placement, and complete the assembly sequence correctly.
 
-This project is being designed for a professor in the College of Forestry who has a use and need for an XR educational tool for the instruction of timber assembly.
-
 The project builds on ongoing research in augmented and extended reality for timber construction and will focus on creating a robust software platform for guided assembly training.
 ### Objectives
 The final system should include:
