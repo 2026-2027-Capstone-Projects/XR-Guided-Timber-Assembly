@@ -1,7 +1,32 @@
+##General Project Description and Objectives
+Timber construction often involves assembling structural components according to precise spatial relationships and construction sequences. Understanding drawings alone may not be sufficient for inexperienced users to immediately understand where components belong, how they should be oriented, and in what order they should be assembled.
 
-Module One Goals
+This project will develop an XR training system that guides users through the assembly of a representative timber structure. The system will provide interactive visualization and spatial guidance to help users identify components, understand their placement, and complete the assembly sequence correctly.
 
-Issue 1 — Establish the Unity scene and import representative timber components
+This project is being designed for a professor in the College of Forestry who has a use and need for an XR educational tool for the instruction of timber assembly.
+
+The project builds on ongoing research in augmented and extended reality for timber construction and will focus on creating a robust software platform for guided assembly training.
+## Objectives
+The final system should include:
+
+An XR application supporting a representative timber assembly task.
+Digital models of the required structural components.
+A clearly defined assembly sequence.
+Visualization of the current assembly step.
+Identification of the component required for each step.
+Spatial guidance showing where components should be placed.
+Orientation and alignment guidance.
+Detection of correct and incorrect assembly actions.
+User feedback when errors occur.
+Progress tracking.
+Basic training metrics such as time per step, errors, and completed steps.
+Support for restarting or replaying training procedures.
+An architecture that allows additional assembly scenarios to be configured.
+User and developer documentation.
+
+## Module 1
+
+### Issue 1 — Establish the Unity scene and import representative timber components
 Goal: Verify that the supplied models can support interactive exploration in Unity.
 Tasks
 
@@ -20,7 +45,7 @@ At least one known dimension is checked against the source model.
 Each component can be addressed independently through a stable identifier.
 The scene runs on the agreed target device, with any import limitations documented.
 
-Issue 2 — Select a component and display its identity and role
+### Issue 2 — Select a component and display its identity and role
 Goal: Let learners identify parts directly within the structure.
 Tasks
 
@@ -39,7 +64,7 @@ Missing descriptive content produces a clear fallback without breaking interacti
 
 Dependency: Issue 1.
 
-Issue 3 — Inspect a component and return to its structural context
+### Issue 3 — Inspect a component and return to its structural context
 Goal: Let learners examine component geometry independently.
 Tasks
 
@@ -58,7 +83,7 @@ Returning to the structure preserves the component selection.
 
 Dependency: Issue 2.
 
-Issue 4 — Explore one connection in assembled and exploded views
+### Issue 4 — Explore one connection in assembled and exploded views
 Goal: Explain how a representative connection joins its participating components.
 Tasks
 
@@ -79,7 +104,7 @@ The connection explanation is checked against the reference materials; unresolve
 
 Dependency: Issue 2. Reuse the inspection functionality from Issue 3 where appropriate.
 
-Issue 5 — Browse the kit of parts and locate components in the structure
+### Issue 5 — Browse the kit of parts and locate components in the structure
 Goal: Connect component types with their instances in the complete structure.
 Tasks
 
@@ -98,7 +123,7 @@ The catalog clearly communicates which components are currently included.
 
 Dependencies: Issues 2–3.
 
-Issue 6 — Guide the learner through a short exploration activity
+### Issue 6 — Guide the learner through a short exploration activity
 Goal: Provide a purposeful introduction to components and connections.
 Tasks
 
@@ -117,7 +142,7 @@ The learner can exit to free exploration and restart the activity.
 
 Dependencies: Issues 3–4.
 
-Issue 7 — Check understanding through identification tasks
+### Issue 7 — Check understanding through identification tasks
 Goal: Check whether learners recognize the components and relationships they explored.
 Tasks
 
@@ -137,7 +162,7 @@ Completing the activity does not automatically imply that all answers were corre
 
 Dependencies: Issues 2 and 4.
 
-Issue 8 — Extend the module using configurable content
+### Issue 8 — Extend the module using configurable content
 Goal: Demonstrate that the module can support additional components and connections through a consistent content structure.
 Tasks
 
