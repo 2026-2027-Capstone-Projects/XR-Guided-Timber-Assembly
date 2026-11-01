@@ -27,7 +27,7 @@ The final system should include:
     User and developer documentation.
 
 ## Assets and Other Provided Material
-This project will be based around a pre-exsting timber design. We have been provided three different [documents](./docs/structureDocs) that contain instructions for construction, deconstruction, and a guide to the parts, and design intentions of the structure. Additionally, a 3d model asset containing the complete structure, comprised of the necessary individual components has also been provided and can be found in the [assets]() folder
+This project will be based around a pre-exsting timber design. We have been provided three different [documents](./structureDocs) that contain instructions for construction, deconstruction, and a guide to the parts, and design intentions of the structure. Additionally, a 3d model asset containing the complete structure, comprised of the necessary individual components has also been provided and can be found in the [assets]() folder
 
 ## Technologies and Languages Utilized
 This project will be developed and designed utilizing the Unity Game Engine and C# language. A database has not yet been decided, however it is likely the existing Unity database system will be used. 
