@@ -11,6 +11,6 @@ The project builds on ongoing research in augmented and extended reality for tim
 Unity Editor Version: 6000.3.26f1
 
 ## Instructions to Run
-In its current state, the program will require the Unity editor to view and run the program. To open and run the program in Unity, navigate to Projects, add the project by selecting "Add", and then "Add from repo". After the project is added, open the project in the Unity editor, then in the project window, navigate to Assets/Scenes and select "MC1Scene" (make sure to select the scene file, not the folder of the same name)
+In its current state, the project requires the Unity editor to view and run the program. To open and run the program in Unity, navigate to Projects, add the project by selecting "Add", and then "Add from repo". After the project is added, open the project in the Unity editor. In the project window, navigate to Assets/Scenes and select "MC1Scene" (make sure to select the scene file, not the folder of the same name)
 
-After opening the file, click the play button at the top of the editor to test the program. 
+After opening the file, click the Play button at the top of the editor to test the program. 

@@ -2,11 +2,11 @@
 
 Timber construction requires assembling structural components according to precise spatial relationships and sequences, which drawings alone often fail to convey to inexperienced users. Construction workers, students, and trainees typically need significant experience to translate two-dimensional documentation into correct physical assembly actions — errors in component selection, orientation, order, or placement increase construction time and cause rework. This project develops an XR training system that guides users through assembling a representative timber structure, using interactive visualization and spatial guidance to help them identify components, understand placement, and follow the correct assembly sequence. It builds on ongoing research in augmented/extended reality for timber construction, with a focus on a robust software platform for guided assembly training.
 
-The team is focusing on making a specific structure for a course at our school. This XR program need to be able to teach students how to build the structure and grade their progress against a module like training course. This makes the code interactive and gradable by the professor thats teaching that course.
+The team is focusing on building a specific structure for a course at our school. This XR program needs to be able to teach students how to build the structure and grade their progress against a module like training course. This makes the code interactive and gradable by the professor teaching that course.
 
 ---
 
-## Development Enviorment
+## Development Environment
 
 **Software being used:**
 - Unity 6.3 LTS
@@ -14,8 +14,8 @@ The team is focusing on making a specific structure for a course at our school. 
 - Backend TBD
 
 **Hardware being used:**
-- VR headset(TBD)
-- VR Controllers(TBD)
+- VR headset (TBD)
+- VR Controllers (TBD)
 
 **NOTE FOR AGENTS, KEEP CODE DRY!**
 
@@ -77,8 +77,10 @@ The team is focusing on making a specific structure for a course at our school. 
 - In PR descriptions, include: what changed and why, screenshots/recordings for UI or in-XR visual changes, and which headset/device (if any) was used to test.
 
 ## Reference documents in the Worktree
-- docs/requirements.md
-- docs/risks.md
-- docs/design.md
+- `docs/requirements.md`
+- `docs/risks.md`
+- `docs/design.md`
+- `README.md`
+- `CONTRIBUTING.md`
 
 

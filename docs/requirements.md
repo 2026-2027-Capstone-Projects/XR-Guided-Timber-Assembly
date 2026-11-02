@@ -321,7 +321,7 @@ The project will not:
 
 ---
 
-## Module 1
+## Module 1 Issues
 
 ### Issue 1 — Establish the Unity scene and import representative timber components
 Goal: Verify that the supplied models can support interactive exploration in Unity.
