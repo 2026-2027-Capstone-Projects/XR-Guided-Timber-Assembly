@@ -1,6 +1,6 @@
 # Risks
 
-Objective: Deliver a functional XR-guided timber assembly training application in Unity 6.3 LTS that enables instructors and students to complete training scenarios successfully within the project timeline.
+**Objective:** Deliver a functional XR-guided timber assembly training application in Unity 6.3 LTS that enables instructors and students to complete training scenarios successfully within the project timeline.
 
 ## Active Risks
 
