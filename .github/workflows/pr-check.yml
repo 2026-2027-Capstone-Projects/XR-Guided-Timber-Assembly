@@ -66,3 +66,4 @@ jobs:
           # Use Android for Meta Quest / XR APK builds, or StandaloneWindows64 / StandaloneLinux64 for desktop
           targetPlatform: Android
           buildsPath: Timber-Assembly/build
+          allowDirtyBuild: true # Nuclear Option
