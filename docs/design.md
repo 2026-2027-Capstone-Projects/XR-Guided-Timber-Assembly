@@ -37,4 +37,5 @@ In order to ensure that this project meets the expectations and needs of the cli
 
 ## Diagrams
 ### Context Diagram
-[Context Diagram](./'system context.jpg')
+
+![Context Diagram](./system%20context.jpg)
