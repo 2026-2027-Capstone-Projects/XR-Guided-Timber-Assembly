@@ -1,5 +1,5 @@
+#if UNITY_INCLUDE_TESTS // Guard against the runtime tests being added to the player build; Add to each file or make custom .asmdef
 using System;
-using System.Collections;
 using NUnit.Framework;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
@@ -39,3 +39,4 @@ public class PartInfoRuntimeTests
         Assert.IsFalse(stringified.StartsWith("No translation found"), $"GetDescription returned fallback missing-translation text for {id}: {result}");
     }
 }
+#endif
