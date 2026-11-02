@@ -1,0 +1,66 @@
+name: PR Test and Build
+
+on:
+  pull_request:
+    branches: [ "main", "master", "develop" ]
+
+jobs:
+  lint:
+    name: Lint C# Scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Verify C# Formatting (dotnet format)
+        # --folder lints Assets/ directly without requiring Unity's gitignored .sln/.csproj files
+        run: dotnet format whitespace Timber-Assembly/Assets --folder --verify-no-changes --verbosity diagnostic
+
+  test-and-build:
+    name: Run Tests & Verify Build
+    needs: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: true
+
+      - name: Cache Unity Library
+        uses: actions/cache@v4
+        with:
+          path: Timber-Assembly/Library
+          key: Library-${{ hashFiles('Timber-Assembly/Assets/**', 'Timber-Assembly/Packages/**', 'Timber-Assembly/ProjectSettings/**') }}
+          restore-keys: |
+            Library-
+
+      - name: Run EditMode and PlayMode Tests
+        uses: game-ci/unity-test-runner@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: Timber-Assembly
+          testMode: all
+          artifactsPath: Timber-Assembly/TestResults
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          checkName: Unity Test Results
+
+      - name: Build Project
+        uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          projectPath: Timber-Assembly
+          # Use Android for Meta Quest / XR APK builds, or StandaloneWindows64 / StandaloneLinux64 for desktop
+          targetPlatform: Android
+          buildsPath: Timber-Assembly/build
