@@ -4,11 +4,9 @@ on:
   pull_request:
     branches: [ "main", "master", "develop" ]
 
-permissions:
-  contents: read
-  checks: write
 
 jobs:
+  # lint C# code in the Unity project's Assets tree, to ensure it complies with .editorconfig
   lint:
     name: Lint C# Scripts
     runs-on: ubuntu-latest
@@ -25,10 +23,34 @@ jobs:
         # --folder lints Assets/ directly without requiring Unity's gitignored .sln/.csproj files
         run: dotnet format whitespace Timber-Assembly/Assets --folder --verify-no-changes --verbosity diagnostic
 
+  # Check if files in the Timber-Assembly project directory have been changed
+  project-changes:
+    name: Detect Unity Project Changes
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      unity: ${{ steps.filter.outputs.unity }}
+    steps:
+      - name: Detect changed files
+        uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            unity:
+              - 'Timber-Assembly/**'
+
+  # Run Editor and Runtime tests, and build the game (Can take an hour)
   test-and-build:
     name: Run Tests & Verify Build
-    needs: lint
+    needs: [lint, project-changes]
+    # Skip running tests if project files have not been changed
+    if: needs.project-changes.result == 'success' && needs.project-changes.outputs.unity == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
