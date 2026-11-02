@@ -20,4 +20,4 @@
 #echo 'Husky.Net is awesome!'
 
 # Lint stages C# files in Timber-Assembly/Assets/
-dotnet husky run --name lint-staged-cs-assets
+dotnet husky run --name format-staged-cs-assets

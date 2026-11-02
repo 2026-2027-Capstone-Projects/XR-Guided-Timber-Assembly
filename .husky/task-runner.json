@@ -11,7 +11,7 @@
          }
       },
       {
-        "name": "lint-staged-cs-assets",
+        "name": "format-staged-cs-assets",
         "command": "dotnet",
         "args": [
           "format",
