@@ -34,3 +34,7 @@ This project will be developed and designed utilizing the Unity Game Engine and 
 
 ## Consistency with Design and Desired Project
 In order to ensure that this project meets the expectations and needs of the client, this design document and all referenced documents will be utilized as a guide to understanding the structure that we will be implementing into our program. Any questions may be brought to our project partner to answer in order to avoid making incorrect assumptions and unintentionally working against our end goal/product. The team will follow and adhere to this design doc and the resources provided, as well as the instructions/issues set out by our project partner in order to avoid conflicts or problems with the work created. AI may be utilized, however it is the responsibility of the team member utilizing it to ensure adherence to this design doc and the policies listed in other documents such as [contributing](../CONTRIBUTING.md).
+
+## Diagrams
+### Context Diagram
+[](./'system context.jpg')
