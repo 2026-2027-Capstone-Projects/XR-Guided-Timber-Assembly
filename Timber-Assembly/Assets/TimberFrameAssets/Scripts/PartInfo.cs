@@ -21,12 +21,12 @@ public static class PartInfo
         // TODO: Verify if they should be added to the Part ID system
     }
 
-    private static readonly string[] KeyMap = Enum.GetNames(typeof(ID));
+    public static readonly string[] KeyMap = Enum.GetNames(typeof(ID));
 
     // This all relies on using the keys from KeyMap as the keys within the following Localization Tables:
 
-    private const string NamesTable = "PartNames"; // Relies on "PartNames" Localization Table existing
-    private const string DescriptionsTable = "PartDescriptions"; // Relies on "PartDescriptions" Localization Table existing
+    public const string NamesTable = "PartNames"; // Relies on "PartNames" Localization Table existing
+    public const string DescriptionsTable = "PartDescriptions"; // Relies on "PartDescriptions" Localization Table existing
 
 
     public static string ToString(ID id)
