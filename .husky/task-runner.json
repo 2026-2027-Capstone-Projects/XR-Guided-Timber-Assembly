@@ -22,18 +22,6 @@
         "include": [
           "Timber-Assembly/Assets/**/*.cs"
         ]
-      },
-      {
-        "name": "lint-unstaged-cs-assets",
-        "command": "dotnet",
-        "args": [
-          "format",
-          "--include",
-          "${staged}"
-        ],
-        "include": [
-          "Timber-Assembly/Assets/**/*.cs"
-        ]
       }
    ]
 }
