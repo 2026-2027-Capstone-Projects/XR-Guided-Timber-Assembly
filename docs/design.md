@@ -11,23 +11,23 @@ The project builds on ongoing research in augmented and extended reality for tim
 
 The final system should include:
 
-    An XR application supporting a representative timber assembly task.
-    Digital models of the required structural components.
-    A clearly defined assembly sequence.
-    Visualization of the current assembly step.
-    Identification of the component required for each step.
-    Spatial guidance showing where components should be placed.
-    Orientation and alignment guidance.
-    Detection of correct and incorrect assembly actions.
-    User feedback when errors occur.
-    Progress tracking.
-    Basic training metrics such as time per step, errors, and completed steps.
-    Support for restarting or replaying training procedures.
-    An architecture that allows additional assembly scenarios to be configured.
-    User and developer documentation.
+- An XR application supporting a representative timber assembly task.
+- Digital models of the required structural components.
+- A clearly defined assembly sequence.
+- Visualization of the current assembly step.
+- Identification of the component required for each step.
+- Spatial guidance showing where components should be placed.
+- Orientation and alignment guidance.
+- Detection of correct and incorrect assembly actions.
+- User feedback when errors occur.
+- Progress tracking.
+- Basic training metrics such as time per step, errors, and completed steps.
+- Support for restarting or replaying training procedures.
+- An architecture that allows additional assembly scenarios to be configured.
+- User and developer documentation.
 
 ## Assets and Other Provided Material
-This project will be based around a pre-exsting timber design. We have been provided three different [documents](./structureDocs) that contain instructions for construction, deconstruction, and a guide to the parts, and design intentions of the structure. Additionally, a 3d model asset containing the complete structure, comprised of the necessary individual components, which can be found in the Unity project [assets folder](../Timber-Assembly/Assets/TimberFrameAssets/Models/TimberFrame.fbx). This same folder, as linked here, also contains a subfolder with the individual parts models separated from the completed structure.
+This project will be based around a pre-existing timber design. We have been provided three different [documents](./structureDocs) that contain instructions for construction, deconstruction, and a guide to the parts, and design intentions of the structure. Additionally, a 3D model asset containing the complete structure, comprised of the necessary individual components, which can be found in the Unity project [assets folder](../Timber-Assembly/Assets/TimberFrameAssets/Models/TimberFrame.fbx). This same folder, as linked here, also contains a subfolder with the individual parts models separated from the completed structure.
 
 ## Technologies and Languages Utilized
 This project will be developed and designed utilizing the Unity Game Engine and C# language. A database has not yet been decided, however it is likely the existing Unity database system will be used.
