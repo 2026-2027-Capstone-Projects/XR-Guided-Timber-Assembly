@@ -11,8 +11,13 @@ public class XRInspectablePart : MonoBehaviour
     [SerializeField] private PartInfo.ID partIdentifier = PartInfo.ID.None;
     [Tooltip("Auto-detected on the same GameObject if left empty.")]
     [SerializeField] private XRHoverOutline hoverOutline;
+    [Header("Selection Placement")]
+    [SerializeField, Min(0.1f)] private float cameraDistance = 1.5f;
 
     private XRSimpleInteractable interactable;
+    private Transform partTransform;
+    private Vector3 originalPartPosition;
+    private bool hasOriginalPartPosition;
     private LocalizedString localizedInfoTextHeader;
     private LocalizedString localizedInfoTextBody;
 
@@ -20,6 +25,7 @@ public class XRInspectablePart : MonoBehaviour
     {
         // Cache reference to UX interface
         interactable = GetComponent<XRSimpleInteractable>();
+        partTransform = transform.parent != null ? transform.parent : transform;
 
         // Cache the LocalizedStrings
         localizedInfoTextHeader = PartInfo.GetName(partIdentifier);
@@ -56,9 +62,38 @@ public class XRInspectablePart : MonoBehaviour
 
     private void TriggerPopup()
     {
-        if (PopupUIManager.Instance != null)
+        if (PopupUIManager.Instance == null)
         {
-            PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, partIdentifier, hoverOutline);
+            return;
         }
+
+        PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, partIdentifier, hoverOutline, this);
+        MovePartInFrontOfCamera();
+    }
+
+    private void MovePartInFrontOfCamera()
+    {
+        Camera mainCamera = Camera.main;
+        if (mainCamera == null)
+        {
+            Debug.LogWarning("Cannot move selected part because no MainCamera was found.", this);
+            return;
+        }
+
+        if (!hasOriginalPartPosition)
+        {
+            originalPartPosition = partTransform.position;
+            hasOriginalPartPosition = true;
+        }
+
+        partTransform.position = mainCamera.transform.position + mainCamera.transform.forward * cameraDistance;
+    }
+
+    public void RestoreOriginalPosition()
+    {
+        if (!hasOriginalPartPosition) return;
+
+        partTransform.position = originalPartPosition;
+        hasOriginalPartPosition = false;
     }
 }
