@@ -1,0 +1,411 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2612230290795878821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5203613846346549942}
+  m_Layer: 0
+  m_Name: RoofPurlinGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5203613846346549942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2612230290795878821}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
+  m_LocalPosition: {x: 1.216516, y: 2.7451935, z: -0.0006670952}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4785883373164243624}
+  - {fileID: 5022017690135972895}
+  - {fileID: 6502445606981210778}
+  - {fileID: 5058734828162591271}
+  - {fileID: 6909507091020850559}
+  - {fileID: 4654244571289517100}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7616849407943170731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5203613846346549942}
+    m_Modifications:
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2054038
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14954044
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827454241976831749, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_Name
+      value: RoofPurlin (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+--- !u!4 &6502445606981210778 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+  m_PrefabInstance: {fileID: 7616849407943170731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7812249927180217678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5203613846346549942}
+    m_Modifications:
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.61626863
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.44810802
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827454241976831749, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_Name
+      value: RoofPurlin (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+--- !u!4 &6909507091020850559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+  m_PrefabInstance: {fileID: 7812249927180217678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8206667307722072729
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5203613846346549942}
+    m_Modifications:
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0270705
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7468457
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827454241976831749, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_Name
+      value: RoofPurlin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+--- !u!4 &4785883373164243624 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+  m_PrefabInstance: {fileID: 8206667307722072729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8295099702818550813
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5203613846346549942}
+    m_Modifications:
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0270705
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000000059604645
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.74684554
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827454241976831749, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_Name
+      value: RoofPurlin (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+--- !u!4 &4654244571289517100 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+  m_PrefabInstance: {fileID: 8295099702818550813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8483958694838919702
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5203613846346549942}
+    m_Modifications:
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.20556211
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.14919735
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827454241976831749, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_Name
+      value: RoofPurlin (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+--- !u!4 &5058734828162591271 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+  m_PrefabInstance: {fileID: 8483958694838919702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8518811061128430638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5203613846346549942}
+    m_Modifications:
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6162534
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.00000011920929
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4481936
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827454241976831749, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+      propertyPath: m_Name
+      value: RoofPurlin (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+--- !u!4 &5022017690135972895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3713552134561777713, guid: 7861b66cde26f4b41aa1e188d4a411c9, type: 3}
+  m_PrefabInstance: {fileID: 8518811061128430638}
+  m_PrefabAsset: {fileID: 0}
