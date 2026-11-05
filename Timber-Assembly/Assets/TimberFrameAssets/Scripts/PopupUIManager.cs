@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Localization;
 using UnityEngine.UI;
 using TMPro;
@@ -34,6 +35,15 @@ public class PopupUIManager : MonoBehaviour
         AttachToLeftController();
         closeButton.onClick.AddListener(ClosePopup);
         popupPanel.SetActive(false);
+    }
+
+    private void Update()
+    {
+        // Desktop/editor shortcut for closing the popup and returning to the structure
+        if (popupPanel.activeSelf && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            ClosePopup();
+        }
     }
 
     private void AttachToLeftController()
@@ -110,7 +120,6 @@ public class PopupUIManager : MonoBehaviour
     {
         ClearCurrentState();
         popupPanel.SetActive(false);
-        PopupClosed?.Invoke();
     }
 
     private void UpdateHeader(string translatedValue)
@@ -145,8 +154,11 @@ public class PopupUIManager : MonoBehaviour
         }
         if (currentInspectablePart != null)
         {
-            currentInspectablePart.RestoreOriginalPosition();
+            currentInspectablePart.EndInspection();
             currentInspectablePart = null;
         }
+
+        // Lets listeners (e.g. the dimensions panel) hide when the part is closed or another is selected
+        PopupClosed?.Invoke();
     }
 }

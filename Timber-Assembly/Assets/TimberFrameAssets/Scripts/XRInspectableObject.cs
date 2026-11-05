@@ -15,6 +15,9 @@ public class XRInspectablePart : MonoBehaviour
     [Header("Selection Placement")]
     [SerializeField, Min(0.1f)] private float cameraDistance = 1.5f;
     [SerializeField, Min(0.1f)] private float moveDuration = 0.4f;
+    [Header("Inspection View")]
+    [SerializeField] private InspectionViewController inspectionViewController;
+    [SerializeField] private InspectionUIController inspectionUIController;
 
     private XRSimpleInteractable interactable;
     private Transform partTransform;
@@ -38,6 +41,17 @@ public class XRInspectablePart : MonoBehaviour
         if (hoverOutline == null)
         {
             hoverOutline = GetComponent<XRHoverOutline>();
+        }
+
+        // Auto-detect inspection controllers if not assigned
+        if (inspectionViewController == null)
+        {
+            inspectionViewController = GetComponent<InspectionViewController>();
+        }
+
+        if (inspectionUIController == null)
+        {
+            inspectionUIController = GetComponentInChildren<InspectionUIController>();
         }
     }
 
@@ -65,15 +79,26 @@ public class XRInspectablePart : MonoBehaviour
 
     private void TriggerPopup()
     {
-        ShowDimensionsPopup();
-
         if (PopupUIManager.Instance == null)
         {
             return;
         }
 
+        // Show the popup first so the previous part's panels are cleared before this part's dimensions appear
         PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, partIdentifier, hoverOutline, this);
+        ShowDimensionsPopup();
         MovePartInFrontOfCamera();
+
+        if (inspectionViewController != null)
+        {
+            inspectionViewController.SetInspecting(true);
+        }
+
+        // Enable inspection UI if available
+        if (inspectionUIController != null)
+        {
+            inspectionUIController.SetInspectionMode(true);
+        }
     }
 
     private void ShowDimensionsPopup()
@@ -131,6 +156,22 @@ public class XRInspectablePart : MonoBehaviour
 
         partTransform.position = targetPosition;
         moveCoroutine = null;
+    }
+
+    public void EndInspection()
+    {
+        if (inspectionViewController != null)
+        {
+            inspectionViewController.ResetInspectionView();
+            inspectionViewController.SetInspecting(false);
+        }
+
+        if (inspectionUIController != null)
+        {
+            inspectionUIController.SetInspectionMode(false);
+        }
+
+        RestoreOriginalPosition();
     }
 
     public void RestoreOriginalPosition()
