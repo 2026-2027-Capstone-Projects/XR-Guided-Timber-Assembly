@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -13,11 +14,13 @@ public class XRInspectablePart : MonoBehaviour
     [SerializeField] private XRHoverOutline hoverOutline;
     [Header("Selection Placement")]
     [SerializeField, Min(0.1f)] private float cameraDistance = 1.5f;
+    [SerializeField, Min(0.1f)] private float moveDuration = 0.4f;
 
     private XRSimpleInteractable interactable;
     private Transform partTransform;
     private Vector3 originalPartPosition;
     private bool hasOriginalPartPosition;
+    private Coroutine moveCoroutine;
     private LocalizedString localizedInfoTextHeader;
     private LocalizedString localizedInfoTextBody;
 
@@ -62,6 +65,8 @@ public class XRInspectablePart : MonoBehaviour
 
     private void TriggerPopup()
     {
+        ShowDimensionsPopup();
+
         if (PopupUIManager.Instance == null)
         {
             return;
@@ -69,6 +74,22 @@ public class XRInspectablePart : MonoBehaviour
 
         PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, partIdentifier, hoverOutline, this);
         MovePartInFrontOfCamera();
+    }
+
+    private void ShowDimensionsPopup()
+    {
+        if (!sizeVerification.TryGetDimensions(partTransform, out Transform meshTransform, out Bounds meshBounds, out Vector3 dimensions))
+        {
+            return;
+        }
+
+        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>();
+        if (dimensionsPopup == null)
+        {
+            dimensionsPopup = gameObject.AddComponent<PopupDimensions>();
+        }
+
+        dimensionsPopup.Show(meshTransform, meshBounds, dimensions);
     }
 
     private void MovePartInFrontOfCamera()
@@ -86,12 +107,41 @@ public class XRInspectablePart : MonoBehaviour
             hasOriginalPartPosition = true;
         }
 
-        partTransform.position = mainCamera.transform.position + mainCamera.transform.forward * cameraDistance;
+        Vector3 targetPosition = mainCamera.transform.position + mainCamera.transform.forward * cameraDistance;
+        if (moveCoroutine != null)
+        {
+            StopCoroutine(moveCoroutine);
+        }
+
+        moveCoroutine = StartCoroutine(MovePartToPosition(targetPosition));
+    }
+
+    private IEnumerator MovePartToPosition(Vector3 targetPosition)
+    {
+        Vector3 startPosition = partTransform.position;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < moveDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float progress = Mathf.Clamp01(elapsedTime / moveDuration);
+            partTransform.position = Vector3.Lerp(startPosition, targetPosition, Mathf.SmoothStep(0f, 1f, progress));
+            yield return null;
+        }
+
+        partTransform.position = targetPosition;
+        moveCoroutine = null;
     }
 
     public void RestoreOriginalPosition()
     {
         if (!hasOriginalPartPosition) return;
+
+        if (moveCoroutine != null)
+        {
+            StopCoroutine(moveCoroutine);
+            moveCoroutine = null;
+        }
 
         partTransform.position = originalPartPosition;
         hasOriginalPartPosition = false;
