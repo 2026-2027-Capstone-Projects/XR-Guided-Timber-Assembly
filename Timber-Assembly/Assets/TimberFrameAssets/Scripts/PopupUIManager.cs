@@ -6,6 +6,7 @@ using TMPro;
 public class PopupUIManager : MonoBehaviour
 {
     public static PopupUIManager Instance { get; private set; }
+    public event System.Action PopupClosed;
 
     [SerializeField] private GameObject popupPanel;
     [SerializeField] private TMP_Text popupTextHeader;
@@ -109,6 +110,7 @@ public class PopupUIManager : MonoBehaviour
     {
         ClearCurrentState();
         popupPanel.SetActive(false);
+        PopupClosed?.Invoke();
     }
 
     private void UpdateHeader(string translatedValue)

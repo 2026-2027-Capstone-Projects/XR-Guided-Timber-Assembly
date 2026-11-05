@@ -13,9 +13,11 @@ public class PopupDimensions : MonoBehaviour
 	private float partHeight;
 	private float partLength;
 	private GameObject popupObject;
+	private PopupUIManager subscribedPopupManager;
 
 	public void Show(Transform part, Bounds meshBounds, Vector3 dimensions)
 	{
+		SubscribeToPopupClosed();
 		partTransform = part;
 		localBounds = meshBounds;
 		partWidth = Mathf.Abs(dimensions.x);
@@ -31,6 +33,33 @@ public class PopupDimensions : MonoBehaviour
 		text.text = $"W {partWidth:F2} m\nH {partHeight:F2} m\nL {partLength:F2} m";
 		UpdatePopupTransform();
 		popupObject.SetActive(true);
+	}
+
+	private void SubscribeToPopupClosed()
+	{
+		if (subscribedPopupManager == PopupUIManager.Instance)
+		{
+			return;
+		}
+
+		if (subscribedPopupManager != null)
+		{
+			subscribedPopupManager.PopupClosed -= Hide;
+		}
+
+		subscribedPopupManager = PopupUIManager.Instance;
+		if (subscribedPopupManager != null)
+		{
+			subscribedPopupManager.PopupClosed += Hide;
+		}
+	}
+
+	private void Hide()
+	{
+		if (popupObject != null)
+		{
+			popupObject.SetActive(false);
+		}
 	}
 
 	private void LateUpdate()
@@ -89,6 +118,11 @@ public class PopupDimensions : MonoBehaviour
 
 	private void OnDestroy()
 	{
+		if (subscribedPopupManager != null)
+		{
+			subscribedPopupManager.PopupClosed -= Hide;
+		}
+
 		if (popupObject != null)
 		{
 			Destroy(popupObject);
