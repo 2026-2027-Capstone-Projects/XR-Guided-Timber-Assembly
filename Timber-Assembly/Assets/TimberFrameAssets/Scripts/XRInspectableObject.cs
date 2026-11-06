@@ -101,7 +101,7 @@ public class XRInspectablePart : MonoBehaviour
         }
     }
 
-    private void ShowDimensionsPopup()
+    /*pivate void ShowDimensionsPopup()
     {
         if (!sizeVerification.TryGetDimensions(partTransform, out Transform meshTransform, out Bounds meshBounds, out Vector3 dimensions))
         {
@@ -115,6 +115,25 @@ public class XRInspectablePart : MonoBehaviour
         }
 
         dimensionsPopup.Show(meshTransform, meshBounds, dimensions);
+    }*/
+    //Changing to match with sizeVerification changes
+    private void ShowDimensionsPopup()
+    {
+        if (!sizeVerification.TryGetDimensions(partTransform, out Transform boundsTransform, out Bounds meshBounds, out Vector3 dimensions))
+        {
+            Debug.LogWarning($"Could not calculate dimensions for {partTransform.name}.", this);
+            return;
+        }
+
+        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>();
+
+        if (dimensionsPopup == null)
+        {
+            dimensionsPopup = gameObject.AddComponent<PopupDimensions>();
+        }
+
+        dimensionsPopup.Show(boundsTransform, meshBounds, dimensions);
+
     }
 
     private void MovePartInFrontOfCamera()

@@ -22,7 +22,7 @@ public class PopupDimensions : MonoBehaviour
 		localBounds = meshBounds;
 		partWidth = Mathf.Abs(dimensions.x);
 		partHeight = Mathf.Abs(dimensions.y);
-		partLength = Mathf.Abs(dimensions.z);
+		partLength = Mathf.Abs(dimensions.z); 
 
 		if (popupObject == null)
 		{
