@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Localization;
 using UnityEngine.UI;
 using TMPro;
@@ -6,16 +7,21 @@ using TMPro;
 public class PopupUIManager : MonoBehaviour
 {
     public static PopupUIManager Instance { get; private set; }
+    public event System.Action PopupClosed;
 
     [SerializeField] private GameObject popupPanel;
     [SerializeField] private TMP_Text popupTextHeader;
     [SerializeField] private TMP_Text popupTextBody;
     [SerializeField] private TMP_Text popupTextIdentifier;
     [SerializeField] private Button closeButton;
+    [Header("Controller Anchor")]
+    [SerializeField] private Vector3 leftControllerLocalPosition = new Vector3(0f, 0.12f, 0.2f);
+    [SerializeField, Min(0.001f)] private float popupScale = 0.0025f;
 
     private LocalizedString currentLocalizedStringHeader;
     private LocalizedString currentLocalizedStringBody;
     private XRHoverOutline currentActiveOutline;
+    private XRInspectablePart currentInspectablePart;
 
     private void Awake()
     {
@@ -26,11 +32,37 @@ public class PopupUIManager : MonoBehaviour
         }
         Instance = this;
 
+        AttachToLeftController();
         closeButton.onClick.AddListener(ClosePopup);
         popupPanel.SetActive(false);
     }
 
-    public void ShowPopup(LocalizedString header, LocalizedString body, PartInfo.ID identifier = PartInfo.ID.None, XRHoverOutline sourceOutline = null)
+    private void Update()
+    {
+        // Desktop/editor shortcut for closing the popup and returning to the structure
+        if (popupPanel.activeSelf && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            ClosePopup();
+        }
+    }
+
+    private void AttachToLeftController()
+    {
+        transform.localScale = Vector3.one * popupScale;
+
+        GameObject leftController = GameObject.Find("Left Controller");
+        if (leftController == null)
+        {
+            Debug.LogWarning("Cannot anchor popup because no Left Controller was found.", this);
+            return;
+        }
+
+        transform.SetParent(leftController.transform, false);
+        transform.localPosition = leftControllerLocalPosition;
+        transform.localRotation = Quaternion.identity;
+    }
+
+    public void ShowPopup(LocalizedString header, LocalizedString body, PartInfo.ID identifier = PartInfo.ID.None, XRHoverOutline sourceOutline = null, XRInspectablePart sourcePart = null)
     {
         string errorHeader = null, errorBody = null;
         if (header == null || header.IsEmpty)
@@ -51,6 +83,7 @@ public class PopupUIManager : MonoBehaviour
         {
             currentActiveOutline.SetSelectedOutline(true);
         }
+        currentInspectablePart = sourcePart;
 
         // Subscribing to StringChanged automatically triggers an asynchronous fetch 
         // and invokes UpdateText immediately upon completion, as well as whenever the active Locale changes.
@@ -119,5 +152,13 @@ public class PopupUIManager : MonoBehaviour
             currentActiveOutline.SetSelectedOutline(false);
             currentActiveOutline = null;
         }
+        if (currentInspectablePart != null)
+        {
+            currentInspectablePart.EndInspection();
+            currentInspectablePart = null;
+        }
+
+        // Lets listeners (e.g. the dimensions panel) hide when the part is closed or another is selected
+        PopupClosed?.Invoke();
     }
 }

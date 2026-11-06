@@ -119,6 +119,240 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &26109592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2056986062514690964, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &26109598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26109592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &96335203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1402985096454670034, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &96335209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96335203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &118562895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7034483871461666760, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &118562901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118562895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &125636330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1387285387149349517, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &125636336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125636330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &157654734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6246443042437187002, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &157654740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157654734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &164299143 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6539611703043164933, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &164299149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164299143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &236892210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2605562360987459435, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &236892216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236892210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &257144589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3197463377723692947, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &257144595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257144589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &258047236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5048743145828799689, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &258047242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258047236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
 --- !u!1 &299639867
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +480,188 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &305530841 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8836136888537801468, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &305530847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305530841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &316189462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4621209716016359312, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &316189468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 316189462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &350496081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5077989833668327375, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &350496087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350496081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &354985517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 957956131414172069, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &354985523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354985517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &358329794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 819147015059223766, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &358329800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358329794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &368415292 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5882433886261923891, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &368415298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368415292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &439729909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5627246190593600183, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &439729915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439729909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
 --- !u!1001 &441087506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -254,6 +670,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1178791450436251564, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
@@ -304,9 +724,509 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8366379412631108205, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1582691012}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1142013466}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!1 &445605326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3338519240423153828, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &445605332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445605326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &467194775 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3502976568158961837, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &467194781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467194775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &471157959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6630230609647671762, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &471157965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471157959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &476034860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7110981553302276560, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &476034866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476034860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &498032421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4272771480191736383, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &498032427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498032421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &510188852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2216940323148082972, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &510188858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510188852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &540268138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1398898298964507384, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &540268144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540268138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &557773137 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364131404644641252, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &557773143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557773137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &574910933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2259224851595817851, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &574910939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574910933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &583928478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9095485523984250054, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &583928484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583928478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &602294295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3676663543645436452, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &602294301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602294295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &618734619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8130622172082397917, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &618734625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618734619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &635426524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3640944070468967121, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &635426530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635426524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &650268314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5783249848936634116, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &650268320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650268314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &650305994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3184865097279671614, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &650306000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650305994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &655181130 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2722439230288484427, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &655181136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655181130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &687363406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 578902373565127002, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &687363412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687363406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &717256487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6227113417506812090, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &717256493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717256487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &735015202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3698991378405782131, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &735015208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735015202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
 --- !u!1 &756192406
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,11 +1273,528 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &777842975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4307514236980499619, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &777842981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777842975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &827565584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1509993034994277873, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &827565590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827565584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &832558838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 159211249924473786, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &832558844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832558838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &847465315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5482279629105624505, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &847465321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847465315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &854075111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6642540628338570780, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &854075117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854075111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &865204665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2751771552697957338, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &865204671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865204665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &882068833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7229456117551043527, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &882068839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882068833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &885492574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 318215747123675772, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &885492580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885492574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &898634220 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4217578671263097758, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &898634226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898634220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &915444895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7495647481704392880, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &915444901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915444895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &979868407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7821297514010749104, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &979868413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979868407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1017893238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3441872240804474984, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1017893240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017893238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1049442056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8823486297446250166, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1049442062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049442056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1065971452 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3202673812293353494, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1065971458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065971452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1067619358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5302146998761250456, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1067619364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067619358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1086324059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4877231735827712999, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1086324065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086324059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1126660917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2101475389836892833, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1126660923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126660917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1134545989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &1142013461 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 441087506}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1142013466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134545989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.SpatialTracking::UnityEngine.SpatialTracking.TrackedPoseDriver
+  m_Device: 0
+  m_PoseSource: 2
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 0
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
+--- !u!1 &1166803898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2309429369486478979, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1166803904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166803898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1169559275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2951904376487006417, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1169559281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169559275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
 --- !u!114 &1224195893 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 370816286112628393, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
@@ -566,6 +2003,1212 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1310929387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6365579335363218395, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1310929393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310929387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1320687323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8320415064382080276, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1320687329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320687323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!4 &1328565142 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8366379412631108205, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1333798313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8567821847980764951, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1333798319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333798313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1334759826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2824481945443973027, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1334759832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334759826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1396747341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5136671150590664738, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1396747347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396747341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1427633897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2150517360773079076, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1427633903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427633897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1439522491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3218117792417992659, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1439522497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439522491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1464403747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9154007482321477909, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1464403753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464403747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1491461458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8706495064427515768, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1491461464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491461458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1501377146 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8960529439124367910, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1501377152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501377146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1513109622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4822331407416021855, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1513109628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513109622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1560420956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 673609244938507267, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1560420962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560420956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1582691011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582691012}
+  - component: {fileID: 1582691013}
+  m_Layer: 0
+  m_Name: InspectionUIController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582691012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582691011}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 12.65814, y: -1.36144, z: -4.09808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1328565142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1582691013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582691011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f469ebf7816922d4d95eeffc9653a616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionUIController
+  inspectionViewController: {fileID: 0}
+  popupUIManager: {fileID: 0}
+  rotateLeftButton: {fileID: 0}
+  rotateRightButton: {fileID: 0}
+  enlargeButton: {fileID: 0}
+  resetButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  buttonRotationDegrees: 45
+  enlargedStatusText: {fileID: 0}
+  enlargedStatusColor: {r: 1, g: 0.8, b: 0, a: 1}
+  normalStatusColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonPressScale: 0.95
+  buttonScaleRecoveryDuration: 0.2
+--- !u!1 &1582820825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2289560297969575851, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1582820831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582820825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1589033635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1632771676448121091, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1589033641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589033635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1660595672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 620421320310329696, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1660595678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660595672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1676642878 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6102761455759398707, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1676642884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676642878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1683233264 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7427740547949061753, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683233270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683233264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1690399413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3061400542694235110, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1690399419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690399413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1693821186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2046161911452120018, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1693821192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693821186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1726001290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7337371021393271467, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1726001296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726001290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1728654526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3938012845802508261, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1728654532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728654526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1780868985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8246966940193150681, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1780868991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780868985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1800914730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 231592112313494175, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1800914736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800914730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1804146652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7755176646990565761, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1804146658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804146652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1810505072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8045731215706283181, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1810505078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810505072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1813077375 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1947945439065494256, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1813077381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813077375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1815324255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5417069444427197665, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1815324261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815324255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1828998278 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7189488152492121857, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1828998284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828998278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1846543296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8082098795002707068, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1846543302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846543296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1860836032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8534793497667807654, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1860836038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860836032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1890868297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6963645885167516704, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1890868303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890868297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1917251877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4861606395230556609, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1917251883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917251877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1926994515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 410856535276829351, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1926994521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926994515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1927148165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3575532456427753667, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1927148171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927148165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1947892318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2401867657981480378, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1947892324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947892318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1995316148 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1768471131301280498, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1995316154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995316148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2006814043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1074328158599814213, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2006814049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006814043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2018676122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7431757679823223366, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2018676128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018676122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2035613291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5457188183762530519, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2035613297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035613291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2050729756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1328462997058105669, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2050729762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050729756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2055026821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4001101668910414367, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2055026827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055026821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2064695415 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8368579579927621769, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2064695421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064695415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2064989645 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4912860393987240991, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2064989651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064989645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2069774509 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7043568963012120462, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2069774515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069774509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
 --- !u!1 &2092139007
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +3298,110 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2098223478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7710520586876011983, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2098223484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098223478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2110135096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 997926928881480220, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2110135102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110135096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2120563158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6532975149213508117, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2120563164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120563158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &2129368025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5308526541664231092, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+  m_PrefabInstance: {fileID: 1887750813975250773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2129368031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129368025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881c386c159daac4a98a50fc7103f25e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionViewController
+  rotationSensitivity: 2
+  rotationSpeedRange: {x: 30, y: 120}
+  mouseDegreesPerPixel: 0.3
+  enlargeKey: 43
+  resetKey: 32
+  normalScale: 1
+  enlargedScale: 1.5
+  scaleTransitionDuration: 0.3
+  enlargedIndicatorUI: {fileID: 0}
 --- !u!1001 &1887750813975250773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -667,10 +3414,22 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 120135163634793914, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c07988096d24f3418d17b72f63d3a30, type: 2}
     - target: {fileID: 136408432890347030, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 136408432890347030, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ba929bb412302cf4fb3541bb0c55c804, type: 2}
+    - target: {fileID: 136408432890347030, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: inspectionViewController
+      value: 
+      objectReference: {fileID: 1017893240}
     - target: {fileID: 524358167169438267, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
@@ -735,6 +3494,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1971676561922778812, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: b83e5cf29806f9d4ab805d2329a890af, type: 2}
     - target: {fileID: 2234536536742303939, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
@@ -819,6 +3582,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3894798652019942101, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c07988096d24f3418d17b72f63d3a30, type: 2}
     - target: {fileID: 3912631242723880046, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
@@ -991,6 +3758,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6722968554131185563, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ba929bb412302cf4fb3541bb0c55c804, type: 2}
     - target: {fileID: 6785690746263589734, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 5
@@ -1063,6 +3834,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7736944385323402253, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: b83e5cf29806f9d4ab805d2329a890af, type: 2}
     - target: {fileID: 7877348957503849812, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 8
@@ -1122,7 +3897,313 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3441872240804474984, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017893240}
+    - targetCorrespondingSourceObject: {fileID: 8567821847980764951, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1333798319}
+    - targetCorrespondingSourceObject: {fileID: 7337371021393271467, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1726001296}
+    - targetCorrespondingSourceObject: {fileID: 3338519240423153828, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 445605332}
+    - targetCorrespondingSourceObject: {fileID: 6532975149213508117, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2120563164}
+    - targetCorrespondingSourceObject: {fileID: 4217578671263097758, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 898634226}
+    - targetCorrespondingSourceObject: {fileID: 6642540628338570780, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 854075117}
+    - targetCorrespondingSourceObject: {fileID: 7755176646990565761, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1804146658}
+    - targetCorrespondingSourceObject: {fileID: 4621209716016359312, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 316189468}
+    - targetCorrespondingSourceObject: {fileID: 3698991378405782131, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 735015208}
+    - targetCorrespondingSourceObject: {fileID: 8706495064427515768, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1491461464}
+    - targetCorrespondingSourceObject: {fileID: 8960529439124367910, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1501377152}
+    - targetCorrespondingSourceObject: {fileID: 1768471131301280498, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1995316154}
+    - targetCorrespondingSourceObject: {fileID: 1632771676448121091, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1589033641}
+    - targetCorrespondingSourceObject: {fileID: 7821297514010749104, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 979868413}
+    - targetCorrespondingSourceObject: {fileID: 5308526541664231092, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2129368031}
+    - targetCorrespondingSourceObject: {fileID: 6227113417506812090, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 717256493}
+    - targetCorrespondingSourceObject: {fileID: 7034483871461666760, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 118562901}
+    - targetCorrespondingSourceObject: {fileID: 2824481945443973027, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1334759832}
+    - targetCorrespondingSourceObject: {fileID: 1398898298964507384, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 540268144}
+    - targetCorrespondingSourceObject: {fileID: 7229456117551043527, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 882068839}
+    - targetCorrespondingSourceObject: {fileID: 5048743145828799689, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 258047242}
+    - targetCorrespondingSourceObject: {fileID: 8045731215706283181, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1810505078}
+    - targetCorrespondingSourceObject: {fileID: 3502976568158961837, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 467194781}
+    - targetCorrespondingSourceObject: {fileID: 6963645885167516704, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1890868303}
+    - targetCorrespondingSourceObject: {fileID: 8082098795002707068, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1846543302}
+    - targetCorrespondingSourceObject: {fileID: 6539611703043164933, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 164299149}
+    - targetCorrespondingSourceObject: {fileID: 7495647481704392880, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 915444901}
+    - targetCorrespondingSourceObject: {fileID: 4877231735827712999, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1086324065}
+    - targetCorrespondingSourceObject: {fileID: 5457188183762530519, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2035613297}
+    - targetCorrespondingSourceObject: {fileID: 819147015059223766, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 358329800}
+    - targetCorrespondingSourceObject: {fileID: 1402985096454670034, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 96335209}
+    - targetCorrespondingSourceObject: {fileID: 1947945439065494256, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1813077381}
+    - targetCorrespondingSourceObject: {fileID: 2101475389836892833, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1126660923}
+    - targetCorrespondingSourceObject: {fileID: 4307514236980499619, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 777842981}
+    - targetCorrespondingSourceObject: {fileID: 8320415064382080276, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1320687329}
+    - targetCorrespondingSourceObject: {fileID: 3218117792417992659, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1439522497}
+    - targetCorrespondingSourceObject: {fileID: 159211249924473786, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 832558844}
+    - targetCorrespondingSourceObject: {fileID: 6102761455759398707, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1676642884}
+    - targetCorrespondingSourceObject: {fileID: 318215747123675772, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 885492580}
+    - targetCorrespondingSourceObject: {fileID: 7189488152492121857, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1828998284}
+    - targetCorrespondingSourceObject: {fileID: 2056986062514690964, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 26109598}
+    - targetCorrespondingSourceObject: {fileID: 5302146998761250456, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1067619364}
+    - targetCorrespondingSourceObject: {fileID: 3938012845802508261, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1728654532}
+    - targetCorrespondingSourceObject: {fileID: 5627246190593600183, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 439729915}
+    - targetCorrespondingSourceObject: {fileID: 6630230609647671762, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 471157965}
+    - targetCorrespondingSourceObject: {fileID: 7110981553302276560, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 476034866}
+    - targetCorrespondingSourceObject: {fileID: 673609244938507267, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1560420962}
+    - targetCorrespondingSourceObject: {fileID: 3676663543645436452, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 602294301}
+    - targetCorrespondingSourceObject: {fileID: 997926928881480220, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2110135102}
+    - targetCorrespondingSourceObject: {fileID: 1509993034994277873, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 827565590}
+    - targetCorrespondingSourceObject: {fileID: 1074328158599814213, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2006814049}
+    - targetCorrespondingSourceObject: {fileID: 7710520586876011983, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2098223484}
+    - targetCorrespondingSourceObject: {fileID: 8130622172082397917, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 618734625}
+    - targetCorrespondingSourceObject: {fileID: 4001101668910414367, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2055026827}
+    - targetCorrespondingSourceObject: {fileID: 231592112313494175, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1800914736}
+    - targetCorrespondingSourceObject: {fileID: 2259224851595817851, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 574910939}
+    - targetCorrespondingSourceObject: {fileID: 9095485523984250054, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 583928484}
+    - targetCorrespondingSourceObject: {fileID: 3640944070468967121, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 635426530}
+    - targetCorrespondingSourceObject: {fileID: 5077989833668327375, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 350496087}
+    - targetCorrespondingSourceObject: {fileID: 4272771480191736383, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 498032427}
+    - targetCorrespondingSourceObject: {fileID: 2309429369486478979, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1166803904}
+    - targetCorrespondingSourceObject: {fileID: 5417069444427197665, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1815324261}
+    - targetCorrespondingSourceObject: {fileID: 1328462997058105669, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2050729762}
+    - targetCorrespondingSourceObject: {fileID: 7427740547949061753, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1683233270}
+    - targetCorrespondingSourceObject: {fileID: 9154007482321477909, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1464403753}
+    - targetCorrespondingSourceObject: {fileID: 6246443042437187002, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 157654740}
+    - targetCorrespondingSourceObject: {fileID: 957956131414172069, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 354985523}
+    - targetCorrespondingSourceObject: {fileID: 3061400542694235110, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1690399419}
+    - targetCorrespondingSourceObject: {fileID: 2605562360987459435, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 236892216}
+    - targetCorrespondingSourceObject: {fileID: 2722439230288484427, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 655181136}
+    - targetCorrespondingSourceObject: {fileID: 5136671150590664738, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1396747347}
+    - targetCorrespondingSourceObject: {fileID: 578902373565127002, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 687363412}
+    - targetCorrespondingSourceObject: {fileID: 8836136888537801468, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 305530847}
+    - targetCorrespondingSourceObject: {fileID: 3184865097279671614, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 650306000}
+    - targetCorrespondingSourceObject: {fileID: 2289560297969575851, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1582820831}
+    - targetCorrespondingSourceObject: {fileID: 2150517360773079076, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1427633903}
+    - targetCorrespondingSourceObject: {fileID: 2751771552697957338, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 865204671}
+    - targetCorrespondingSourceObject: {fileID: 5783249848936634116, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 650268320}
+    - targetCorrespondingSourceObject: {fileID: 8823486297446250166, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1049442062}
+    - targetCorrespondingSourceObject: {fileID: 4912860393987240991, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064989651}
+    - targetCorrespondingSourceObject: {fileID: 4861606395230556609, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1917251883}
+    - targetCorrespondingSourceObject: {fileID: 4822331407416021855, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1513109628}
+    - targetCorrespondingSourceObject: {fileID: 1387285387149349517, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 125636336}
+    - targetCorrespondingSourceObject: {fileID: 6365579335363218395, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1310929393}
+    - targetCorrespondingSourceObject: {fileID: 620421320310329696, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1660595678}
+    - targetCorrespondingSourceObject: {fileID: 2401867657981480378, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1947892324}
+    - targetCorrespondingSourceObject: {fileID: 5482279629105624505, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 847465321}
+    - targetCorrespondingSourceObject: {fileID: 410856535276829351, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1926994521}
+    - targetCorrespondingSourceObject: {fileID: 2951904376487006417, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1169559281}
+    - targetCorrespondingSourceObject: {fileID: 2216940323148082972, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 510188858}
+    - targetCorrespondingSourceObject: {fileID: 8364131404644641252, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 557773143}
+    - targetCorrespondingSourceObject: {fileID: 3575532456427753667, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1927148171}
+    - targetCorrespondingSourceObject: {fileID: 8534793497667807654, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1860836038}
+    - targetCorrespondingSourceObject: {fileID: 3202673812293353494, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1065971458}
+    - targetCorrespondingSourceObject: {fileID: 2046161911452120018, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1693821192}
+    - targetCorrespondingSourceObject: {fileID: 8246966940193150681, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1780868991}
+    - targetCorrespondingSourceObject: {fileID: 5882433886261923891, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 368415298}
+    - targetCorrespondingSourceObject: {fileID: 3197463377723692947, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 257144595}
+    - targetCorrespondingSourceObject: {fileID: 8368579579927621769, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2064695421}
+    - targetCorrespondingSourceObject: {fileID: 7431757679823223366, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2018676128}
+    - targetCorrespondingSourceObject: {fileID: 7043568963012120462, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2069774515}
   m_SourcePrefab: {fileID: 100100000, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
 --- !u!1001 &5259193853309913791
 PrefabInstance:
@@ -1215,6 +4296,10 @@ PrefabInstance:
     - target: {fileID: 745391335198587902, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612875080655411180, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7251933124122905203, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
       propertyPath: m_Camera
