@@ -670,6 +670,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1178791450436251564, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_RequestedTrackingOriginMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
@@ -720,8 +724,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8366379412631108205, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1582691012}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1142013466}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
 --- !u!1 &445605326 stripped
 GameObject:
@@ -1705,11 +1715,34 @@ MonoBehaviour:
   enlargedScale: 1.5
   scaleTransitionDuration: 0.3
   enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1134545989 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1767192433, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &1142013461 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 441087506}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1142013466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134545989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.SpatialTracking::UnityEngine.SpatialTracking.TrackedPoseDriver
+  m_Device: 0
+  m_PoseSource: 2
+  m_PoseProviderComponent: {fileID: 0}
+  m_TrackingType: 0
+  m_UpdateType: 0
+  m_UseRelativeTransform: 0
 --- !u!1 &1166803898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2309429369486478979, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
@@ -2022,6 +2055,11 @@ MonoBehaviour:
   enlargedScale: 1.5
   scaleTransitionDuration: 0.3
   enlargedIndicatorUI: {fileID: 0}
+--- !u!4 &1328565142 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8366379412631108205, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1333798313 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8567821847980764951, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
@@ -2282,6 +2320,63 @@ MonoBehaviour:
   enlargedScale: 1.5
   scaleTransitionDuration: 0.3
   enlargedIndicatorUI: {fileID: 0}
+--- !u!1 &1582691011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582691012}
+  - component: {fileID: 1582691013}
+  m_Layer: 0
+  m_Name: InspectionUIController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582691012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582691011}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 12.65814, y: -1.36144, z: -4.09808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1328565142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1582691013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582691011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f469ebf7816922d4d95eeffc9653a616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InspectionUIController
+  inspectionViewController: {fileID: 0}
+  popupUIManager: {fileID: 0}
+  rotateLeftButton: {fileID: 0}
+  rotateRightButton: {fileID: 0}
+  enlargeButton: {fileID: 0}
+  resetButton: {fileID: 0}
+  closeButton: {fileID: 0}
+  buttonRotationDegrees: 45
+  enlargedStatusText: {fileID: 0}
+  enlargedStatusColor: {r: 1, g: 0.8, b: 0, a: 1}
+  normalStatusColor: {r: 1, g: 1, b: 1, a: 1}
+  buttonPressScale: 0.95
+  buttonScaleRecoveryDuration: 0.2
 --- !u!1 &1582820825 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2289560297969575851, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
@@ -4201,6 +4296,10 @@ PrefabInstance:
     - target: {fileID: 745391335198587902, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612875080655411180, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7251933124122905203, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
       propertyPath: m_Camera
