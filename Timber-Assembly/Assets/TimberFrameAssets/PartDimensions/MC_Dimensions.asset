@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0dd040578d6d494e848549d8a5a7072, type: 3}
   m_Name: MC_Dimensions
   m_EditorClassIdentifier: Assembly-CSharp::PartDimensionData
-  partId: 2
+  partId: 3
   widthMeters: 0.4572
-  heightMeters: 0
+  heightMeters: 0.0381
   lengthMeters: 2.4384

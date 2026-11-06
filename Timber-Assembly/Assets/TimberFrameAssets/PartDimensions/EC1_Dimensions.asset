@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PartDimensionData
   partId: 1
   widthMeters: 0.4572
-  heightMeters: 0
+  heightMeters: 0.0381
   lengthMeters: 2.4384
