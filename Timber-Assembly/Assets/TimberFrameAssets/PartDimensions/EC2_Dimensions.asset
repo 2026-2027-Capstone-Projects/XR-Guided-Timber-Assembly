@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0dd040578d6d494e848549d8a5a7072, type: 3}
+  m_Name: EC2_Dimensions
+  m_EditorClassIdentifier: Assembly-CSharp::PartDimensionData
+  partId: 2
+  widthMeters: 0.4572
+  heightMeters: 0
+  lengthMeters: 2.4384

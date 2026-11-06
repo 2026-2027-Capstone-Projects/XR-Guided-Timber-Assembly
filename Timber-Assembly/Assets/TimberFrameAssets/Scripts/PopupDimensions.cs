@@ -15,7 +15,7 @@ public class PopupDimensions : MonoBehaviour
 	private GameObject popupObject;
 	private PopupUIManager subscribedPopupManager;
 
-	public void Show(Transform part, Bounds meshBounds, Vector3 dimensions)
+    /*public void Show(Transform part, Bounds meshBounds, Vector3 dimensions)
 	{
 		SubscribeToPopupClosed();
 		partTransform = part;
@@ -33,9 +33,36 @@ public class PopupDimensions : MonoBehaviour
 		text.text = $"W {partWidth:F2} m\nH {partHeight:F2} m\nL {partLength:F2} m";
 		UpdatePopupTransform();
 		popupObject.SetActive(true);
-	}
+	}*/
 
-	private void SubscribeToPopupClosed()
+    public void Show(Transform part, Bounds meshBounds, float width, float height, float length)
+    {
+        SubscribeToPopupClosed();
+
+        partTransform = part;
+        localBounds = meshBounds;
+
+        // Documented compunent data values
+        partWidth = width;
+        partHeight = height;
+        partLength = length;
+
+        if (popupObject == null)
+        {
+            CreatePopup();
+        }
+
+        TMP_Text text = popupObject.GetComponentInChildren<TMP_Text>();
+
+        text.text = $"W {partWidth:F2} m\n" + $"H {partHeight:F2} m\n" + $"L {partLength:F2} m";
+
+        UpdatePopupTransform();
+        popupObject.SetActive(true);
+
+    }
+
+
+    private void SubscribeToPopupClosed()
 	{
 		if (subscribedPopupManager == PopupUIManager.Instance)
 		{
@@ -103,7 +130,12 @@ public class PopupDimensions : MonoBehaviour
 	private void UpdatePopupTransform()
 	{
 		Vector3 meshCenter = partTransform.TransformPoint(localBounds.center);
-		popupObject.transform.position = meshCenter + partTransform.right * (partWidth * 0.5f + offsetRightOfPart);
+
+        // Use actual geometry to position the popup beside the part
+        float worldHalfWidth = partTransform.TransformVector(Vector3.right * localBounds.extents.x).magnitude;
+
+        popupObject.transform.position = meshCenter + partTransform.right * (worldHalfWidth + offsetRightOfPart);
+		//popupObject.transform.position = meshCenter + partTransform.right * (partWidth * 0.5f + offsetRightOfPart);
 
 		Camera mainCamera = Camera.main;
 		if (mainCamera != null)

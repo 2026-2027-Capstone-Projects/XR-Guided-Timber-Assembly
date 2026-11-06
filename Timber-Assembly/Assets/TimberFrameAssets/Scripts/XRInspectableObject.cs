@@ -18,6 +18,8 @@ public class XRInspectablePart : MonoBehaviour
     [Header("Inspection View")]
     [SerializeField] private InspectionViewController inspectionViewController;
     [SerializeField] private InspectionUIController inspectionUIController;
+    [Header("Documented Dimensions")]
+    [SerializeField] private PartDimensionData documentedDimensions;
 
     private XRSimpleInteractable interactable;
     private Transform partTransform;
@@ -119,20 +121,38 @@ public class XRInspectablePart : MonoBehaviour
     //Changing to match with sizeVerification changes
     private void ShowDimensionsPopup()
     {
-        if (!sizeVerification.TryGetDimensions(partTransform, out Transform boundsTransform, out Bounds meshBounds, out Vector3 dimensions))
+        // Make sure documented dimensions have been assigned
+       if (documentedDimensions == null)
         {
-            Debug.LogWarning($"Could not calculate dimensions for {partTransform.name}.", this);
+            Debug.LogWarning($"No documented dimensions assigned to {partIdentifier}.", this);
             return;
         }
 
-        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>();
+       // Make sure the assigned data belongs to this component
+       if (documentedDimensions.PartId != partIdentifier)
+        {
+            Debug.LogError($"Dimension data mismatch on {name}. "
+                         + $"Expected {partIdentifier}, but asset contains "
+                         + $"{documentedDimensions.PartId}.", this);
+            return;
+        }
+
+       // Get mesh bounds only for popup positioning
+       if (!sizeVerification.TryGetDimensions(partTransform, out Transform boundsTransform, out Bounds meshBounds, out Vector3 geometryDimensions))
+        {
+            Debug.LogWarning($"Could not calculate mesh bounds for {partTransform.name}.", this);
+            return;
+        }
+
+       PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>();
 
         if (dimensionsPopup == null)
         {
             dimensionsPopup = gameObject.AddComponent<PopupDimensions>();
         }
 
-        dimensionsPopup.Show(boundsTransform, meshBounds, dimensions);
+        // Display documented dimensions
+        dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthMeters, documentedDimensions.HeightMeters, documentedDimensions.LengthMeters);
 
     }
 
