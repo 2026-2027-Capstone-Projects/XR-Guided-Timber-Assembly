@@ -201,7 +201,7 @@ public class XRInspectablePart : MonoBehaviour
     {
         if (inspectionViewController != null)
         {
-            inspectionViewController.ResetInspectionView();
+            inspectionViewController.ResetInspectionViewOnExit();
             inspectionViewController.SetInspecting(false);
         }
 
