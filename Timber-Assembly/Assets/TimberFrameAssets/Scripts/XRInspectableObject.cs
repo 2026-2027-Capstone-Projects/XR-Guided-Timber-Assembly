@@ -107,6 +107,7 @@ public class XRInspectablePart : MonoBehaviour
 
         PopupUIManager.Instance.ShowPopup(this);
         MovePartInFrontOfCamera();
+        ShowDimensionsPopup();
     }
 
     /*pivate void ShowDimensionsPopup()
@@ -152,7 +153,10 @@ public class XRInspectablePart : MonoBehaviour
 
 
         // Display documented dimensions
-        dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthMeters, documentedDimensions.HeightMeters, documentedDimensions.LengthMeters);
+        // dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthMeters, documentedDimensions.HeightMeters, documentedDimensions.LengthMeters);
+        dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthFeet, documentedDimensions.WidthInches,
+                                                          documentedDimensions.HeightFeet, documentedDimensions.HeightInches,
+                                                          documentedDimensions.LengthFeet, documentedDimensions.LengthInches);
 
     }
 

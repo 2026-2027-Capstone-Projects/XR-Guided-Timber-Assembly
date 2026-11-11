@@ -35,17 +35,19 @@ public class PopupDimensions : MonoBehaviour
 		popupObject.SetActive(true);
 	}*/
 
-    public void Show(Transform part, Bounds meshBounds, float width, float height, float length)
+    private static string FormatFtIn(float feet, float inches)
+    {
+        string inchText = inches.ToString("0.##");
+
+        return $"{feet:0.##}' - {inches:0.##}\"";
+    }
+
+    public void Show(Transform part, Bounds meshBounds, float widthFt, float widthIn, float heightFt, float heightIn, float lengthFt, float lengthIn)
     {
         SubscribeToPopupClosed();
 
         partTransform = part;
         localBounds = meshBounds;
-
-        // Documented compunent data values
-        partWidth = width;
-        partHeight = height;
-        partLength = length;
 
         if (popupObject == null)
         {
@@ -54,12 +56,16 @@ public class PopupDimensions : MonoBehaviour
 
         TMP_Text text = popupObject.GetComponentInChildren<TMP_Text>();
 
-        text.text = $"W {partWidth:F2} m\n" + $"H {partHeight:F2} m\n" + $"L {partLength:F2} m";
+        text.text = $"W {FormatFtIn(widthFt, widthIn)}\n" +
+                    $"H {FormatFtIn(heightFt, heightIn)}\n" +
+                    $"L {FormatFtIn(lengthFt, lengthIn)}";
 
         UpdatePopupTransform();
         popupObject.SetActive(true);
 
     }
+
+
 
 
     private void SubscribeToPopupClosed()
