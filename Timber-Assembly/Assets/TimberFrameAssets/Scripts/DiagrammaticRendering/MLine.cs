@@ -1,12 +1,11 @@
-using Unity.Tutorials.Editor;
 using UnityEngine;
 
 // Functional behavior for the MeasurementLine prefab.
 [RequireComponent(typeof(LineRenderer))]
 public class MLine : MonoBehaviour
 {
-    [SerializeField] private ObjectReference arrowHead1;
-    [SerializeField] private ObjectReference arrowHead2;
+    [SerializeField] private GameObject arrowHead1;
+    [SerializeField] private GameObject arrowHead2;
 
     private LineRenderer lineRenderer;
     private LineRenderer endLine1;
@@ -15,8 +14,8 @@ public class MLine : MonoBehaviour
     void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
-        endLine1 = arrowHead1.SceneObjectReference.ReferencedObjectAsGameObject.GetComponent<LineRenderer>();
-        endLine2 = arrowHead2.SceneObjectReference.ReferencedObjectAsGameObject.GetComponent<LineRenderer>();
+        endLine1 = arrowHead1.GetComponent<LineRenderer>();
+        endLine2 = arrowHead2.GetComponent<LineRenderer>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
