@@ -146,8 +146,8 @@ public class InspectionViewController : MonoBehaviour
             return;
 
         isEnlargedMode = enlarged;
-        targetScale = isEnlargedMode ? 
-            originalLocalScale * enlargedScale : 
+        targetScale = isEnlargedMode ?
+            originalLocalScale * enlargedScale :
             originalLocalScale * normalScale;
 
         scaleTransitionTimer = 0f;

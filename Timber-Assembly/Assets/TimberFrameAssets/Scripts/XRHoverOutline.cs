@@ -36,10 +36,7 @@ public class XRHoverOutline : MonoBehaviour
 
         if (targetRenderers == null || targetRenderers.Length == 0)
         {
-            if (transform.parent != null)
-            {
-                targetRenderers = transform.parent.GetComponentsInChildren<MeshRenderer>();
-            }
+            targetRenderers = transform.parent?.GetComponentsInChildren<MeshRenderer>();
 
             if (targetRenderers == null || targetRenderers.Length == 0)
             {

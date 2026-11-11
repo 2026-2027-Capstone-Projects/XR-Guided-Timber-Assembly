@@ -447,8 +447,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  partIdentifier: 3
+  partID: 3
   hoverOutline: {fileID: 0}
+  cameraDistance: 1.5
+  moveDuration: 0.4
 --- !u!114 &7947422936764852968
 MonoBehaviour:
   m_ObjectHideFlags: 0

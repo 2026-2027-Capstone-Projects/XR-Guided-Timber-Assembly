@@ -68,7 +68,8 @@ public class sizeVerification : MonoBehaviour
                 {
                     combinedBounds = new Bounds(partLocalCorner, Vector3.zero);
                     foundMesh = true;
-                } else
+                }
+                else
                 {
                     combinedBounds.Encapsulate(partLocalCorner);
                 }
