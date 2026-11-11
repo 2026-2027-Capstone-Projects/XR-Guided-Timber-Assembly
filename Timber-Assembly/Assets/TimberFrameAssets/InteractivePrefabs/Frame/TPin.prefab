@@ -142,8 +142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
-  partIdentifier: 7
+  partID: 7
   hoverOutline: {fileID: 0}
+  cameraDistance: 1.5
+  moveDuration: 0.4
 --- !u!114 &4180513342539137694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +173,7 @@ GameObject:
   - component: {fileID: 9082533333670368792}
   - component: {fileID: 9218278766499352729}
   - component: {fileID: 3895444282692080864}
+  - component: {fileID: 8008517125714096085}
   m_Layer: 0
   m_Name: TPin
   m_TagString: Untagged
@@ -251,3 +254,21 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8008517125714096085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694182439860408273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e15113f9cbbc64c896441b0bd2c747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExplodablePart
+  movementDuration: 1
+  lineTextureMode: 1
+  lineMaterials:
+  - {fileID: 2100000, guid: 38e9b81aeab0bdb41a4b56607cb8cd9e, type: 2}
+  inspectionComponent: {fileID: 0}
+  lineRenderer: {fileID: 0}

@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -8,12 +9,15 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables; // Omit .Interactables i
 [RequireComponent(typeof(XRSimpleInteractable))]
 public class XRInspectablePart : MonoBehaviour
 {
-    [Tooltip("The ID of this part, used for fetching data.")]
-    [SerializeField] private PartInfo.ID partIdentifier = PartInfo.ID.None;
+    [Tooltip("The ID of this part type, used for fetching data.")]
+    [SerializeField] private PartInfo.ID partID = PartInfo.ID.None;
+
     [Tooltip("Auto-detected on the same GameObject if left empty.")]
     [SerializeField] private XRHoverOutline hoverOutline;
+
     [Header("Selection Placement")]
     [SerializeField, Min(0.1f)] private float cameraDistance = 1.5f;
+
     [SerializeField, Min(0.1f)] private float moveDuration = 0.4f;
 
     private XRSimpleInteractable interactable;
@@ -24,6 +28,24 @@ public class XRInspectablePart : MonoBehaviour
     private LocalizedString localizedInfoTextHeader;
     private LocalizedString localizedInfoTextBody;
 
+    /// <summary> Getter for the part identifier, used for fetching data and display in the popup. </summary>
+    public PartInfo.ID PartID => partID;
+    public PartInfo.ID pID => partID;
+
+    /// <summary> Getter for the unique string, used for display in the popup. </summary>
+    public string uID => PartCatalog.GetUID(this);
+    /// <summary> Getter for the unique string, used for display in the popup. </summary>
+    public string UniqueID => uID;
+
+    /// <summary> Getter for the XRHoverOutline component reference used for highlighting the part. </summary>
+    public XRHoverOutline HoverOutline => hoverOutline;
+
+    /// <summary> Getter for the localized part name text, used for display in the popup. </summary>
+    public LocalizedString PartName => localizedInfoTextHeader;
+
+    /// <summary> Getter for the localized part description text, used for display in the popup. </summary>
+    public LocalizedString PartDescription => localizedInfoTextBody;
+
     private void Awake()
     {
         // Cache reference to UX interface
@@ -31,8 +53,8 @@ public class XRInspectablePart : MonoBehaviour
         partTransform = transform.parent != null ? transform.parent : transform;
 
         // Cache the LocalizedStrings
-        localizedInfoTextHeader = PartInfo.GetName(partIdentifier);
-        localizedInfoTextBody = PartInfo.GetDescription(partIdentifier);
+        localizedInfoTextHeader = PartInfo.GetName(partID);
+        localizedInfoTextBody = PartInfo.GetDescription(partID);
 
         // Set up object outlining, if available
         if (hoverOutline == null)
@@ -45,17 +67,20 @@ public class XRInspectablePart : MonoBehaviour
     {
         interactable.selectEntered.AddListener(OnSelect);
         interactable.activated.AddListener(OnActivate);
+        //interactable.selectExited.AddListener(OnSelectExited);
+
     }
 
     private void OnDisable()
     {
         interactable.selectEntered.RemoveListener(OnSelect);
-        interactable.activated.RemoveListener(OnActivate);
     }
 
     public void OnSelect(SelectEnterEventArgs args)
     {
+        ShowDimensionsPopup();
         TriggerPopup();
+        MovePartInFrontOfCamera();
     }
 
     public void OnActivate(ActivateEventArgs args)
@@ -63,17 +88,20 @@ public class XRInspectablePart : MonoBehaviour
         TriggerPopup();
     }
 
+    //public void OnSelectExited(SelectExitEventArgs args)
+    //{
+    //    RestoreOriginalPosition();
+    //}
+
     private void TriggerPopup()
     {
-        ShowDimensionsPopup();
-
         if (PopupUIManager.Instance == null)
         {
+            Debug.Log("PopupUIManager.Instance is null!");
             return;
         }
 
-        PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, partIdentifier, hoverOutline, this);
-        MovePartInFrontOfCamera();
+        PopupUIManager.Instance.ShowPopup(this);
     }
 
     private void ShowDimensionsPopup()
