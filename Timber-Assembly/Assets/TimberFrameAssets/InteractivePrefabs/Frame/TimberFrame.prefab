@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 337783291554276393}
+  - component: {fileID: 1505065876873028345}
   m_Layer: 0
   m_Name: TimberFrame
   m_TagString: Untagged
@@ -58,6 +59,18 @@ Transform:
   - {fileID: 2646446401238875542}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505065876873028345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990906623661283578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6225fe69ed864364e8fe401068188595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PartCatalog
 --- !u!1001 &751317377877951946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -635,6 +648,10 @@ PrefabInstance:
     - target: {fileID: 5001630767678141812, guid: 77af6f61e2a81cd47a2941d6cee47718, type: 3}
       propertyPath: m_Name
       value: Center
+      objectReference: {fileID: 0}
+    - target: {fileID: 5930382750259931005, guid: 77af6f61e2a81cd47a2941d6cee47718, type: 3}
+      propertyPath: uniqueIdentifier
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8389023570046479292, guid: 77af6f61e2a81cd47a2941d6cee47718, type: 3}
       propertyPath: m_LocalPosition.x

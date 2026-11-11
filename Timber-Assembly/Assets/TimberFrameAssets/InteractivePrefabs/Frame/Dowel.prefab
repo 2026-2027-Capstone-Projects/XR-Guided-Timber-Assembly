@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6821505090765895441}
   - component: {fileID: 6798444090590988836}
   - component: {fileID: 9074965467526580114}
+  - component: {fileID: 1704564439320641487}
   m_Layer: 0
   m_Name: Dowel
   m_TagString: Untagged
@@ -90,3 +91,21 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1704564439320641487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3603614482459832711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e15113f9cbbc64c896441b0bd2c747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExplodablePart
+  movementDuration: 1
+  lineTextureMode: 1
+  lineMaterials:
+  - {fileID: 2100000, guid: 38e9b81aeab0bdb41a4b56607cb8cd9e, type: 2}
+  inspectionComponent: {fileID: 0}
+  lineRenderer: {fileID: 0}
