@@ -105,8 +105,7 @@ public class XRInspectablePart : MonoBehaviour
             return;
         }
 
-        // Show the popup first so the previous part's panels are cleared before this part's dimensions appear
-        PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, partIdentifier, hoverOutline, this);
+        PopupUIManager.Instance.ShowPopup(this);
         MovePartInFrontOfCamera();
     }
 

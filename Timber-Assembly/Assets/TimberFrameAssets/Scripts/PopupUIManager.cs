@@ -9,6 +9,7 @@ public class PopupUIManager : MonoBehaviour
     public static PopupUIManager Instance { get; private set; }
     public event System.Action PopupClosed;
 
+    [SerializeField] private GameObject _anchorObject;
     [SerializeField] private GameObject popupPanel;
     [SerializeField] private TMP_Text popupTextHeader;
     [SerializeField] private TMP_Text popupTextBody;
@@ -50,69 +51,16 @@ public class PopupUIManager : MonoBehaviour
     {
         transform.localScale = Vector3.one * popupScale;
 
-        GameObject leftController = GameObject.Find("Left Controller");
-        if (leftController == null)
+        _anchorObject ??= GameObject.Find("Left Controller") ?? GameObject.Find("Right Controller");
+        if (_anchorObject == null)
         {
-            Debug.LogWarning("Cannot anchor popup because no Left Controller was found.", this);
+            Debug.LogWarning("Cannot anchor popup because neither Left Controller no Right Controller was found.", this);
             return;
         }
 
-        transform.SetParent(leftController.transform, false);
+        transform.SetParent(_anchorObject.transform, false);
         transform.localPosition = leftControllerLocalPosition;
         transform.localRotation = Quaternion.identity;
-    }
-
-    /// <summary>
-    /// Deprecated<para/>
-    /// Since the XRInspectablePart popup functionality is becoming very non-standardized and uses a reference to it anyway now, I've given it an overload.
-    /// </summary>
-    public void ShowPopup(LocalizedString header, LocalizedString body, PartInfo.ID identifier = PartInfo.ID.None, XRHoverOutline sourceOutline = null, XRInspectablePart sourcePart = null)
-    {
-        string errorHeader = null, errorBody = null;
-        if (header == null || header.IsEmpty)
-        {
-            Debug.LogWarning("Assigned header LocalizedString is null or empty.");
-            errorHeader = "NO HEADER FOUND";
-        }
-        if (body == null || body.IsEmpty)
-        {
-            Debug.LogWarning("Assigned body LocalizedString is null or empty.");
-            errorBody = "NO BODY FOUND";
-        }
-
-        ClearCurrentState();
-
-        // If a sourceOutline is provided, highlight it while the popup is open.
-        (currentActiveOutline = sourceOutline)?.SetSelectedOutline(true);
-
-        // Subscribing to StringChanged automatically triggers an asynchronous fetch 
-        // and invokes UpdateText immediately upon completion, as well as whenever the active Locale changes.
-
-        // Header
-        if (errorHeader != null)
-        {
-            UpdateHeader(errorHeader);
-        }
-        else
-        {
-            currentLocalizedStringHeader = header;
-            currentLocalizedStringHeader.StringChanged += UpdateHeader;
-        }
-
-        // Body
-        if (errorBody != null)
-        {
-            UpdateBody(errorBody);
-        }
-        else
-        {
-            currentLocalizedStringBody = body;
-            currentLocalizedStringBody.StringChanged += UpdateBody;
-        }
-
-        // Identifier
-        popupTextIdentifier.text = identifier.ToString();
-        popupPanel.SetActive(true);
     }
 
     /// <summary>
@@ -134,12 +82,7 @@ public class PopupUIManager : MonoBehaviour
         }
 
         currentInspectablePart = sourcePart;
-        currentActiveOutline = sourcePart.HoverOutline;
-
-        if (currentActiveOutline != null)
-        {
-            currentActiveOutline.SetSelectedOutline(true);
-        }
+        (currentActiveOutline = sourcePart.HoverOutline)?.SetSelectedOutline(true);
 
         // Subscribing to StringChanged automatically triggers an asynchronous fetch 
         // and invokes UpdateText immediately upon completion, as well as whenever the active Locale changes.
