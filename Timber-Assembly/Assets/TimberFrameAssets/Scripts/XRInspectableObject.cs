@@ -81,7 +81,12 @@ public class XRInspectablePart : MonoBehaviour
 
     private void TriggerPopup()
     {
-        if (PopupUIManager.Instance == null)
+        if (PopupUIManager.Instance == null || !QuestInspectionInput.HasHandedness)
+        {
+            return;
+        }
+
+        if (PopupUIManager.Instance.IsInspecting(this))
         {
             return;
         }

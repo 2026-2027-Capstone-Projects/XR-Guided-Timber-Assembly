@@ -49,12 +49,16 @@ public class InspectionUIController : MonoBehaviour
     private void OnEnable()
     {
         RegisterButtonListeners();
+        if (inspectionViewController != null)
+            inspectionViewController.EnlargementChanged += UpdateEnlargedStatusIndicator;
         UpdateEnlargedStatusIndicator();
     }
 
     private void OnDisable()
     {
         UnregisterButtonListeners();
+        if (inspectionViewController != null)
+            inspectionViewController.EnlargementChanged -= UpdateEnlargedStatusIndicator;
     }
 
     private void RegisterButtonListeners()
@@ -108,7 +112,6 @@ public class InspectionUIController : MonoBehaviour
         if (inspectionViewController != null)
         {
             inspectionViewController.ToggleEnlargement();
-            UpdateEnlargedStatusIndicator();
             PlayButtonPressAnimation(enlargeButton);
         }
     }
@@ -118,7 +121,6 @@ public class InspectionUIController : MonoBehaviour
         if (inspectionViewController != null)
         {
             inspectionViewController.ResetInspectionView();
-            UpdateEnlargedStatusIndicator();
             PlayButtonPressAnimation(resetButton);
         }
     }
