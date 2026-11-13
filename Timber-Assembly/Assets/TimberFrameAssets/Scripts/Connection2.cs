@@ -241,7 +241,7 @@ public class Connection : MonoBehaviour
     {
         if (IsInspecting) return;
         IsInspecting = true;
-        _selectionCollider.enabled = false;
+        //_selectionCollider.enabled = false;
 
         if (referenceCamera == null && Camera.main != null)
         {
