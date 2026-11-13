@@ -13,6 +13,7 @@ public class PopupUIManager : MonoBehaviour
     public static PopupUIManager Instance { get; private set; }
     public event System.Action PopupClosed;
 
+    [SerializeField] private GameObject _anchorObject;
     [SerializeField] private GameObject popupPanel;
     [SerializeField] private TMP_Text popupTextHeader;
     [SerializeField] private TMP_Text popupTextBody;
@@ -137,7 +138,8 @@ public class PopupUIManager : MonoBehaviour
         transform.localScale = Vector3.one * popupScale;
 
         string controllerName = QuestInspectionInput.IsLeftHanded ? "Right Controller" : "Left Controller";
-        GameObject controller = GameObject.Find(controllerName);
+        GameObject controller = _anchorObject != null && _anchorObject.name == controllerName
+            ? _anchorObject : GameObject.Find(controllerName);
         if (controller == null)
         {
             Debug.LogWarning($"Cannot anchor popup because no {controllerName} was found.", this);
@@ -267,38 +269,60 @@ public class PopupUIManager : MonoBehaviour
         suspended.Clear();
     }
 
-    public void ShowPopup(LocalizedString header, LocalizedString body, PartInfo.ID identifier = PartInfo.ID.None, XRHoverOutline sourceOutline = null, XRInspectablePart sourcePart = null)
+    /// <summary>
+    ///     Updates and displays the popup with <paramref name="sourcePart"/>'s name, unique ID, and description, using <see cref="XRInspectablePart"/> methods.
+    /// </summary>
+    /// <param name="sourcePart">
+    ///     The part to display info for and to highlight while this popup is open,
+    ///     <para/>
+    ///     Highlighting requires an XRHoverOutline component
+    /// </param>
+    public void ShowPopup(XRInspectablePart sourcePart)
     {
-        string errorHeader = null, errorBody = null;
-        if (header == null || header.IsEmpty)
+        ClearCurrentState();
+
+        if (sourcePart == null)
         {
-            Debug.LogWarning("Assigned header LocalizedString is null or empty.");
-            errorHeader = "NO HEADER FOUND";
-        }
-        if (body == null || body.IsEmpty)
-        {
-            Debug.LogWarning("Assigned body LocalizedString is null or empty.");
-            errorBody = "NO BODY FOUND";
+            Debug.LogWarning("Cannot show popup because the provided source part is null.");
+            return;
         }
 
-        ClearCurrentState();
         SuspendLocomotion(suspendedJumpProviders, false);
         SuspendLocomotion(suspendedGrabProviders, true);
-
-        currentActiveOutline = sourceOutline;
-        if (currentActiveOutline != null)
-        {
-            currentActiveOutline.SetSelectedOutline(true);
-        }
         currentInspectablePart = sourcePart;
+        (currentActiveOutline = sourcePart.HoverOutline)?.SetSelectedOutline(true);
 
         // Subscribing to StringChanged automatically triggers an asynchronous fetch 
         // and invokes UpdateText immediately upon completion, as well as whenever the active Locale changes.
+        currentLocalizedStringHeader = sourcePart.PartName;
+        currentLocalizedStringHeader.StringChanged += UpdateHeader;
+        currentLocalizedStringBody = sourcePart.PartDescription;
+        currentLocalizedStringBody.StringChanged += UpdateBody;
 
-        // Header
-        if (errorHeader != null)
+        // Set the part identifier text based on the part identifier and unique identifier
+        popupTextIdentifier.text = sourcePart.UniqueID;
+        popupPanel.SetActive(true);
+    }
+
+    /// <summary>
+    ///     Updates and displays the popup with a localized <paramref name="header"/>, localized <paramref name="body"/>, and optional <paramref name="identifier"/>.
+    /// </summary>
+    /// <param name="header">
+    ///     LocalizedString for the text to display across the top of the popup.
+    /// </param>
+    /// <param name="body">
+    ///     LocalizedString for the text to display in the body of the popup.
+    /// </param>
+    /// <param name="identifier">
+    ///     Optional string to display in the right-justified "identifier" text-area below the closeButton of the popup.
+    /// </param>
+    public void ShowPopup(LocalizedString header, LocalizedString body, string identifier = "")
+    {
+        ClearCurrentState();
+
+        if (header == null)
         {
-            UpdateHeader(errorHeader);
+            popupTextHeader.text = "NO HEADER FOUND";
         }
         else
         {
@@ -306,10 +330,9 @@ public class PopupUIManager : MonoBehaviour
             currentLocalizedStringHeader.StringChanged += UpdateHeader;
         }
 
-        // Body
-        if (errorBody != null)
+        if (body == null)
         {
-            UpdateBody(errorBody);
+            popupTextBody.text = "NO BODY FOUND";
         }
         else
         {
@@ -317,8 +340,7 @@ public class PopupUIManager : MonoBehaviour
             currentLocalizedStringBody.StringChanged += UpdateBody;
         }
 
-        // Identifier
-        popupTextIdentifier.text = PartInfo.ToString(identifier);
+        popupTextIdentifier.text = identifier; // Allow identifier to be any arbitrary string, since this overload is not tied to PartInfo.ID or XRInspectablePart.
 
         popupPanel.SetActive(true);
     }

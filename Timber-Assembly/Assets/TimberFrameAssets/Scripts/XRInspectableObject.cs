@@ -8,12 +8,15 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables; // Omit .Interactables i
 [RequireComponent(typeof(XRSimpleInteractable))]
 public class XRInspectablePart : MonoBehaviour
 {
-    [Tooltip("The ID of this part, used for fetching data.")]
-    [SerializeField] private PartInfo.ID partIdentifier = PartInfo.ID.None;
+    [Tooltip("The ID of this part type, used for fetching data.")]
+    [SerializeField] private PartInfo.ID partID = PartInfo.ID.None;
+
     [Tooltip("Auto-detected on the same GameObject if left empty.")]
     [SerializeField] private XRHoverOutline hoverOutline;
+
     [Header("Selection Placement")]
     [SerializeField, Min(0.1f)] private float cameraDistance = 1.5f;
+
     [SerializeField, Min(0.1f)] private float moveDuration = 0.4f;
     [Header("Inspection View")]
     [SerializeField] private InspectionViewController inspectionViewController;
@@ -29,38 +32,49 @@ public class XRInspectablePart : MonoBehaviour
     private LocalizedString localizedInfoTextHeader;
     private LocalizedString localizedInfoTextBody;
 
+    /// <summary> Getter for the part identifier, used for fetching data and display in the popup. </summary>
+    public PartInfo.ID PartID => partID;
+    public PartInfo.ID pID => partID;
+
+    /// <summary> Getter for the unique string, used for display in the popup. </summary>
+    public string uID => PartCatalog.GetUID(this);
+    /// <summary> Getter for the unique string, used for display in the popup. </summary>
+    public string UniqueID => uID;
+
+    /// <summary> Getter for the XRHoverOutline component reference used for highlighting the part. </summary>
+    public XRHoverOutline HoverOutline => hoverOutline;
+
+    /// <summary> Getter for the localized part name text, used for display in the popup. </summary>
+    public LocalizedString PartName => localizedInfoTextHeader;
+
+    /// <summary> Getter for the localized part description text, used for display in the popup. </summary>
+    public LocalizedString PartDescription => localizedInfoTextBody;
+
     private void Awake()
     {
         // Cache reference to UX interface
         interactable = GetComponent<XRSimpleInteractable>();
-        partTransform = transform.parent != null ? transform.parent : transform;
+        partTransform = transform.parent ?? transform;
 
         // Cache the LocalizedStrings
-        localizedInfoTextHeader = PartInfo.GetName(partIdentifier);
-        localizedInfoTextBody = PartInfo.GetDescription(partIdentifier);
+        localizedInfoTextHeader = PartInfo.GetName(partID);
+        localizedInfoTextBody = PartInfo.GetDescription(partID);
 
         // Set up object outlining, if available
-        if (hoverOutline == null)
-        {
-            hoverOutline = GetComponent<XRHoverOutline>();
-        }
+        hoverOutline ??= GetComponent<XRHoverOutline>();
 
         // Auto-detect inspection controllers if not assigned
-        if (inspectionViewController == null)
-        {
-            inspectionViewController = GetComponent<InspectionViewController>();
-        }
+        inspectionViewController ??= GetComponent<InspectionViewController>();
+        inspectionUIController ??= GetComponentInChildren<InspectionUIController>();
 
-        if (inspectionUIController == null)
-        {
-            inspectionUIController = GetComponentInChildren<InspectionUIController>();
-        }
     }
 
     private void OnEnable()
     {
         interactable.selectEntered.AddListener(OnSelect);
         interactable.activated.AddListener(OnActivate);
+        //interactable.selectExited.AddListener(OnSelectExited);
+
     }
 
     private void OnDisable()
@@ -79,6 +93,11 @@ public class XRInspectablePart : MonoBehaviour
         TriggerPopup();
     }
 
+    //public void OnSelectExited(SelectExitEventArgs args)
+    //{
+    //    RestoreOriginalPosition();
+    //}
+
     private void TriggerPopup()
     {
         if (PopupUIManager.Instance == null || !QuestInspectionInput.HasHandedness)
@@ -91,17 +110,15 @@ public class XRInspectablePart : MonoBehaviour
             return;
         }
 
-        // Show the popup first so the previous part's panels are cleared before this part's dimensions appear
-        PopupUIManager.Instance.ShowPopup(localizedInfoTextHeader, localizedInfoTextBody, partIdentifier, hoverOutline, this);
-        ShowDimensionsPopup();
+        PopupUIManager.Instance.ShowPopup(this);
         MovePartInFrontOfCamera();
+        ShowDimensionsPopup();
 
         if (inspectionViewController != null)
         {
             inspectionViewController.SetInspecting(true);
         }
 
-        // Enable inspection UI if available
         if (inspectionUIController != null)
         {
             inspectionUIController.SetInspectionMode(true);
@@ -115,11 +132,7 @@ public class XRInspectablePart : MonoBehaviour
             return;
         }
 
-        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>();
-        if (dimensionsPopup == null)
-        {
-            dimensionsPopup = gameObject.AddComponent<PopupDimensions>();
-        }
+        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>() ?? gameObject.AddComponent<PopupDimensions>();
 
         dimensionsPopup.Show(meshTransform, meshBounds, dimensions);
     }*/
@@ -127,37 +140,38 @@ public class XRInspectablePart : MonoBehaviour
     private void ShowDimensionsPopup()
     {
         // Make sure documented dimensions have been assigned
-       if (documentedDimensions == null)
+        if (documentedDimensions == null)
         {
-            Debug.LogWarning($"No documented dimensions assigned to {partIdentifier}.", this);
+            Debug.LogWarning($"No documented dimensions assigned to {partID}.", this);
             return;
         }
 
-       // Make sure the assigned data belongs to this component
-       if (documentedDimensions.PartId != partIdentifier)
+        // Make sure the assigned data belongs to this component
+        if (documentedDimensions.PartId != partID)
         {
             Debug.LogError($"Dimension data mismatch on {name}. "
-                         + $"Expected {partIdentifier}, but asset contains "
+                         + $"Expected {partID}, but asset contains "
                          + $"{documentedDimensions.PartId}.", this);
             return;
         }
 
-       // Get mesh bounds only for popup positioning
-       if (!sizeVerification.TryGetDimensions(partTransform, out Transform boundsTransform, out Bounds meshBounds, out Vector3 geometryDimensions))
+        // Get mesh bounds only for popup positioning
+        if (!sizeVerification.TryGetDimensions(partTransform, out Transform boundsTransform, out Bounds meshBounds, out Vector3 geometryDimensions))
         {
             Debug.LogWarning($"Could not calculate mesh bounds for {partTransform.name}.", this);
             return;
         }
 
-       PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>();
+        // Get PopupDimension component if it exists, otherwise add one.
+        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>() ?? gameObject.AddComponent<PopupDimensions>();
 
-        if (dimensionsPopup == null)
-        {
-            dimensionsPopup = gameObject.AddComponent<PopupDimensions>();
-        }
+
 
         // Display documented dimensions
-        dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthMeters, documentedDimensions.HeightMeters, documentedDimensions.LengthMeters);
+        // dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthMeters, documentedDimensions.HeightMeters, documentedDimensions.LengthMeters);
+        dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthFeet, documentedDimensions.WidthInches,
+                                                          documentedDimensions.HeightFeet, documentedDimensions.HeightInches,
+                                                          documentedDimensions.LengthFeet, documentedDimensions.LengthInches);
 
     }
 
@@ -206,7 +220,7 @@ public class XRInspectablePart : MonoBehaviour
     {
         if (inspectionViewController != null)
         {
-            inspectionViewController.ResetInspectionView();
+            inspectionViewController.ResetInspectionViewOnExit();
             inspectionViewController.SetInspecting(false);
         }
 

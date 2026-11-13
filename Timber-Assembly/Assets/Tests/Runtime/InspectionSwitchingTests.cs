@@ -67,12 +67,15 @@ public class InspectionSwitchingTests
 
             firstPart.OnSelect(null);
             Assert.IsTrue(popup.IsInspecting(firstPart));
+            Assert.IsTrue(IsViewInspecting(firstView));
             firstView.ToggleEnlargement();
             first.transform.rotation = Quaternion.Euler(0f, 45f, 0f);
 
             secondPart.OnSelect(null);
             Assert.IsTrue(popup.IsInspecting(secondPart));
             Assert.IsFalse(popup.IsInspecting(firstPart));
+            Assert.IsFalse(IsViewInspecting(firstView));
+            Assert.IsTrue(IsViewInspecting(secondView));
             Assert.AreEqual(firstPosition, first.transform.position);
             Assert.Less(Quaternion.Angle(Quaternion.identity, first.transform.rotation), 0.01f);
             Assert.IsFalse(firstView.IsEnlarged());
@@ -84,6 +87,7 @@ public class InspectionSwitchingTests
 
             popup.ClosePopup();
             Assert.IsFalse(popup.HasActiveInspection);
+            Assert.IsFalse(IsViewInspecting(secondView));
         }
         finally
         {
@@ -98,6 +102,13 @@ public class InspectionSwitchingTests
             InputSystem.RemoveDevice(controller);
             InputSystem.RemoveLayout(nameof(InspectionTestController));
         }
+    }
+
+    private static bool IsViewInspecting(InspectionViewController view)
+    {
+        FieldInfo field = typeof(InspectionViewController).GetField("isInspecting", BindingFlags.Instance | BindingFlags.NonPublic);
+        Assert.IsNotNull(field);
+        return (bool)field.GetValue(view);
     }
 
     private static void SetField(object target, string name, object value)

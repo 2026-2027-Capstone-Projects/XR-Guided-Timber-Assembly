@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 /// <summary>
@@ -203,8 +204,8 @@ public class InspectionViewController : MonoBehaviour
             return;
 
         isEnlargedMode = enlarged;
-        targetScale = isEnlargedMode ? 
-            originalLocalScale * enlargedScale : 
+        targetScale = isEnlargedMode ?
+            originalLocalScale * enlargedScale :
             originalLocalScale * normalScale;
 
         scaleTransitionStart = inspectedTransform.localScale;
@@ -215,6 +216,13 @@ public class InspectionViewController : MonoBehaviour
             enlargedIndicatorUI.gameObject.SetActive(isEnlargedMode);
         }
         EnlargementChanged?.Invoke();
+        ShowEnlargementNotification();
+    }
+
+    private void ShowEnlargementNotification()
+    {
+        CameraNotification.ShowOnMainCamera(new LocalizedString(
+            "InspectionMessages", isEnlargedMode ? "ObjectEnlarged" : "ObjectNormalSize"));
     }
 
     /// <summary>
@@ -290,6 +298,20 @@ public class InspectionViewController : MonoBehaviour
     /// </summary>
     public void ResetInspectionView()
     {
+        ResetInspectionView(true);
+    }
+
+    /// <summary>
+    /// Resets the view without notification when inspection ends.
+    /// </summary>
+    public void ResetInspectionViewOnExit()
+    {
+        ResetInspectionView(false);
+    }
+
+    private void ResetInspectionView(bool notify)
+    {
+        bool wasEnlarged = isEnlargedMode;
         inspectedTransform.localRotation = originalLocalRotation;
         inspectedTransform.localScale = originalLocalScale * normalScale;
 
@@ -304,6 +326,11 @@ public class InspectionViewController : MonoBehaviour
             enlargedIndicatorUI.gameObject.SetActive(false);
         }
         EnlargementChanged?.Invoke();
+
+        if (notify && wasEnlarged)
+        {
+            ShowEnlargementNotification();
+        }
     }
 
     /// <summary>
