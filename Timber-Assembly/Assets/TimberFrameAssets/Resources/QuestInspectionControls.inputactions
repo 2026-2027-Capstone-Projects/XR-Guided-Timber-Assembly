@@ -1,0 +1,37 @@
+{
+    "version": 1,
+    "name": "QuestInspectionControls",
+    "maps": [
+        {
+            "name": "Inspection",
+            "id": "0255e6ae-5abc-4f3c-a70d-0889720f353d",
+            "actions": [
+                { "name": "Enlarge", "type": "Button", "id": "d43fdf1d-9f4b-4bdd-886c-7da3577df0ab", "expectedControlType": "Button" },
+                { "name": "Reset", "type": "Button", "id": "62488e7e-14e9-4eba-89bf-c2aa6229c8dc", "expectedControlType": "Button" },
+                { "name": "Grip", "type": "Button", "id": "ff4a4b04-b851-452c-86c7-8fd87e146af0", "expectedControlType": "Button" },
+                { "name": "Position", "type": "Value", "id": "42f6b92b-9338-4a2e-ae48-cba19fe42fa3", "expectedControlType": "Vector3", "initialStateCheck": true },
+                { "name": "Tracked", "type": "Button", "id": "dbb1e6a3-eb17-451b-91a6-f3039856425b", "expectedControlType": "Button", "initialStateCheck": true },
+                { "name": "Close", "type": "Button", "id": "759896d1-d070-46f8-b9e3-9b1594779c81", "expectedControlType": "Button" },
+                { "name": "ChooseLeft", "type": "Button", "id": "a5bc07ae-c5b2-4c6a-9b1d-d1915589e0aa", "expectedControlType": "Button" },
+                { "name": "ChooseRight", "type": "Button", "id": "4531c999-628a-402f-a2e4-153e307d216a", "expectedControlType": "Button" }
+            ],
+            "bindings": [
+                { "id": "960f8179-b1fb-4c54-9828-595d71b1c2b9", "path": "<XRController>{RightHand}/{PrimaryButton}", "groups": "Right", "action": "Enlarge" },
+                { "id": "dc5d19b0-f19b-4d9e-b1a0-4b20dc2c51c2", "path": "<XRController>{LeftHand}/{PrimaryButton}", "groups": "Left", "action": "Enlarge" },
+                { "id": "d867b2c2-5814-4904-a071-aee6d45b6936", "path": "<XRController>{RightHand}/{SecondaryButton}", "groups": "Right", "action": "Reset" },
+                { "id": "9b906894-f9b9-4958-a48b-7c6430799062", "path": "<XRController>{LeftHand}/{SecondaryButton}", "groups": "Left", "action": "Reset" },
+                { "id": "f711939e-a676-41a6-ae0c-7194396b5b95", "path": "<XRController>{RightHand}/{GripButton}", "groups": "Right", "action": "Grip" },
+                { "id": "83782ec5-d0b4-4b4a-ae92-f603a3472c62", "path": "<XRController>{LeftHand}/{GripButton}", "groups": "Left", "action": "Grip" },
+                { "id": "9dfe8086-3771-4858-b17a-edba548c8dc2", "path": "<XRController>{RightHand}/devicePosition", "groups": "Right", "action": "Position" },
+                { "id": "e3da5d9f-6bed-460a-bfe9-0c5d06f1eb82", "path": "<XRController>{LeftHand}/devicePosition", "groups": "Left", "action": "Position" },
+                { "id": "4127ef59-c604-4c09-9413-4292f205244a", "path": "<XRController>{RightHand}/isTracked", "groups": "Right", "action": "Tracked" },
+                { "id": "323092b7-ec24-48c7-8972-3d6261dafd85", "path": "<XRController>{LeftHand}/isTracked", "groups": "Left", "action": "Tracked" },
+                { "id": "080b5590-21c6-40a9-bce3-e8f0a48dab1d", "path": "<XRController>{RightHand}/{SecondaryButton}", "groups": "Right", "action": "Close" },
+                { "id": "da9f4f98-378e-4982-be13-c73777567421", "path": "<XRController>{LeftHand}/{SecondaryButton}", "groups": "Left", "action": "Close" },
+                { "id": "b1228a1f-6f9a-4b39-a7fd-963f7ea9a7a5", "path": "<XRController>{LeftHand}/{PrimaryButton}", "action": "ChooseLeft" },
+                { "id": "e131cd18-816e-4d40-b06d-27e2f5bec8d2", "path": "<XRController>{RightHand}/{PrimaryButton}", "action": "ChooseRight" }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
