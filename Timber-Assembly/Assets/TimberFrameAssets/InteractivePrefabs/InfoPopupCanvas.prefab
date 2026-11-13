@@ -233,7 +233,7 @@ MonoBehaviour:
   m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 12
+  m_fontSizeMin: 6
   m_fontSizeMax: 36
   m_fontStyle: 1
   m_HorizontalAlignment: 1
@@ -751,6 +751,8 @@ MonoBehaviour:
   popupTextBody: {fileID: 7182853255958764858}
   popupTextIdentifier: {fileID: 370816286112628393}
   closeButton: {fileID: 8504544180489379325}
+  leftControllerLocalPosition: {x: 0, y: 0.12, z: 0.2}
+  popupScale: 0.0025
 --- !u!1 &8918887719850174214
 GameObject:
   m_ObjectHideFlags: 0

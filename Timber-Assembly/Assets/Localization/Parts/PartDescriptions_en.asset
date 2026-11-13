@@ -87,7 +87,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4026588602368
-    m_Localized: The dowels are used to secure the side angle module to the coumns.
+    m_Localized: The dowels are used to secure the angle modules, columns, and beams
+      together.
     m_Metadata:
       m_Items: []
   - m_Id: 4092967657472

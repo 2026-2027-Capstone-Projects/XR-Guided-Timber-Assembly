@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: ConnectionNames Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: ConnectionNames
+  m_TableCollectionNameGuidString: 7ffd261858b4c834295f7a9db02dd24e
+  m_Entries:
+  - m_Id: 61377486848
+    m_Key: CONN_TPIN_WP_EC1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 522344079360
+    m_Key: CONN_TPIN_WP_EC2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 555890122752
+    m_Key: CONN_TPIN_2WP_MC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 875269595136
+    m_Key: CONN_SLOT_RP_SAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959029846016
+    m_Key: CONN_SLOT_RP_RB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963777798144
+    m_Key: CONN_SLOT_RP_TAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1169009287168
+    m_Key: CONN_DOWEL_EC1_SAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1191725637632
+    m_Key: CONN_DOWEL_EC2_SAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1270784073728
+    m_Key: CONN_DOWEL_MC_SAM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1324555051008
+    m_Key: CONN_DOWEL_SAM_RB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1515563655168
+    m_Key: CONN_DOWEL_TAM_RB
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8453518461057892627
+  references:
+    version: 2
+    RefIds:
+    - rid: 8453518461057892627
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1794490080216

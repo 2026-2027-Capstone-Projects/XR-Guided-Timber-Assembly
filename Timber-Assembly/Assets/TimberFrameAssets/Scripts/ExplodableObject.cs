@@ -1,16 +1,18 @@
-using System.Collections;
+/*
+ * using System.Collections;
 using UnityEngine;
 
 public class ExplodableObject : MonoBehaviour
 {
-    private bool _InitializeComponentRefd = false;
+    //private bool _initializeComponentRefd = false;
     private XRInspectablePart _inspectablePartComponent;
     [Tooltip("The duration of the explosion animation in seconds.")]
-    [SerializeField, Min(0.1f)] private float movementDuration = 1.0f;
-    [SerializeField] private LineTextureMode lineTextureMode = LineTextureMode.Tile;
-    [SerializeField] private Material[] lineMaterials;
-    [SerializeField] private XRInspectablePart inspectionComponent;
-    [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField, Min(0.1f)] private float _movementDuration = 1.0f;
+    [SerializeField] private LineTextureMode _lineTextureMode = LineTextureMode.Tile;
+    [SerializeField] private Material[] _lineMaterials;
+    [SerializeField] private XRInspectablePart _inspectionComponent;
+    [SerializeField] private Vector3[] _lineRendererLocalPositions;
+    private LineRenderer[] _lineRenderers;
 
     private bool exploded = false;
     private Vector3 explosionVector;
@@ -34,16 +36,28 @@ public class ExplodableObject : MonoBehaviour
 
         // Iniitalize the line renderer for the movement, growing while exploding or shrinking while reverting
         if (exploded)
-            lineRenderer.SetPosition(0, targetPosition);
-        else
-            lineRenderer.SetPosition(0, startPosition);
-        lineRenderer.SetPosition(1, startPosition);
-        lineRenderer.enabled = true;
+        {
+            foreach (var lineRenderer in _lineRenderers)
+            {
+                lineRenderer.SetPosition(0, targetPosition);
+                lineRenderer.SetPosition(1, startPosition);
+                lineRenderer.enabled = true;
+            }
+        }
+        else // exploding
+        {
+            foreach (var lineRenderer in _lineRenderers)
+            {
+                lineRenderer.SetPosition(0, startPosition);
+                lineRenderer.SetPosition(1, startPosition);
+                lineRenderer.enabled = true;
+            }
+        }
 
-        while (elapsedTime < movementDuration)
+        while (elapsedTime < _movementDuration)
         {
             elapsedTime += Time.deltaTime;
-            float t = Mathf.Clamp01(elapsedTime / movementDuration);
+            float t = Mathf.Clamp01(elapsedTime / _movementDuration);
             var currentPosition = Vector3.Lerp(startPosition, targetPosition, t);
 
             transform.localPosition = currentPosition;
@@ -66,7 +80,7 @@ public class ExplodableObject : MonoBehaviour
         if (!_InitializeComponentRefd)
         {
             _inspectablePartComponent = GetComponent<XRInspectablePart>();
-            _InitializeComponentRefd = true;
+            _initializeComponentRefd = true;
         }
         return _inspectablePartComponent;
     }
@@ -75,18 +89,16 @@ public class ExplodableObject : MonoBehaviour
     {
         InitializeComponentRef();
 
-        if (!inspectionComponent)
-            inspectionComponent = GetComponent<XRInspectablePart>();
+        inspectionComponent ??= GetComponent<XRInspectablePart>();
 
-        if (!lineRenderer)
-            lineRenderer = GetComponent<LineRenderer>();
-        if (!lineRenderer)
             lineRenderer = gameObject.AddComponent<LineRenderer>(); // Add a LineRenderer if not present
 
         // Set up the lineRenderer properties
+        foreach (var lineRenderer in _lineRenderers)
+        {
         lineRenderer.enabled = false; // Disable the line renderer initially
-        lineRenderer.materials = lineMaterials;
-        lineRenderer.textureMode = lineTextureMode;
+        lineRenderer.materials = _lineMaterials;
+        lineRenderer.textureMode = _lineTextureMode;
         lineRenderer.generateLightingData = false;
         lineRenderer.positionCount = 2; // We only need two points for a line
         lineRenderer.useWorldSpace = false;
@@ -94,6 +106,7 @@ public class ExplodableObject : MonoBehaviour
         lineRenderer.endWidth = 0.1f;
         lineRenderer.numCapVertices = 0;
         lineRenderer.numCornerVertices = 0;
+        }
 
         // TODO: Remove this
         explosionVector = new Vector3(0.5f, 0, 0);
@@ -111,7 +124,7 @@ public class ExplodableObject : MonoBehaviour
 
     }
 }
-
+*/
 /****************************
  * 
  * ************************/

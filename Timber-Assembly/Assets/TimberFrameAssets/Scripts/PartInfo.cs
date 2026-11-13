@@ -31,8 +31,9 @@ public static class PartInfo
         WP,
         TP,
         SAM,
-        TAM
-        // MPP variants, 4x6, 4x4, fiberglass roof, Dowel, and U-Channel brackets not added
+        TAM,
+        Dowel
+        // MPP variants, 4x6, 4x4, fiberglass roof, and U-Channel brackets not added
         // TODO: Verify if they should be added to the Part ID system
     }
 

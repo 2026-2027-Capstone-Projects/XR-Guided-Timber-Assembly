@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ConnectionNames_en
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 7ffd261858b4c834295f7a9db02dd24e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 61377486848
+    m_Localized: End Panel-Column1 T-Pin Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 522344079360
+    m_Localized: End Panel-Column2 T-Pin Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 555890122752
+    m_Localized: Middle Panel-Column T-Pin Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 963777798144
+    m_Localized: Top-Purlin Slot Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 959029846016
+    m_Localized: Beam-Purlin Slot Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 875269595136
+    m_Localized: Side-Purlin Slot Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1169009287168
+    m_Localized: End Rafter-Column1 Dowel Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1191725637632
+    m_Localized: End Rafter-Column2 Dowel Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1270784073728
+    m_Localized: Mid Rafter-Column Dowel Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1324555051008
+    m_Localized: Side-Beam Dowel Connection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1515563655168
+    m_Localized: Top-Beam Dowel Connection
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

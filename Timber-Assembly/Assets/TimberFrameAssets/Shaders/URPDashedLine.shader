@@ -2,7 +2,7 @@ Shader "Custom/URPDashedLine"
 {
     Properties
     {
-        [MainColor] _BaseColor("Base Color", Color) = (1, 1, 1, 1)
+        [MainColor] _Color("Base Color", Color) = (1, 1, 1, 1)
         [DashLength] _DashLength ("Dash Length", Float) = 1.0
         [GapLength] _GapLength ("Gap Length", Float) = 1.0
         [Tiling] _Tiling ("Tiling Factor", Float) = 5.0

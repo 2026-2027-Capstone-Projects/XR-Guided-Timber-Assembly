@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Linq;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -15,18 +15,25 @@ public class XRInspectablePart : MonoBehaviour
     [Tooltip("Auto-detected on the same GameObject if left empty.")]
     [SerializeField] private XRHoverOutline hoverOutline;
 
+    [SerializeField] private LineRenderer[] _explodeLineRenderers;
+
     [Header("Selection Placement")]
     [SerializeField, Min(0.1f)] private float cameraDistance = 1.5f;
 
     [SerializeField, Min(0.1f)] private float moveDuration = 0.4f;
 
-    private XRSimpleInteractable interactable;
     private Transform partTransform;
+    private Vector3 _initialPosition;
     private Vector3 originalPartPosition;
     private bool hasOriginalPartPosition;
     private Coroutine moveCoroutine;
     private LocalizedString localizedInfoTextHeader;
     private LocalizedString localizedInfoTextBody;
+
+
+    public XRSimpleInteractable interactable;
+    public bool DisableSelecting = false;
+    public LineRenderer[] ExplodeLineRenderers;
 
     /// <summary> Getter for the part identifier, used for fetching data and display in the popup. </summary>
     public PartInfo.ID PartID => partID;
@@ -46,11 +53,16 @@ public class XRInspectablePart : MonoBehaviour
     /// <summary> Getter for the localized part description text, used for display in the popup. </summary>
     public LocalizedString PartDescription => localizedInfoTextBody;
 
+    public Transform PartTransform => partTransform;
+
+    public void SnapToInitialPosition() => partTransform.position = _initialPosition;
+
     private void Awake()
     {
         // Cache reference to UX interface
         interactable = GetComponent<XRSimpleInteractable>();
         partTransform = transform.parent != null ? transform.parent : transform;
+        _initialPosition = partTransform.position;
 
         // Cache the LocalizedStrings
         localizedInfoTextHeader = PartInfo.GetName(partID);
@@ -78,6 +90,7 @@ public class XRInspectablePart : MonoBehaviour
 
     public void OnSelect(SelectEnterEventArgs args)
     {
+        if (DisableSelecting) return;
         ShowDimensionsPopup();
         TriggerPopup();
         MovePartInFrontOfCamera();
@@ -85,13 +98,15 @@ public class XRInspectablePart : MonoBehaviour
 
     public void OnActivate(ActivateEventArgs args)
     {
+        if (DisableSelecting) return;
         TriggerPopup();
     }
 
-    //public void OnSelectExited(SelectExitEventArgs args)
-    //{
-    //    RestoreOriginalPosition();
-    //}
+    public void OnSelectExited(SelectExitEventArgs args)
+    {
+        if (DisableSelecting) return;
+        RestoreOriginalPosition();
+    }
 
     private void TriggerPopup()
     {
