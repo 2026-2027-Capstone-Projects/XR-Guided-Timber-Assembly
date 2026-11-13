@@ -16,6 +16,9 @@ public class InspectionViewController : MonoBehaviour
     [Header("Mouse Rotation (editor/desktop testing)")]
     [SerializeField, Min(0.01f)] private float mouseDegreesPerPixel = 0.3f;
 
+    [Header("Quest Rotation")]
+    [SerializeField, Min(0.01f)] private float controllerDegreesPerMeter = 180f;
+
     [Header("Desktop Shortcuts (editor/desktop testing)")]
     [SerializeField] private Key enlargeKey = Key.Digit3;
     [SerializeField] private Key resetKey = Key.R;
@@ -37,11 +40,16 @@ public class InspectionViewController : MonoBehaviour
     private bool isInspecting;
     private bool isEnlargedMode;
     private float scaleTransitionTimer;
+    private Vector3 scaleTransitionStart;
     private Vector3 targetScale;
     private Vector3 currentScaleVelocity;
 
     private Coroutine rotationCoroutine;
     private Vector3 currentAngularVelocity;
+    private bool hasControllerDragPosition;
+    private Vector3 previousControllerPosition;
+
+    public event System.Action EnlargementChanged;
 
     private void Awake()
     {
@@ -63,6 +71,7 @@ public class InspectionViewController : MonoBehaviour
         {
             RotateWithMouseDrag();
             HandleKeyboardShortcuts();
+            HandleQuestControls();
         }
     }
 
@@ -95,6 +104,7 @@ public class InspectionViewController : MonoBehaviour
     public void SetInspecting(bool inspecting)
     {
         isInspecting = inspecting;
+        hasControllerDragPosition = false;
     }
 
     // Hold the left mouse button and drag; rotates around the camera's axes so it feels natural from any orientation.
@@ -113,6 +123,51 @@ public class InspectionViewController : MonoBehaviour
             return;
         }
 
+        RotateFromDrag(cam, delta);
+    }
+
+    private void HandleQuestControls()
+    {
+        if (!QuestInspectionInput.IsAvailable || !QuestInspectionInput.HasHandedness)
+        {
+            hasControllerDragPosition = false;
+            return;
+        }
+
+        Camera cam = Camera.main;
+        if (!QuestInspectionInput.Grip.IsPressed() || !QuestInspectionInput.Tracked.IsPressed() || cam == null)
+        {
+            hasControllerDragPosition = false;
+        }
+        else
+        {
+            Vector3 position = QuestInspectionInput.Position.ReadValue<Vector3>();
+            if (hasControllerDragPosition)
+            {
+                Vector3 delta = position - previousControllerPosition;
+                Transform trackingOrigin = cam.transform.parent;
+                Vector3 worldDelta = trackingOrigin != null ? trackingOrigin.TransformVector(delta) : delta;
+                RotateFromDrag(cam, new Vector2(
+                    Vector3.Dot(worldDelta, cam.transform.right),
+                    Vector3.Dot(worldDelta, cam.transform.up)) * controllerDegreesPerMeter);
+            }
+
+            previousControllerPosition = position;
+            hasControllerDragPosition = true;
+        }
+
+        if (QuestInspectionInput.Enlarge.WasPressedThisFrame())
+        {
+            ToggleEnlargement();
+        }
+        if (QuestInspectionInput.Reset.WasPressedThisFrame())
+        {
+            ResetInspectionView();
+        }
+    }
+
+    private void RotateFromDrag(Camera cam, Vector2 delta)
+    {
         inspectedTransform.Rotate(cam.transform.up, -delta.x, Space.World);
         inspectedTransform.Rotate(cam.transform.right, delta.y, Space.World);
     }
@@ -126,7 +181,9 @@ public class InspectionViewController : MonoBehaviour
         originalLocalRotation = inspectedTransform.localRotation;
         originalLocalScale = inspectedTransform.localScale;
 
+        scaleTransitionStart = originalLocalScale;
         targetScale = originalLocalScale;
+        scaleTransitionTimer = scaleTransitionDuration;
         isEnlargedMode = false;
     }
 
@@ -151,13 +208,14 @@ public class InspectionViewController : MonoBehaviour
             originalLocalScale * enlargedScale :
             originalLocalScale * normalScale;
 
+        scaleTransitionStart = inspectedTransform.localScale;
         scaleTransitionTimer = 0f;
 
         if (enlargedIndicatorUI != null)
         {
             enlargedIndicatorUI.gameObject.SetActive(isEnlargedMode);
         }
-
+        EnlargementChanged?.Invoke();
         ShowEnlargementNotification();
     }
 
@@ -186,7 +244,7 @@ public class InspectionViewController : MonoBehaviour
             progress = Mathf.SmoothStep(0f, 1f, progress);
 
             inspectedTransform.localScale = Vector3.Lerp(
-                isEnlargedMode ? originalLocalScale * normalScale : originalLocalScale * enlargedScale,
+                scaleTransitionStart,
                 targetScale,
                 progress
             );
@@ -257,7 +315,8 @@ public class InspectionViewController : MonoBehaviour
         inspectedTransform.localRotation = originalLocalRotation;
         inspectedTransform.localScale = originalLocalScale * normalScale;
 
-        targetScale = originalLocalScale;
+        targetScale = originalLocalScale * normalScale;
+        scaleTransitionStart = targetScale;
         isEnlargedMode = false;
         scaleTransitionTimer = 0f;
         currentAngularVelocity = Vector3.zero;
@@ -266,6 +325,7 @@ public class InspectionViewController : MonoBehaviour
         {
             enlargedIndicatorUI.gameObject.SetActive(false);
         }
+        EnlargementChanged?.Invoke();
 
         if (notify && wasEnlarged)
         {
@@ -311,5 +371,75 @@ public class InspectionViewController : MonoBehaviour
     public Vector3 GetOriginalScale()
     {
         return originalLocalScale;
+    }
+}
+
+internal static class QuestInspectionInput
+{
+    private static InputActionAsset actions;
+
+    internal static InputAction Enlarge { get; private set; }
+    internal static InputAction Reset { get; private set; }
+    internal static InputAction Grip { get; private set; }
+    internal static InputAction Position { get; private set; }
+    internal static InputAction Tracked { get; private set; }
+    internal static InputAction Close { get; private set; }
+    internal static InputAction ChooseLeft { get; private set; }
+    internal static InputAction ChooseRight { get; private set; }
+    internal static bool IsAvailable => actions != null;
+    internal static bool HasHandedness { get; private set; }
+    internal static bool IsLeftHanded { get; private set; }
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void ResetSession()
+    {
+        HasHandedness = false;
+        IsLeftHanded = false;
+    }
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterAssembliesLoaded)]
+    private static void Initialize()
+    {
+        if (actions != null)
+        {
+            actions.Disable();
+        }
+
+        actions = Resources.Load<InputActionAsset>("QuestInspectionControls");
+        if (actions == null)
+        {
+            Debug.LogError("Quest inspection input actions could not be loaded.");
+            return;
+        }
+
+        Enlarge = actions.FindAction("Inspection/Enlarge", true);
+        Reset = actions.FindAction("Inspection/Reset", true);
+        Grip = actions.FindAction("Inspection/Grip", true);
+        Position = actions.FindAction("Inspection/Position", true);
+        Tracked = actions.FindAction("Inspection/Tracked", true);
+        Close = actions.FindAction("Inspection/Close", true);
+        ChooseLeft = actions.FindAction("Inspection/ChooseLeft", true);
+        ChooseRight = actions.FindAction("Inspection/ChooseRight", true);
+        Enlarge.bindingMask = null;
+        Reset.bindingMask = null;
+        Grip.bindingMask = null;
+        Position.bindingMask = null;
+        Tracked.bindingMask = null;
+        Close.bindingMask = null;
+        actions.Enable();
+    }
+
+    internal static void SetHandedness(bool leftHanded)
+    {
+        string dominant = leftHanded ? "Left" : "Right";
+        string offHand = leftHanded ? "Right" : "Left";
+        Enlarge.bindingMask = InputBinding.MaskByGroup(dominant);
+        Reset.bindingMask = InputBinding.MaskByGroup(dominant);
+        Grip.bindingMask = InputBinding.MaskByGroup(dominant);
+        Position.bindingMask = InputBinding.MaskByGroup(dominant);
+        Tracked.bindingMask = InputBinding.MaskByGroup(dominant);
+        Close.bindingMask = InputBinding.MaskByGroup(offHand);
+        IsLeftHanded = leftHanded;
+        HasHandedness = true;
     }
 }

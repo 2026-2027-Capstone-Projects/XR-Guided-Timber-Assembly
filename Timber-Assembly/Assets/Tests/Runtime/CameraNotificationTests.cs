@@ -44,6 +44,8 @@ public class CameraNotificationTests
         try
         {
             var inspection = part.GetComponent<InspectionViewController>();
+            int changeCount = 0;
+            inspection.EnlargementChanged += () => changeCount++;
             inspection.ResetInspectionView();
             Assert.IsNull(cameraObject.GetComponent<CameraNotification>());
 
@@ -66,6 +68,7 @@ public class CameraNotificationTests
             inspection.ResetInspectionViewOnExit();
             Assert.IsFalse(inspection.IsEnlarged());
             Assert.AreEqual("Object enlarged", text.text);
+            Assert.AreEqual(6, changeCount);
         }
         finally
         {

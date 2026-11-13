@@ -80,6 +80,7 @@ public class XRInspectablePart : MonoBehaviour
     private void OnDisable()
     {
         interactable.selectEntered.RemoveListener(OnSelect);
+        interactable.activated.RemoveListener(OnActivate);
     }
 
     public void OnSelect(SelectEnterEventArgs args)
@@ -99,15 +100,29 @@ public class XRInspectablePart : MonoBehaviour
 
     private void TriggerPopup()
     {
-        if (PopupUIManager.Instance == null)
+        if (PopupUIManager.Instance == null || !QuestInspectionInput.HasHandedness)
         {
-            Debug.Log("PopupUIManager.Instance is null!");
+            return;
+        }
+
+        if (PopupUIManager.Instance.IsInspecting(this))
+        {
             return;
         }
 
         PopupUIManager.Instance.ShowPopup(this);
         MovePartInFrontOfCamera();
         ShowDimensionsPopup();
+
+        if (inspectionViewController != null)
+        {
+            inspectionViewController.SetInspecting(true);
+        }
+
+        if (inspectionUIController != null)
+        {
+            inspectionUIController.SetInspectionMode(true);
+        }
     }
 
     /*pivate void ShowDimensionsPopup()
