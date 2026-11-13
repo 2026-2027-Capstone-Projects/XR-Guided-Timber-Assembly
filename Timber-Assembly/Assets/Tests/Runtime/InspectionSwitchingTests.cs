@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.Layouts;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.UI;
 
@@ -61,7 +62,11 @@ public class InspectionSwitchingTests
         try
         {
             popupObject.SetActive(true);
-            InputSystem.QueueDeltaStateEvent(controller.gripPressed, 1f);
+            using (StateEvent.From(controller, out var eventPtr))
+            {
+                controller.gripPressed.WriteValueIntoEvent(1f, eventPtr);
+                InputSystem.QueueEvent(eventPtr);
+            }
             InputSystem.Update();
             Assert.IsTrue(QuestInspectionInput.Grip.IsPressed(), "The dominant grip must be held during this test.");
 
