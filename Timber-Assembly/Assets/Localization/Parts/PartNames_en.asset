@@ -86,6 +86,10 @@ MonoBehaviour:
     m_Localized: N/A
     m_Metadata:
       m_Items: []
+  - m_Id: 900000000000001
+    m_Localized: "Choose your dominant hand:\nPress the lower face button on that controller\nKeyboard: L for left, R for right (focus Game view)"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
