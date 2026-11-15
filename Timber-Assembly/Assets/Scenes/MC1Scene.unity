@@ -3541,9 +3541,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1017893240}
     - target: {fileID: 524358167169438267, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: partID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 524358167169438267, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 524358167169438267, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 589175908896161302, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -3552,6 +3560,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 589175908896161302, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 920177939056034680, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -3559,11 +3571,23 @@ PrefabInstance:
     - target: {fileID: 920177939056034680, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 920177939056034680, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
+    - target: {fileID: 1045454520874939830, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: partID
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1045454520874939830, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1045454520874939830, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 1133605566622673333, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -3572,10 +3596,18 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1133605566622673333, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 1190668800510113892, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1190668800510113892, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 1230052185135151540, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -3588,18 +3620,38 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 1365565809338698900, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: beb5bf919b1fcd440ac7431853796b47, type: 2}
+    - target: {fileID: 1376868821506116719, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: partID
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1376868821506116719, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1376868821506116719, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 1413043748190148594, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1413043748190148594, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 1478831059301834500, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1478831059301834500, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 1494408643630454561, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -3608,14 +3660,22 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1494408643630454561, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 1731223257769899279, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1731223257769899279, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1731223257769899279, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 1781131784270184440, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3624,10 +3684,18 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1781131784270184440, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 1830390132400882340, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1830390132400882340, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 1971676561922778812, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 3
@@ -3648,6 +3716,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2234536536742303939, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 2417481329186043338, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -3656,6 +3728,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2417481329186043338, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 2486376869629758680, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3663,11 +3739,23 @@ PrefabInstance:
     - target: {fileID: 2486376869629758680, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486376869629758680, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
+    - target: {fileID: 2545132668629987434, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: partID
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2545132668629987434, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2545132668629987434, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 2602255682638063238, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 9
@@ -3676,6 +3764,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 2602255682638063238, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: beb5bf919b1fcd440ac7431853796b47, type: 2}
     - target: {fileID: 2650336451652689820, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -3684,6 +3776,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2650336451652689820, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 2738861815898677261, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3692,6 +3788,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2738861815898677261, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 2762013316524463608, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3700,14 +3800,22 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2762013316524463608, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 2950393275181845032, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2950393275181845032, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2950393275181845032, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 3073934256704806062, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 4
@@ -3716,6 +3824,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3073934256704806062, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 721a01cc128cfcf42bdeadbd0e7761c9, type: 2}
     - target: {fileID: 3300305975345635056, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -3724,6 +3836,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3300305975345635056, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 3329028257382700414, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -3732,6 +3848,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3329028257382700414, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 3350831646041824475, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3740,6 +3860,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3350831646041824475, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 3384934997266413195, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3748,6 +3872,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3384934997266413195, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 3450265173707117307, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3756,10 +3884,18 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3450265173707117307, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 3556195547629053563, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3556195547629053563, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 3650281471065816027, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3768,6 +3904,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3650281471065816027, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 3766376956435382095, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 4
@@ -3776,14 +3916,22 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3766376956435382095, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 721a01cc128cfcf42bdeadbd0e7761c9, type: 2}
     - target: {fileID: 3794594694924028222, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3794594694924028222, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3794594694924028222, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 3796746137418965653, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -3792,10 +3940,18 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3796746137418965653, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 3798589648323037181, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3798589648323037181, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 3835955070169373246, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3804,6 +3960,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3835955070169373246, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 3894798652019942101, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 2
@@ -3824,6 +3984,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3912631242723880046, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 4103696520852391267, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 4
@@ -3832,6 +3996,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4103696520852391267, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 721a01cc128cfcf42bdeadbd0e7761c9, type: 2}
     - target: {fileID: 4210369657603430403, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -3840,6 +4008,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4210369657603430403, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 4265213933611878339, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3848,6 +4020,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4265213933611878339, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 4268930141201537157, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 9
@@ -3856,6 +4032,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 4268930141201537157, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: beb5bf919b1fcd440ac7431853796b47, type: 2}
     - target: {fileID: 4351993581061041437, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3864,6 +4044,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4351993581061041437, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 4418854939524576204, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3872,6 +4056,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4418854939524576204, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 4453805676342033600, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 9
@@ -3880,6 +4068,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 4453805676342033600, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: beb5bf919b1fcd440ac7431853796b47, type: 2}
     - target: {fileID: 4476988321235614724, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3888,6 +4080,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4476988321235614724, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 4483498145115274725, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3896,6 +4092,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4483498145115274725, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 4645046530245056449, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3904,6 +4104,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4645046530245056449, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 4710434468767962474, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -3912,6 +4116,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4710434468767962474, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 4857156248148727727, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: m_Name
       value: InfoPopupTimberFrame
@@ -3920,6 +4128,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4871727629687359246, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 4945771044140852867, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -3928,6 +4140,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4945771044140852867, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 4986469370330285430, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 4
@@ -3936,6 +4152,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4986469370330285430, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 721a01cc128cfcf42bdeadbd0e7761c9, type: 2}
     - target: {fileID: 5134888321550754871, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3944,6 +4164,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5134888321550754871, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 5198215492892429589, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3985,9 +4209,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5252650790601194453, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: partID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252650790601194453, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5252650790601194453, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 5348680762926256196, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -3996,6 +4228,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5348680762926256196, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 5520102748729782253, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -4004,6 +4240,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5520102748729782253, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 5677319005926049988, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -4012,6 +4252,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5677319005926049988, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 5701037382324374508, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4020,10 +4264,18 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5701037382324374508, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 5927886483250801766, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5927886483250801766, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 5985008357660168452, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4032,6 +4284,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5985008357660168452, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 6011148930208504473, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -4040,10 +4296,18 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6011148930208504473, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 6058643700649571144, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6058643700649571144, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 6068453714231554217, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -4052,6 +4316,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6180124095095829476, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 6203026778233713632, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -4060,6 +4328,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6203026778233713632, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 6216691335520756405, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -4068,6 +4340,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6216691335520756405, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 6442568202870264752, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -4076,6 +4352,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6442568202870264752, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 6509276845618070284, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -4084,6 +4364,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6509276845618070284, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 6722968554131185563, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 1
@@ -4104,6 +4388,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6785690746263589734, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 6955972524930906997, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4112,6 +4400,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 6955972524930906997, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 7009492864793568390, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -4124,6 +4416,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7025503950367765621, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: beb5bf919b1fcd440ac7431853796b47, type: 2}
     - target: {fileID: 7055380246221429740, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 4
@@ -4132,6 +4428,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7055380246221429740, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 721a01cc128cfcf42bdeadbd0e7761c9, type: 2}
     - target: {fileID: 7080872973410631686, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4140,6 +4440,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7080872973410631686, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 7147781248186348915, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4148,6 +4452,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7147781248186348915, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 7194317600238685253, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 4
@@ -4156,6 +4464,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7194317600238685253, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 721a01cc128cfcf42bdeadbd0e7761c9, type: 2}
     - target: {fileID: 7213818394023464358, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 9
@@ -4164,6 +4476,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7213818394023464358, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: beb5bf919b1fcd440ac7431853796b47, type: 2}
     - target: {fileID: 7315967695900603824, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4172,6 +4488,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7315967695900603824, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 7387923833460403228, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4180,6 +4500,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7387923833460403228, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 7456634120560224110, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -4188,6 +4512,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7456634120560224110, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 7492501765145992980, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4196,6 +4524,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7492501765145992980, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 7544434498527197796, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -4204,14 +4536,22 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7544434498527197796, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 7587229380399204696, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7587229380399204696, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7587229380399204696, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 7622700894021133701, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -4220,6 +4560,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7622700894021133701, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 7631690502657962031, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -4228,6 +4572,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7631690502657962031, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 7736944385323402253, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 3
@@ -4248,6 +4596,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7877348957503849812, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 7926820085109785515, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -4256,6 +4608,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7926820085109785515, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 8103185861429911218, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4264,14 +4620,22 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8103185861429911218, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 8462808594549915363, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8462808594549915363, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8462808594549915363, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 8544806805670985573, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -4280,6 +4644,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8544806805670985573, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 8560926653554176758, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4288,6 +4656,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8560926653554176758, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 8701659380886647519, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4296,10 +4668,18 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8701659380886647519, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 8816280026221689990, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8816280026221689990, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 8891693632079409157, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 8
@@ -4308,10 +4688,18 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8891693632079409157, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: ad11cf9f551dc6e4ab04a78763018e0a, type: 2}
     - target: {fileID: 8892589563623340494, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8892589563623340494, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 8912213440373376844, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -4320,6 +4708,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8912213440373376844, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     - target: {fileID: 8978015343206778817, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 7
@@ -4328,6 +4720,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8978015343206778817, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: c614751d7bdb2bd4c9c2a26febc2654a, type: 2}
     - target: {fileID: 9077359398268003210, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 6
@@ -4336,6 +4732,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 9077359398268003210, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedShapeDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 9190da65d429bc94eb5453be4a2377f3, type: 2}
     - target: {fileID: 9122601773611976211, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
       propertyPath: partID
       value: 5
@@ -4344,6 +4744,10 @@ PrefabInstance:
       propertyPath: partIdentifier
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 9122601773611976211, guid: 286afeedd1176a44e93a6f1126581473, type: 3}
+      propertyPath: documentedDimensions
+      value: 
+      objectReference: {fileID: 11400000, guid: 8853b6ed2c6f9be4f8f1f6c9d6603672, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
