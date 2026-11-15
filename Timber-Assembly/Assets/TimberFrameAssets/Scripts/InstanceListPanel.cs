@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using TMPro;
 using UnityEngine.Localization;
+using UnityEngine.UI;
 
 public class InstanceListPanel : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class InstanceListPanel : MonoBehaviour
     [SerializeField] private Transform entryContainer;
     [SerializeField] private TMP_Text titleText;
     [SerializeField] private GameObject emptyMessage;
+    [SerializeField] private ScrollRect scrollRect;
 
     private LocalizedString currentTitle;
 
@@ -40,6 +42,12 @@ public class InstanceListPanel : MonoBehaviour
             currentTitle.StringChanged += UpdateTitle;
         }
 
+        if (scrollRect != null)
+        {
+            Canvas.ForceUpdateCanvases();
+            scrollRect.verticalNormalizedPosition = 1f;
+        }
+
         gameObject.SetActive(true);
     }
 
@@ -61,6 +69,12 @@ public class InstanceListPanel : MonoBehaviour
 
         foreach (Transform child in entryContainer)
         {
+            Destroy(child.gameObject);
+        }
+
+        foreach (Transform child in entryContainer)
+        {
+            child.gameObject.SetActive(false);
             Destroy(child.gameObject);
         }
     }

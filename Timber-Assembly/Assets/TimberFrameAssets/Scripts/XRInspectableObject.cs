@@ -93,6 +93,15 @@ public class XRInspectablePart : MonoBehaviour
         TriggerPopup();
     }
 
+
+    // Starts inspecting this part, exactly as if the user had selected it directly
+    // Used exclusively by the catalog. Does nothing if no popup manager exists or user hasn't chosen a hand yet
+    public void Inspect()
+    {
+        TriggerPopup();
+    }
+
+
     //public void OnSelectExited(SelectExitEventArgs args)
     //{
     //    RestoreOriginalPosition();
