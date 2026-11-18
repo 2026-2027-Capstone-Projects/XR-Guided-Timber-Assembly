@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: EC2_Dimensions
   m_EditorClassIdentifier: Assembly-CSharp::PartDimensionData
   partId: 2
-  widthMeters: 0.4572
-  heightMeters: 0.0381
-  lengthMeters: 2.4384
+  widthFeet: 1
+  widthInches: 6
+  heightFeet: 0
+  heightInches: 1.5
+  lengthFeet: 6
+  lengthInches: 0

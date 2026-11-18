@@ -249,6 +249,10 @@ MonoBehaviour:
   hoverOutline: {fileID: 0}
   cameraDistance: 1.5
   moveDuration: 0.4
+  inspectionViewController: {fileID: 0}
+  inspectionUIController: {fileID: 0}
+  documentedDimensions: {fileID: 11400000, guid: 5c07988096d24f3418d17b72f63d3a30, type: 2}
+  documentedShapeDimensions: {fileID: 0}
 --- !u!114 &2290988505577665973
 MonoBehaviour:
   m_ObjectHideFlags: 0
