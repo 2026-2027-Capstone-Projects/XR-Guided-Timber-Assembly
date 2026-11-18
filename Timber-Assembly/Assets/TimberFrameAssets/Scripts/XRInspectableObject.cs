@@ -147,7 +147,7 @@ public class XRInspectablePart : MonoBehaviour
         }
 
         // Make sure documented dimensions have been assigned
-        if (documentedDimensions == null)
+        if (documentedDimensions == null) 
         {
             Debug.LogWarning($"No documented dimensions assigned to {partID}.", this);
             return;
