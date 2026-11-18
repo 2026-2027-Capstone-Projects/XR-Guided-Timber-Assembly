@@ -23,6 +23,8 @@ public class XRInspectablePart : MonoBehaviour
     [SerializeField] private InspectionUIController inspectionUIController;
     [Header("Documented Dimensions")]
     [SerializeField] private PartDimensionData documentedDimensions;
+    [Tooltip("For non-rectangular parts (side angles, panels, etc.). Leave empty for rectangular parts")]
+    [SerializeField] private PartShapeDimensionData documentedShapeDimensions;
 
     private XRSimpleInteractable interactable;
     private Transform partTransform;
@@ -139,6 +141,11 @@ public class XRInspectablePart : MonoBehaviour
     //Changing to match with sizeVerification changes
     private void ShowDimensionsPopup()
     {
+        if(documentedShapeDimensions != null){
+            ShowShapeDimensionsPopup();
+            return;
+        }
+
         // Make sure documented dimensions have been assigned
         if (documentedDimensions == null)
         {
@@ -173,6 +180,24 @@ public class XRInspectablePart : MonoBehaviour
                                                           documentedDimensions.HeightFeet, documentedDimensions.HeightInches,
                                                           documentedDimensions.LengthFeet, documentedDimensions.LengthInches);
 
+    }
+
+    private void ShowShapeDimensionsPopup()
+    {
+        if (documentedShapeDimensions.PartId != partID)
+        {
+            Debug.LogError($"Dimension data mismatch on {name}. " + $"Expected {partID}, but asset contains " + $"{documentedShapeDimensions.PartId}.", this);
+            return;
+        }
+
+        if (!sizeVerification.TryGetDimensions(partTransform, out Transform boundsTransform, out Bounds meshBounds, out _))
+        {
+            Debug.LogWarning($"Could not calculate mesh bounds for {partTransform.name}.", this);
+            return;
+        }
+
+        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>() ?? gameObject.AddComponent<PopupDimensions>();
+        dimensionsPopup.Show(boundsTransform, meshBounds, documentedShapeDimensions);
     }
 
     private void MovePartInFrontOfCamera()
