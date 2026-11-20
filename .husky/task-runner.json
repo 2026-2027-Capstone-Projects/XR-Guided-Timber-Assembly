@@ -10,12 +10,14 @@
             "args": ["/c", "echo Husky.Net is awesome!" ]
          }
       },
-      {
+	  {
         "name": "format-staged-cs-assets",
         "command": "dotnet",
         "args": [
           "format",
-		  "Timber-Assembly/Timber-Assembly.sln",
+          "whitespace",
+          ".",
+          "--folder",
           "--include",
           "${staged}"
         ],

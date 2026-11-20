@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &130739907520023774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4866412821431309628}
+  m_Layer: 0
+  m_Name: CONN_DOWEL_EC1_SAM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4866412821431309628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130739907520023774}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7749961239756988741}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &9032439633917140148
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4866412821431309628}
+    m_Modifications:
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238510337190733282, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: _participants.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238510337190733282, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: _uniqueID._variantPrefix
+      value: 129
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043459653904334526, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_Name
+      value: Connection
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+--- !u!4 &7749961239756988741 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1645167715059023345, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+  m_PrefabInstance: {fileID: 9032439633917140148}
+  m_PrefabAsset: {fileID: 0}
