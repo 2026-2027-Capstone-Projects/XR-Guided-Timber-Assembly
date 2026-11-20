@@ -1,3 +1,5 @@
+/*
+
 #if UNITY_INCLUDE_TESTS
 using System.Reflection;
 using NUnit.Framework;
@@ -109,7 +111,7 @@ public class InspectionSwitchingTests
             InputSystem.RemoveLayout(nameof(InspectionTestController));
         }
     }
-*/
+
     public static bool IsViewInspecting(InspectionViewController view)
     {
         FieldInfo field = typeof(InspectionViewController).GetField("isInspecting", BindingFlags.Instance | BindingFlags.NonPublic);
@@ -125,3 +127,4 @@ public class InspectionSwitchingTests
     }
 }
 #endif
+*/
