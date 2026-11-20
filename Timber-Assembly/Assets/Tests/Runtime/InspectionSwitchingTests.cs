@@ -110,14 +110,14 @@ public class InspectionSwitchingTests
         }
     }
 */
-    private static bool IsViewInspecting(InspectionViewController view)
+    public static bool IsViewInspecting(InspectionViewController view)
     {
         FieldInfo field = typeof(InspectionViewController).GetField("isInspecting", BindingFlags.Instance | BindingFlags.NonPublic);
         Assert.IsNotNull(field);
         return (bool)field.GetValue(view);
     }
 
-    private static void SetField(object target, string name, object value)
+    public static void SetField(object target, string name, object value)
     {
         FieldInfo field = target.GetType().GetField(name, BindingFlags.Instance | BindingFlags.NonPublic);
         Assert.IsNotNull(field, name);
