@@ -141,7 +141,7 @@ public class XRInspectablePart : MonoBehaviour
     //Changing to match with sizeVerification changes
     private void ShowDimensionsPopup()
     {
-        if(documentedShapeDimensions != null){
+        if (documentedShapeDimensions != null){
             ShowShapeDimensionsPopup();
             return;
         }
