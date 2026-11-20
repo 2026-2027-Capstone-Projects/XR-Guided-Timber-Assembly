@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.XR.CoreUtils;
 
 public class PartCatalog : MonoBehaviour
 {
@@ -44,14 +45,13 @@ public class PartCatalog : MonoBehaviour
     /// <summary>Get all <see cref="XRInspectablePart"/>s descended from the object containing the <see cref="PartCatalog"/> component</summary>
     public static IReadOnlyList<XRInspectablePart> GetAllParts() => _allParts;
 
-    private void BuildLookupTables()
+    private void _buildPartLookupTables()
     {
 
         // Clear Any Existing Lookup Tables
         _partsByPartID.Clear();
         _partsByUniqueID.Clear();
         _uniqueIdsByPart.Clear();
-        _connectionsByPart.Clear();
 
         // Temporary caches to build the lookup tables before converting lists to arrays (reduces final memory usage)
         Dictionary<PartInfo.ID, List<XRInspectablePart>> partsByPartIDCache = new Dictionary<PartInfo.ID, List<XRInspectablePart>>();
@@ -76,34 +76,44 @@ public class PartCatalog : MonoBehaviour
             partsByPartIDCache[pID].Add(inspectablePart);
         }
 
-        // Populate Connection Lookup Tables
-        foreach (var Connection in _allConnections)
-        {
-            var connectedParts = Connection.GetParts();
-
-            partsByConnectionCache.TryAdd(Connection, connectedParts);
-
-            foreach (var part in connectedParts)
-            {
-                connectionsByPartCache.TryAdd(part, new List<Connection>());
-                connectionsByPartCache[part].Add(Connection);
-            }
-        }
-
         // Convert caches to arrays and store in the final lookup tables
         foreach (var kvp in partsByPartIDCache)
         {
             _partsByPartID.Add(kvp.Key, kvp.Value.ToArray());
         }
+    }
 
-        foreach (var kvp in connectionsByPartCache)
+    private void _connectionSetup()
+    {
+        _connectionsByPart.Clear();
+
+        // Register Connection archetype local roots, and get their group hover outlines to enthrall them as I go.
+        XRHoverOutline connDowelOutline = Connection.ArchetypeCode.CONN_DOWEL.InitializeSceneRoot(gameObject.GetNamedChild("PinnedBridalJoints"));
+        XRHoverOutline connSlotOutline = Connection.ArchetypeCode.CONN_SLOT.InitializeSceneRoot(gameObject.GetNamedChild("NotchedPurlinJoints"));
+        XRHoverOutline connTpinOutline = Connection.ArchetypeCode.CONN_TPIN.InitializeSceneRoot(gameObject.GetNamedChild("KeyedTenonMortiseJoints"));
+
+        var vCCount = Connection.VariantCodeCount;
+
+        Connection[] connections = GetComponentsInChildren<Connection>();
+        Queue<Connection>[] queue = new Queue<Connection>[vCCount];
+
+        byte[] uIDSuffixAccumulator = new byte[vCCount];
+
+        for (int i = 0; i < vCCount; i++)
         {
-            _connectionsByPart.Add(kvp.Key, kvp.Value.ToArray());
+            // Set to 1 or 'A'
+            if (Connection.ID.UsesUniqueIDAlphabeticSuffix.Contains(i.IdxToVariantCode()))
+                uIDSuffixAccumulator[i] = (byte)'A';
+            else
+                uIDSuffixAccumulator[i] = 1;
         }
 
-        foreach (var kvp in partsByConnectionCache)
+        foreach (var connection in connections)
         {
-            _partsByConnection.Add(kvp.Key, kvp.Value);
+            connection.SetUniqueIDSuffix((uIDSuffixAccumulator[connection.UniqueID.VariantPrefix.ToIndex()]++));
+            List<XRInspectablePart> connectionParts = new List<XRInspectablePart>();
+
+            var frameOrigin = transform.position;
         }
 
     }
@@ -116,7 +126,8 @@ public class PartCatalog : MonoBehaviour
         // ScriptableObject? _allConnections = Resources.LoadAll<Connection>(""); // Load all Connection into the PartCatalog
         // Debug.Log($"Loaded {_allConnections.Length} parts into the catalog.");
 
-        BuildLookupTables();
+        _buildPartLookupTables();
+        _connectionSetup();
     }
 }
 

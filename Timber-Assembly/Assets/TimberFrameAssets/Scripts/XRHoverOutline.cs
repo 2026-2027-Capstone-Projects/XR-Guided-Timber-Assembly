@@ -221,6 +221,10 @@ public class XRHoverOutline : MonoBehaviour
     public void ResetManager()
     {
         SetSelectedOutline(false);
-        _managedOutlines.Clear();
+    }
+
+    public void AddManagedOutline(XRHoverOutline xRHoverOutline)
+    {
+        _managedOutlines.Add(xRHoverOutline);
     }
 }

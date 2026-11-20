@@ -81,12 +81,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4238510337190733282, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: _participants.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4238510337190733282, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
       propertyPath: _uniqueID._variantPrefix
       value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 6043459653904334526, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
       propertyPath: m_Name
       value: Connection
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795561611756419480, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795561611756419480, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795561611756419480, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795561611756419480, guid: eb6ca5c06ea508e4186152829197eb07, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -3,7 +3,7 @@ Shader "Custom/VRStencilOutline"
     Properties
     {
         _OutlineColor ("Outline Color", Color) = (1, 1, 1, 1)
-        _OutlineWidth ("Outline Width (Meters)", Range(0.0, 0.05)) = 0.005
+        _OutlineWidth ("Outline Width (Meters)", Range(0.0, 0.2)) = 0.005
         [IntRange] _StencilRef ("Stencil Reference ID", Range(1, 255)) = 1
     }
 
@@ -88,7 +88,7 @@ Shader "Custom/VRStencilOutline"
 
             HLSLPROGRAM
             #pragma vertex vert
-            #pragma fragment frag
+            #pragma fragment frag   
             #pragma multi_compile_instancing
 
             #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
