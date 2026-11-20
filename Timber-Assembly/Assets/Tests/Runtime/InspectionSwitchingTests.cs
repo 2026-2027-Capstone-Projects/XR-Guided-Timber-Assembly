@@ -22,10 +22,11 @@ public class InspectionTestController : XRController
         gripPressed = GetChildControl<ButtonControl>("gripPressed");
     }
 }
-/** 
+
 public class InspectionSwitchingTests
 {
     [Test]
+    /**
     public void SelectingAnotherPartWhileGripIsHeldRestoresThePreviousPart()
     {
         Assert.IsTrue(QuestInspectionInput.IsAvailable);
