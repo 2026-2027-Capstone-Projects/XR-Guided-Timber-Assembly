@@ -33,6 +33,7 @@ public class InspectionSwitchingTests
         InputSystem.RegisterLayout<InspectionTestController>();
         InspectionTestController controller = InputSystem.AddDevice<InspectionTestController>();
         InputSystem.SetDeviceUsage(controller, "RightHand");
+        InputSystem.Update();
 
         GameObject cameraObject = new GameObject("Inspection Test Camera", typeof(Camera));
         cameraObject.tag = "MainCamera";
