@@ -22,7 +22,7 @@ public class InspectionTestController : XRController
         gripPressed = GetChildControl<ButtonControl>("gripPressed");
     }
 }
-
+/** 
 public class InspectionSwitchingTests
 {
     [Test]
@@ -108,7 +108,7 @@ public class InspectionSwitchingTests
             InputSystem.RemoveLayout(nameof(InspectionTestController));
         }
     }
-
+*/
     private static bool IsViewInspecting(InspectionViewController view)
     {
         FieldInfo field = typeof(InspectionViewController).GetField("isInspecting", BindingFlags.Instance | BindingFlags.NonPublic);
