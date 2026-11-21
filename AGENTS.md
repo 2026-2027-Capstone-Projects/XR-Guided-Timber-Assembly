@@ -83,4 +83,38 @@ The team is focusing on building a specific structure for a course at our school
 - `README.md`
 - `CONTRIBUTING.md`
 
+## Testing and Data Preservation Rules
+
+### Unit Test Creation
+- DO NOT create new unit test files unless the user explicitly requests them or provides authorization.
+- If testing is needed but authorization has not been granted, recommend test coverage improvements without generating new test files.
+- Modifications to existing test files are allowed only when directly related to the requested task.
+
+### Test Documentation Standards
+- All test files must be thoroughly documented.
+- Include clear descriptions of:
+  - The purpose of the test suite.
+  - What behavior or requirement each test validates.
+  - Any assumptions, dependencies, mock data, or setup requirements.
+  - Why the test is valuable and what failure it is intended to detect.
+- Favor comments that explain intent and business value rather than implementation details.
+
+### Testing Priorities
+- Prioritize testing fragile or high-risk integrations, including:
+  - External APIs
+  - Database interactions
+  - File system operations
+  - Message queues
+  - Service-to-service communication
+  - Third-party dependencies (These may not be implemented in so these are here for the example of stuff to actually prioritize)
+- Focus on validating end-to-end behavior, contracts, error handling, and integration boundaries.
+- Avoid creating tests that are tightly coupled to implementation details, internal refactoring, private methods, or non-critical code structure unless specifically requested.
+
+### Data Preservation Requirements
+- Never delete, overwrite, reset, or regenerate existing dimension data unless the user explicitly authorizes the change.
+- Never remove, modify, or replace existing Part IDs unless the user explicitly authorizes the change.
+- When making changes that could affect dimension data or Part IDs:
+  - Preserve all existing values.
+  - Treat these fields as authoritative source data.
+  - Ask for clarification before performing any operation that may alter them.
 
