@@ -63,9 +63,9 @@ public class QuestInspectionControlsTests
     [Test]
     public void SelectionActionsAndPrompt_AreAvailable()
     {
-        Assert.AreEqual("<XRController>{LeftHand}/{PrimaryButton}",
+        Assert.AreEqual("<XRController>{LeftHand}/{TriggerButton}",
             actions.FindAction("Inspection/ChooseLeft", true).bindings.Single().path);
-        Assert.AreEqual("<XRController>{RightHand}/{PrimaryButton}",
+        Assert.AreEqual("<XRController>{RightHand}/{TriggerButton}",
             actions.FindAction("Inspection/ChooseRight", true).bindings.Single().path);
         var collection = LocalizationEditorSettings.GetStringTableCollection(PartInfo.NamesTable);
         Assert.IsNotNull(collection);
