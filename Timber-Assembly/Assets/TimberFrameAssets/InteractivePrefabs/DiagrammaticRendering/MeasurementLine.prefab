@@ -157,26 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f6d80d20215ed44486b31b64ecdf98d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MLine
-  arrowHead1:
-    m_SceneObjectReference:
-      m_SceneGuid: 991fe9183de746a41b32765e475d5855
-      m_GameObjectGuid: 96c7779d-26ee-43c6-a935-48ef23f81392
-      m_SerializedComponentType:
-        m_TypeName: 
-      m_ComponentIndex: 0
-      m_AssetObject: {fileID: 0}
-      m_Prefab: {fileID: 0}
-    m_FutureObjectReference: {fileID: 0}
-  arrowHead2:
-    m_SceneObjectReference:
-      m_SceneGuid: 991fe9183de746a41b32765e475d5855
-      m_GameObjectGuid: da5e91d7-4a8b-4a10-b837-de79349f8d0a
-      m_SerializedComponentType:
-        m_TypeName: 
-      m_ComponentIndex: 0
-      m_AssetObject: {fileID: 0}
-      m_Prefab: {fileID: 0}
-    m_FutureObjectReference: {fileID: 0}
+  arrowHead1: {fileID: 1706387375196372542}
+  arrowHead2: {fileID: 2926555441735690513}
 --- !u!1001 &1976842291062981487
 PrefabInstance:
   m_ObjectHideFlags: 0
