@@ -28,8 +28,8 @@
                 { "id": "323092b7-ec24-48c7-8972-3d6261dafd85", "path": "<XRController>{LeftHand}/isTracked", "groups": "Left", "action": "Tracked" },
                 { "id": "080b5590-21c6-40a9-bce3-e8f0a48dab1d", "path": "<XRController>{RightHand}/{SecondaryButton}", "groups": "Right", "action": "Close" },
                 { "id": "da9f4f98-378e-4982-be13-c73777567421", "path": "<XRController>{LeftHand}/{SecondaryButton}", "groups": "Left", "action": "Close" },
-                { "id": "b1228a1f-6f9a-4b39-a7fd-963f7ea9a7a5", "path": "<XRController>{LeftHand}/{PrimaryButton}", "action": "ChooseLeft" },
-                { "id": "e131cd18-816e-4d40-b06d-27e2f5bec8d2", "path": "<XRController>{RightHand}/{PrimaryButton}", "action": "ChooseRight" }
+                { "id": "b1228a1f-6f9a-4b39-a7fd-963f7ea9a7a5", "path": "<XRController>{LeftHand}/{TriggerButton}", "action": "ChooseLeft" },
+                { "id": "e131cd18-816e-4d40-b06d-27e2f5bec8d2", "path": "<XRController>{RightHand}/{TriggerButton}", "action": "ChooseRight" }
             ]
         }
     ],
