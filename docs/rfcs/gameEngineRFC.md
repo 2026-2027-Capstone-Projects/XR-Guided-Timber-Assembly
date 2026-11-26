@@ -17,7 +17,7 @@
 
 ## Problem and Context
 
-Of the many hard-to-reverse decisions our team will face when developing our XR-Guided Timber Assembly program, one vital one is our choice of game engine. The game engine will be an essential element upon which our program is designed and our choice of engine will determine many development processes and decisions moving forward. Much like a programming language, reversing this decision would effectively require completely recreating and rewriting most, if not the entirety of our project. As such, this decision cannot be easily reversed and will require heavy consideration to ensure we make the best choice for our project. As this decision is a major pillar in the design and procedure of coding our program, we will need to make this decision soon as development cannot begin until it is made. If our team delays this decision or chooses to do nothing, we will end up delaying or not even not completing our program and as such this decision must be taken into consideration first.
+Our project is an XR-based timber assembly guidance program, designed to provide an educational and instructional construction simulation for students in OSU’s College of Forestry. Our development process will require a development process similar to that of an XR game, and as such will require a game engine. Of the many hard-to-reverse decisions our team will face when developing our XR-Guided Timber Assembly program, the choice of game engine is one of the most vital. The game engine will be an essential element upon which our program is designed and our choice of engine will determine many development processes and decisions moving forward. Much like a programming language, reversing this decision would effectively require completely recreating and rewriting most, if not the entirety of our project. As such, this decision cannot be easily reversed and will require heavy consideration to ensure we make the best choice for our project. As this decision is a major pillar in the design and procedure of coding our program, we will need to make this decision soon as development cannot begin until it is made. If our team delays this decision or chooses to do nothing, we will end up delaying or not even not completing our program and as such this decision must be taken into consideration first.
 
 ## Options
 
@@ -41,7 +41,7 @@ As not every member of our team has experience with 3D game development or game 
 
 ## Recommendation and Verification Plan
 
-With all these factors considered; I reccomend Unity as a our engine of choice. As a small, relatively inexperienced development team, a beginner-friendly editor with vast learning resources will prove more well-suited to our needs. Our program will utilize 3D models and graphics, however will remain within the scope of Unity's capabilities, making Unreal's higher performance not a necessity. However, in order to verify that Unity will be easy to use and learn, each of us will experiment with the software, creating a small, simple, interactive 3D program to learn the basics of the engine. We will then discuss, weigh the options and each's benefits, as well as our experience with Unity. If we feel Unity wil be capable of delivering on all our project's requirements, it will be our engine of choice.
+With all these factors considered; I recommend Unity as a our engine of choice. As a small, relatively inexperienced development team, a beginner-friendly editor with vast learning resources will prove more well-suited to our needs. Our program will utilize 3D models and graphics, however will remain within the scope of Unity's capabilities, making Unreal's higher performance not a necessity. In order to verify this decision, we will create a simple project in Unity and Unreal, import the 3D model provided by our project partner, and implement some graphical textures. This simple project will be simply the VR environment, 3D model, and textures. We will compare the output and performance of both projects on the target device, as well as the editors’ performance on our computers. If Unity is capable of producing the textures and project with no issues and/or Unreal poses performance issues on the target device, we would move forward with the recommendation proposed here. Unreal will be chosen in the event that Unity cannot support the graphics necessary. If neither engine poses development issues, then the team will discuss and choose based on editor preference (ie. which is easier to develop in).
 
 ## Constraints
 
@@ -50,6 +50,7 @@ None apply; both engine options are free to use when revenue is under a specifie
 ## Delegation and Validation
 
 Sources:
+
 https://www.strayspark.studio/blog/unreal-engine-vs-unity-2026-indie-developers
 
 https://rocketbrush.com/blog/unity-vs-unreal-engine-which-one-is-right-for-your-game
