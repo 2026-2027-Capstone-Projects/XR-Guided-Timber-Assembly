@@ -1,6 +1,5 @@
 using System.Collections;
 using Unity.XR.CoreUtils;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.XR.Interaction.Toolkit;
