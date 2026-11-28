@@ -28,6 +28,7 @@ public class PopupUIManager : MonoBehaviour
     private XRHoverOutline currentActiveOutline;
     private XRInspectablePart currentInspectablePart;
     public bool HasActiveInspection => currentInspectablePart != null;
+    private Connection currentInspectableConnection;
 
     public bool IsInspecting(XRInspectablePart part)
     {
@@ -305,6 +306,44 @@ public class PopupUIManager : MonoBehaviour
     }
 
     /// <summary>
+    ///     Updates and displays the popup with <paramref name="sourcePart"/>'s name, unique ID, and description, using <see cref="XRInspectablePart"/> methods.
+    /// </summary>
+    /// <param name="sourcePart">
+    ///     The part to display info for and to highlight while this popup is open,
+    ///     <para/>
+    ///     Highlighting requires an XRHoverOutline component
+    /// </param>
+    public void ShowPopup(Connection sourceConnection)
+    {
+        ClearCurrentState();
+
+        if (sourceConnection == null)
+        {
+            Debug.LogWarning("Cannot show popup because the provided source connection is null.");
+            return;
+        }
+
+        currentInspectableConnection = sourceConnection;
+        currentActiveOutline = sourceConnection.HoverOutline;
+
+        if (currentActiveOutline != null)
+        {
+            currentActiveOutline.SetSelectedOutline(true);
+        }
+
+        // Subscribing to StringChanged automatically triggers an asynchronous fetch 
+        // and invokes UpdateText immediately upon completion, as well as whenever the active Locale changes.
+        currentLocalizedStringHeader = sourceConnection.Name;
+        currentLocalizedStringHeader.StringChanged += UpdateHeader;
+        currentLocalizedStringBody = sourceConnection.Description;
+        currentLocalizedStringBody.StringChanged += UpdateBody;
+
+        // Set the part identifier text based on the part identifier and unique identifier
+        popupTextIdentifier.text = sourceConnection.UniqueID.ToString();
+        popupPanel.SetActive(true);
+    }
+
+    /// <summary>
     ///     Updates and displays the popup with a localized <paramref name="header"/>, localized <paramref name="body"/>, and optional <paramref name="identifier"/>.
     /// </summary>
     /// <param name="header">
@@ -385,6 +424,11 @@ public class PopupUIManager : MonoBehaviour
         {
             currentInspectablePart.EndInspection();
             currentInspectablePart = null;
+        }
+        if (currentInspectableConnection != null)
+        {
+            currentInspectableConnection.EndInspection();
+            currentInspectableConnection = null;
         }
         // Lets listeners (e.g. the dimensions panel) hide when the part is closed or another is selected
         PopupClosed?.Invoke();

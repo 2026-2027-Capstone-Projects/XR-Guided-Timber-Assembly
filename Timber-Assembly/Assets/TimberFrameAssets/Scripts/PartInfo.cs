@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using UnityEngine.Localization;
 
 /// <summary>
@@ -7,12 +9,12 @@ using UnityEngine.Localization;
 /// </summary>
 /// <remarks>
 ///     Primary Usages:<para/>
-///     <c><see langword="string"/> <see cref="PartInfo.IdToString"/></c><para/>
 ///     <c><see cref="LocalizedString"/> <see cref="PartInfo.GetName"/></c><para/>
 ///     <c><see cref="LocalizedString"/> <see cref="PartInfo.GetDescription"/></c>
 /// </remarks>
 public static class PartInfo
 {
+    #region Enums & Consts
     /// <summary>
     ///     Represents the identifier for each part type.
     /// </summary>
@@ -31,8 +33,9 @@ public static class PartInfo
         WP,
         TP,
         SAM,
-        TAM
-        // MPP variants, 4x6, 4x4, fiberglass roof, Dowel, and U-Channel brackets not added
+        TAM,
+        Dowel
+        // MPP variants, 4x6, 4x4, fiberglass roof, and U-Channel brackets not added
         // TODO: Verify if they should be added to the Part ID system
     }
 
@@ -75,6 +78,24 @@ public static class PartInfo
     ///     Counts as an instance of <see cref="UnityEngine.Localization.Tables.TableReference"/> for this purpose.
     /// </summary>
     public const string DescriptionsTable = "PartDescriptions"; // The existence and contents of this table is validated in Tests/Editor/PartInfoEditorTests.cs
+
+    /// <summary>
+    ///     Lookup table of explosion movement vectors using Part ID's as keys
+    /// </summary>
+    public static readonly Dictionary<ID, Vector3> ExplosionVectors = KeyMap.Zip(new Vector3[] {
+        Vector3.zero, // None
+        new Vector3(0, -0.4f, 0), // EC1
+        new Vector3(0, -0.4f, 0), // EC2
+        new Vector3(0, -0.4f, 0), // MC
+        new Vector3(-0.8192f * 0.4f, 0.5736f * 0.4f, 0), // RB -- Exception: TAM => negate X and Y
+        new Vector3(0.5736f * 0.4f, 0.8192f * 0.4f, 0), // RP
+        new Vector3(0, 0, 0.4f), // WP => Exception: Half of MC's match EC1, other half match EC2.
+        new Vector3(0.8192f * 0.4f, 0.5736f * 0.4f, 0), // TP => 
+        Vector3.zero, // SAM
+        Vector3.zero, // TAM
+        new Vector3(0, 0, -0.4f) // Dowell
+    }, (part, vector) => new { part = (ID)Enum.Parse(typeof(ID), part), vector }).ToDictionary(x => x.part, x => x.vector);
+    #endregion
 
     /// <summary>
     ///     Gets the minimum valid unique ID suffix for the specified <paramref name="pID"/>.
@@ -183,8 +204,6 @@ public static class PartInfo
 ///         var stringifiedId = id.ToString();
 ///     </code>
 /// </summary>
-/// <example>
-/// </example>
 public static class PartInfoIDExtensions
 {
     /// <summary>

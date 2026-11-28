@@ -29,6 +29,10 @@ public class XRHoverOutline : MonoBehaviour
     [SerializeField] private Color selectedColor = new Color(1.0f, 0.65f, 0.0f, 1.0f); // Default Orange/Gold
 
     private XRBaseInteractable interactable;
+    private List<XRHoverOutline> _managedOutlines = null;
+
+
+    public List<XRHoverOutline> ManagedOutlines => _managedOutlines; // Intentionally a reference
 
     private void Awake()
     {
@@ -42,6 +46,12 @@ public class XRHoverOutline : MonoBehaviour
             {
                 targetRenderers = GetComponentsInParent<MeshRenderer>();
             }
+        }
+
+        // Connections use an XRHoverOutline to manage others
+        if (GetComponent<Connection>() != null)
+        {
+            _managedOutlines = new List<XRHoverOutline>();
         }
 
         RegisterRenderers();
@@ -127,6 +137,14 @@ public class XRHoverOutline : MonoBehaviour
 
     public void SetHoverOutline(bool active)
     {
+        if (_managedOutlines != null)
+        {
+            foreach (var outline in _managedOutlines)
+            {
+                outline.SetSelectedOutline(active);
+            }
+        }
+
         if (targetRenderers == null || outlineMaterial == null) return;
 
         for (int i = 0; i < targetRenderers.Length; i++)
@@ -146,6 +164,15 @@ public class XRHoverOutline : MonoBehaviour
 
     public void SetSelectedOutline(bool active)
     {
+
+        if (_managedOutlines != null)
+        {
+            foreach (var outline in _managedOutlines)
+            {
+                outline.SetSelectedOutline(active);
+            }
+        }
+
         if (targetRenderers == null || outlineMaterial == null) return;
 
         for (int i = 0; i < targetRenderers.Length; i++)
@@ -155,8 +182,9 @@ public class XRHoverOutline : MonoBehaviour
 
             if (RendererStates.TryGetValue(renderer, out RendererOutlineState state))
             {
-                if (active) state.SelectedRequesters.Add(this);
-                else state.SelectedRequesters.Remove(this);
+                if (_managedOutlines == null)
+                    if (active) state.SelectedRequesters.Add(this);
+                    else state.SelectedRequesters.Remove(this);
 
                 EvaluateRendererState(state);
             }
@@ -184,5 +212,16 @@ public class XRHoverOutline : MonoBehaviour
         state.OverlayRenderer.SetPropertyBlock(state.PropertyBlock);
 
         state.OverlayRenderer.enabled = true;
+    }
+
+    /// <summary>Clear all managed outlines and then clear the manged outline registry</summary>
+    public void ResetManager()
+    {
+        SetSelectedOutline(false);
+    }
+
+    public void AddManagedOutline(XRHoverOutline xRHoverOutline)
+    {
+        _managedOutlines.Add(xRHoverOutline);
     }
 }
