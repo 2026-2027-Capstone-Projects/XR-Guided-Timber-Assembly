@@ -1,13 +1,19 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Localization;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections.Generic;
+using Unity.XR.CoreUtils;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Jump;
+using UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement;
 
 public class PopupUIManager : MonoBehaviour
 {
     public static PopupUIManager Instance { get; private set; }
     public event System.Action PopupClosed;
 
+    [SerializeField] private GameObject _anchorObject;
     [SerializeField] private GameObject popupPanel;
     [SerializeField] private TMP_Text popupTextHeader;
     [SerializeField] private TMP_Text popupTextBody;
@@ -21,7 +27,20 @@ public class PopupUIManager : MonoBehaviour
     private LocalizedString currentLocalizedStringBody;
     private XRHoverOutline currentActiveOutline;
     private XRInspectablePart currentInspectablePart;
+    public bool HasActiveInspection => currentInspectablePart != null;
     private Connection currentInspectableConnection;
+
+    public bool IsInspecting(XRInspectablePart part)
+    {
+        return currentInspectablePart != null && currentInspectablePart == part;
+    }
+
+    private GameObject handednessPrompt;
+    private TMP_Text handednessPromptText;
+    private LocalizedString handednessPromptString;
+    private readonly List<Behaviour> suspendedJumpProviders = new List<Behaviour>();
+    private readonly List<Behaviour> suspendedGrabProviders = new List<Behaviour>();
+    private bool warnedAboutMissingCamera;
 
     private void Awake()
     {
@@ -32,78 +51,223 @@ public class PopupUIManager : MonoBehaviour
         }
         Instance = this;
 
-        AttachToLeftController();
+        if (QuestInspectionInput.HasHandedness)
+        {
+            AttachToOffHand();
+        }
         closeButton.onClick.AddListener(ClosePopup);
         popupPanel.SetActive(false);
     }
 
-    private void AttachToLeftController()
+    private void Start()
     {
-        transform.localScale = Vector3.one * popupScale;
-
-        GameObject leftController = GameObject.Find("Left Controller");
-        if (leftController == null)
+        if (!QuestInspectionInput.HasHandedness)
         {
-            Debug.LogWarning("Cannot anchor popup because no Left Controller was found.", this);
+            SuspendLocomotion(suspendedJumpProviders, false);
+            EnsureHandednessPrompt();
+        }
+    }
+
+    private void Update()
+    {
+        if (!QuestInspectionInput.HasHandedness)
+        {
+            EnsureHandednessPrompt();
+            if (!QuestInspectionInput.IsAvailable)
+            {
+                return;
+            }
+
+            Keyboard keyboard = Keyboard.current;
+            bool keyboardLeft = keyboard != null && keyboard.lKey.wasPressedThisFrame;
+            bool keyboardRight = keyboard != null && keyboard.rKey.wasPressedThisFrame;
+            if (TryChooseHand(keyboardLeft, keyboardRight,
+                QuestInspectionInput.ChooseLeft.WasPressedThisFrame(),
+                QuestInspectionInput.ChooseRight.WasPressedThisFrame(), out bool leftHanded))
+            {
+                QuestInspectionInput.SetHandedness(leftHanded);
+                HideHandednessPrompt();
+                AttachToOffHand();
+            }
             return;
         }
 
-        transform.SetParent(leftController.transform, false);
-        transform.localPosition = leftControllerLocalPosition;
+        if (!HasActiveInspection && QuestInspectionInput.IsAvailable &&
+            !QuestInspectionInput.ChooseLeft.IsPressed() && !QuestInspectionInput.ChooseRight.IsPressed())
+        {
+            RestoreLocomotion(suspendedJumpProviders);
+        }
+        if (!HasActiveInspection && QuestInspectionInput.IsAvailable && !QuestInspectionInput.Grip.IsPressed())
+        {
+            RestoreLocomotion(suspendedGrabProviders);
+        }
+
+        if (HasActiveInspection && QuestInspectionInput.IsAvailable && QuestInspectionInput.Close.WasPressedThisFrame())
+        {
+            ClosePopup();
+            return;
+        }
+
+        // Desktop/editor shortcut for closing the popup and returning to the structure
+        if (popupPanel.activeSelf && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            ClosePopup();
+        }
+    }
+
+    private static bool TryChooseHand(bool keyboardLeft, bool keyboardRight,
+        bool controllerLeft, bool controllerRight, out bool leftHanded)
+    {
+        if (keyboardLeft != keyboardRight)
+        {
+            leftHanded = keyboardLeft;
+            return true;
+        }
+
+        if (!keyboardLeft && !keyboardRight && controllerLeft != controllerRight)
+        {
+            leftHanded = controllerLeft;
+            return true;
+        }
+
+        leftHanded = false;
+        return false;
+    }
+
+    private void AttachToOffHand()
+    {
+        transform.localScale = Vector3.one * popupScale;
+
+        string controllerName = QuestInspectionInput.IsLeftHanded ? "Right Controller" : "Left Controller";
+        GameObject controller = _anchorObject != null && _anchorObject.name == controllerName
+            ? _anchorObject : GameObject.Find(controllerName);
+        if (controller == null)
+        {
+            Debug.LogWarning($"Cannot anchor popup because no {controllerName} was found.", this);
+            return;
+        }
+
+        transform.SetParent(controller.transform, false);
+        Vector3 position = leftControllerLocalPosition;
+        if (QuestInspectionInput.IsLeftHanded)
+        {
+            position.x = -position.x;
+        }
+        transform.localPosition = position;
         transform.localRotation = Quaternion.identity;
     }
 
-    /// <summary>
-    /// Deprecated<para/>
-    /// Since the XRInspectablePart popup functionality is becoming very non-standardized and uses a reference to it anyway now, I've given it an overload.
-    /// </summary>
-    public void ShowPopup(LocalizedString header, LocalizedString body, PartInfo.ID identifier = PartInfo.ID.None, XRHoverOutline sourceOutline = null, XRInspectablePart sourcePart = null)
+    private void EnsureHandednessPrompt()
     {
-        string errorHeader = null, errorBody = null;
-        if (header == null || header.IsEmpty)
+        if (handednessPrompt != null)
         {
-            Debug.LogWarning("Assigned header LocalizedString is null or empty.");
-            errorHeader = "NO HEADER FOUND";
-        }
-        if (body == null || body.IsEmpty)
-        {
-            Debug.LogWarning("Assigned body LocalizedString is null or empty.");
-            errorBody = "NO BODY FOUND";
+            return;
         }
 
-        ClearCurrentState();
-
-        // If a sourceOutline is provided, highlight it while the popup is open.
-        (currentActiveOutline = sourceOutline)?.SetSelectedOutline(true);
-
-        // Subscribing to StringChanged automatically triggers an asynchronous fetch 
-        // and invokes UpdateText immediately upon completion, as well as whenever the active Locale changes.
-
-        // Header
-        if (errorHeader != null)
+        Camera mainCamera = Camera.main;
+        if (mainCamera == null)
         {
-            UpdateHeader(errorHeader);
+            if (!warnedAboutMissingCamera)
+            {
+                Debug.LogError("Cannot display the handedness prompt because no MainCamera was found.", this);
+                warnedAboutMissingCamera = true;
+            }
+            return;
+        }
+
+        SuspendLocomotion(suspendedJumpProviders, false);
+        handednessPrompt = new GameObject("Handedness Prompt", typeof(RectTransform), typeof(Canvas), typeof(Image));
+        handednessPrompt.transform.SetParent(mainCamera.transform, false);
+        handednessPrompt.transform.localPosition = new Vector3(0f, 0f, 1.3f);
+        handednessPrompt.transform.localScale = Vector3.one * 0.0014f;
+        handednessPrompt.GetComponent<RectTransform>().sizeDelta = new Vector2(800f, 300f);
+        Canvas canvas = handednessPrompt.GetComponent<Canvas>();
+        canvas.renderMode = RenderMode.WorldSpace;
+        handednessPrompt.GetComponent<Image>().color = new Color(0.08f, 0.1f, 0.12f, 0.95f);
+        handednessPrompt.GetComponent<Image>().raycastTarget = false;
+
+        GameObject textObject = new GameObject("Prompt Text", typeof(RectTransform), typeof(TextMeshProUGUI));
+        textObject.transform.SetParent(handednessPrompt.transform, false);
+        RectTransform textRect = textObject.GetComponent<RectTransform>();
+        textRect.anchorMin = Vector2.zero;
+        textRect.anchorMax = Vector2.one;
+        textRect.offsetMin = new Vector2(20f, 20f);
+        textRect.offsetMax = new Vector2(-20f, -20f);
+        handednessPromptText = textObject.GetComponent<TextMeshProUGUI>();
+        handednessPromptText.fontSize = 34f;
+        handednessPromptText.alignment = TextAlignmentOptions.Center;
+        handednessPromptText.raycastTarget = false;
+
+        handednessPromptString = new LocalizedString(PartInfo.NamesTable, "HandednessPrompt");
+        handednessPromptString.StringChanged += UpdateHandednessPrompt;
+    }
+
+    private void UpdateHandednessPrompt(string text)
+    {
+        if (handednessPromptText != null)
+        {
+            handednessPromptText.text = text;
+        }
+    }
+
+    private void HideHandednessPrompt()
+    {
+        if (handednessPromptString != null)
+        {
+            handednessPromptString.StringChanged -= UpdateHandednessPrompt;
+            handednessPromptString = null;
+        }
+        if (handednessPrompt != null)
+        {
+            Destroy(handednessPrompt);
+            handednessPrompt = null;
+            handednessPromptText = null;
+        }
+    }
+
+    private void SuspendLocomotion(List<Behaviour> suspended, bool grab)
+    {
+        if (suspended.Count != 0)
+        {
+            return;
+        }
+        Camera mainCamera = Camera.main;
+        XROrigin origin = mainCamera != null ? mainCamera.GetComponentInParent<XROrigin>() : null;
+        if (origin == null)
+        {
+            return;
+        }
+        if (grab)
+        {
+            foreach (GrabMoveProvider provider in origin.GetComponentsInChildren<GrabMoveProvider>(true))
+                SuspendProvider(provider, suspended);
+            foreach (TwoHandedGrabMoveProvider provider in origin.GetComponentsInChildren<TwoHandedGrabMoveProvider>(true))
+                SuspendProvider(provider, suspended);
         }
         else
         {
-            currentLocalizedStringHeader = header;
-            currentLocalizedStringHeader.StringChanged += UpdateHeader;
+            foreach (JumpProvider provider in origin.GetComponentsInChildren<JumpProvider>(true))
+                SuspendProvider(provider, suspended);
         }
+    }
 
-        // Body
-        if (errorBody != null)
+    private static void SuspendProvider(Behaviour provider, List<Behaviour> suspended)
+    {
+        if (provider.isActiveAndEnabled)
         {
-            UpdateBody(errorBody);
+            suspended.Add(provider);
+            provider.enabled = false;
         }
-        else
-        {
-            currentLocalizedStringBody = body;
-            currentLocalizedStringBody.StringChanged += UpdateBody;
-        }
+    }
 
-        // Identifier
-        popupTextIdentifier.text = identifier.ToString();
-        popupPanel.SetActive(true);
+    private static void RestoreLocomotion(List<Behaviour> suspended)
+    {
+        foreach (Behaviour provider in suspended)
+        {
+            if (provider != null)
+                provider.enabled = true;
+        }
+        suspended.Clear();
     }
 
     /// <summary>
@@ -124,13 +288,10 @@ public class PopupUIManager : MonoBehaviour
             return;
         }
 
+        SuspendLocomotion(suspendedJumpProviders, false);
+        SuspendLocomotion(suspendedGrabProviders, true);
         currentInspectablePart = sourcePart;
-        currentActiveOutline = sourcePart.HoverOutline;
-
-        if (currentActiveOutline != null)
-        {
-            currentActiveOutline.SetSelectedOutline(true);
-        }
+        (currentActiveOutline = sourcePart.HoverOutline)?.SetSelectedOutline(true);
 
         // Subscribing to StringChanged automatically triggers an asynchronous fetch 
         // and invokes UpdateText immediately upon completion, as well as whenever the active Locale changes.
@@ -227,7 +388,6 @@ public class PopupUIManager : MonoBehaviour
     {
         ClearCurrentState();
         popupPanel.SetActive(false);
-        PopupClosed?.Invoke();
     }
 
     private void UpdateHeader(string translatedValue)
@@ -262,13 +422,38 @@ public class PopupUIManager : MonoBehaviour
         }
         if (currentInspectablePart != null)
         {
-            currentInspectablePart.RestoreOriginalPosition();
+            currentInspectablePart.EndInspection();
             currentInspectablePart = null;
         }
         if (currentInspectableConnection != null)
         {
             currentInspectableConnection.EndInspection();
             currentInspectableConnection = null;
+        }
+        // Lets listeners (e.g. the dimensions panel) hide when the part is closed or another is selected
+        PopupClosed?.Invoke();
+    }
+
+    private void OnDisable()
+    {
+        if (HasActiveInspection)
+        {
+            ClosePopup();
+        }
+        HideHandednessPrompt();
+        RestoreLocomotion(suspendedJumpProviders);
+        RestoreLocomotion(suspendedGrabProviders);
+    }
+
+    private void OnDestroy()
+    {
+        if (closeButton != null)
+        {
+            closeButton.onClick.RemoveListener(ClosePopup);
+        }
+        if (Instance == this)
+        {
+            Instance = null;
         }
     }
 }

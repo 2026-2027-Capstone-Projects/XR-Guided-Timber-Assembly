@@ -83,6 +83,10 @@ MonoBehaviour:
     m_Key: None
     m_Metadata:
       m_Items: []
+  - m_Id: 900000000000001
+    m_Key: HandednessPrompt
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -21,6 +20,13 @@ public class XRInspectablePart : MonoBehaviour
     [SerializeField, Min(0.1f)] private float cameraDistance = 1.5f;
 
     [SerializeField, Min(0.1f)] private float moveDuration = 0.4f;
+    [Header("Inspection View")]
+    [SerializeField] private InspectionViewController inspectionViewController;
+    [SerializeField] private InspectionUIController inspectionUIController;
+    [Header("Documented Dimensions")]
+    [SerializeField] private PartDimensionData documentedDimensions;
+    [Tooltip("For non-rectangular parts (side angles, panels, etc.). Leave empty for rectangular parts")]
+    [SerializeField] private PartShapeDimensionData documentedShapeDimensions;
 
     private Transform partTransform;
     private Vector3 _initialPosition;
@@ -69,10 +75,12 @@ public class XRInspectablePart : MonoBehaviour
         localizedInfoTextBody = PartInfo.GetDescription(partID);
 
         // Set up object outlining, if available
-        if (hoverOutline == null)
-        {
-            hoverOutline = GetComponent<XRHoverOutline>();
-        }
+        hoverOutline ??= GetComponent<XRHoverOutline>();
+
+        // Auto-detect inspection controllers if not assigned
+        inspectionViewController ??= GetComponent<InspectionViewController>();
+        inspectionUIController ??= GetComponentInChildren<InspectionUIController>();
+
     }
 
     private void OnEnable()
@@ -86,14 +94,14 @@ public class XRInspectablePart : MonoBehaviour
     private void OnDisable()
     {
         interactable.selectEntered.RemoveListener(OnSelect);
+        interactable.activated.RemoveListener(OnActivate);
     }
 
     public void OnSelect(SelectEnterEventArgs args)
     {
         if (DisableSelecting) return;
-        ShowDimensionsPopup();
+        //ShowDimensionsPopup();
         TriggerPopup();
-        MovePartInFrontOfCamera();
     }
 
     public void OnActivate(ActivateEventArgs args)
@@ -110,29 +118,103 @@ public class XRInspectablePart : MonoBehaviour
 
     private void TriggerPopup()
     {
-        if (PopupUIManager.Instance == null)
+        if (PopupUIManager.Instance == null || !QuestInspectionInput.HasHandedness)
         {
-            Debug.Log("PopupUIManager.Instance is null!");
+            return;
+        }
+
+        if (PopupUIManager.Instance.IsInspecting(this))
+        {
             return;
         }
 
         PopupUIManager.Instance.ShowPopup(this);
+        MovePartInFrontOfCamera();
+        ShowDimensionsPopup();
+
+        if (inspectionViewController != null)
+        {
+            inspectionViewController.SetInspecting(true);
+        }
+
+        if (inspectionUIController != null)
+        {
+            inspectionUIController.SetInspectionMode(true);
+        }
     }
 
-    private void ShowDimensionsPopup()
+    /*pivate void ShowDimensionsPopup()
     {
         if (!sizeVerification.TryGetDimensions(partTransform, out Transform meshTransform, out Bounds meshBounds, out Vector3 dimensions))
         {
             return;
         }
 
-        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>();
-        if (dimensionsPopup == null)
-        {
-            dimensionsPopup = gameObject.AddComponent<PopupDimensions>();
-        }
+        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>() ?? gameObject.AddComponent<PopupDimensions>();
 
         dimensionsPopup.Show(meshTransform, meshBounds, dimensions);
+    }*/
+    //Changing to match with sizeVerification changes
+    private void ShowDimensionsPopup()
+    {
+        if (documentedShapeDimensions != null)
+        {
+            ShowShapeDimensionsPopup();
+            return;
+        }
+
+        // Make sure documented dimensions have been assigned
+        if (documentedDimensions == null)
+        {
+            Debug.LogWarning($"No documented dimensions assigned to {partID}.", this);
+            return;
+        }
+
+        // Make sure the assigned data belongs to this component
+        if (documentedDimensions.PartId != partID)
+        {
+            Debug.LogError($"Dimension data mismatch on {name}. "
+                         + $"Expected {partID}, but asset contains "
+                         + $"{documentedDimensions.PartId}.", this);
+            return;
+        }
+
+        // Get mesh bounds only for popup positioning
+        if (!sizeVerification.TryGetDimensions(partTransform, out Transform boundsTransform, out Bounds meshBounds, out Vector3 geometryDimensions))
+        {
+            Debug.LogWarning($"Could not calculate mesh bounds for {partTransform.name}.", this);
+            return;
+        }
+
+        // Get PopupDimension component if it exists, otherwise add one.
+        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>() ?? gameObject.AddComponent<PopupDimensions>();
+
+
+
+        // Display documented dimensions
+        // dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthMeters, documentedDimensions.HeightMeters, documentedDimensions.LengthMeters);
+        dimensionsPopup.Show(boundsTransform, meshBounds, documentedDimensions.WidthFeet, documentedDimensions.WidthInches,
+                                                          documentedDimensions.HeightFeet, documentedDimensions.HeightInches,
+                                                          documentedDimensions.LengthFeet, documentedDimensions.LengthInches);
+
+    }
+
+    private void ShowShapeDimensionsPopup()
+    {
+        if (documentedShapeDimensions.PartId != partID)
+        {
+            Debug.LogError($"Dimension data mismatch on {name}. " + $"Expected {partID}, but asset contains " + $"{documentedShapeDimensions.PartId}.", this);
+            return;
+        }
+
+        if (!sizeVerification.TryGetDimensions(partTransform, out Transform boundsTransform, out Bounds meshBounds, out _))
+        {
+            Debug.LogWarning($"Could not calculate mesh bounds for {partTransform.name}.", this);
+            return;
+        }
+
+        PopupDimensions dimensionsPopup = GetComponent<PopupDimensions>() ?? gameObject.AddComponent<PopupDimensions>();
+        dimensionsPopup.Show(boundsTransform, meshBounds, documentedShapeDimensions);
     }
 
     private void MovePartInFrontOfCamera()
@@ -174,6 +256,22 @@ public class XRInspectablePart : MonoBehaviour
 
         partTransform.position = targetPosition;
         moveCoroutine = null;
+    }
+
+    public void EndInspection()
+    {
+        if (inspectionViewController != null)
+        {
+            inspectionViewController.ResetInspectionViewOnExit();
+            inspectionViewController.SetInspecting(false);
+        }
+
+        if (inspectionUIController != null)
+        {
+            inspectionUIController.SetInspectionMode(false);
+        }
+
+        RestoreOriginalPosition();
     }
 
     public void RestoreOriginalPosition()

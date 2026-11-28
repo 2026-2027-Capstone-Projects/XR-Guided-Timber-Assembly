@@ -714,6 +714,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
+--- !u!1 &688440017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &756192406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1395,6 +1400,13 @@ PrefabInstance:
       value: InfoPopupCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 8948581810549867697, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
+      propertyPath: _anchorObject
+      value: 
+      objectReference: {fileID: 688440017}
+    - target: {fileID: 8948581810549867697, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
+      propertyPath: popupTextIdentifier
+      value: 
+      objectReference: {fileID: 952006848}
       propertyPath: popupScale
       value: 0.0025
       objectReference: {fileID: 0}

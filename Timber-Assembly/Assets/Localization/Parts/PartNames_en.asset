@@ -86,6 +86,16 @@ MonoBehaviour:
     m_Localized: N/A
     m_Metadata:
       m_Items: []
+  - m_Id: 900000000000001
+    m_Localized: 'Choose your dominant hand:
+
+      Press the trigger button on the
+      desired controller.
+
+      Keyboard: Shift + T for left, T for right (focus
+      Game view)'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

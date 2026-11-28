@@ -252,6 +252,10 @@ MonoBehaviour:
   _explodeLineRenderers: []
   cameraDistance: 1.5
   moveDuration: 0.4
+  inspectionViewController: {fileID: 0}
+  inspectionUIController: {fileID: 0}
+  documentedDimensions: {fileID: 11400000, guid: 5c07988096d24f3418d17b72f63d3a30, type: 2}
+  documentedShapeDimensions: {fileID: 0}
   interactable: {fileID: 0}
   DisableSelecting: 0
   ExplodeLineRenderers:

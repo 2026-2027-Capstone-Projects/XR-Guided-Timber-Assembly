@@ -746,6 +746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff411b0dc784fc3498c6cd5efd807540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PopupUIManager
+  _anchorObject: {fileID: 0}
   popupPanel: {fileID: 7727555944209531937}
   popupTextHeader: {fileID: 2760659885642402207}
   popupTextBody: {fileID: 7182853255958764858}

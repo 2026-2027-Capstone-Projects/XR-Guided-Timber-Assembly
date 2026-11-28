@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Text;
 
 public class PopupDimensions : MonoBehaviour
 {
@@ -12,17 +13,43 @@ public class PopupDimensions : MonoBehaviour
     private float partWidth;
     private float partHeight;
     private float partLength;
+    private float extraOffset; // avoid part overlap
     private GameObject popupObject;
     private PopupUIManager subscribedPopupManager;
 
-    public void Show(Transform part, Bounds meshBounds, Vector3 dimensions)
+    /*public void Show(Transform part, Bounds meshBounds, Vector3 dimensions)
+	{
+		SubscribeToPopupClosed();
+		partTransform = part;
+		localBounds = meshBounds;
+		partWidth = Mathf.Abs(dimensions.x);
+		partHeight = Mathf.Abs(dimensions.y);
+		partLength = Mathf.Abs(dimensions.z); 
+
+		if (popupObject == null)
+		{
+			CreatePopup();
+		}
+
+		TMP_Text text = popupObject.GetComponentInChildren<TMP_Text>();
+		text.text = $"W {partWidth:F2} m\nH {partHeight:F2} m\nL {partLength:F2} m";
+		UpdatePopupTransform();
+		popupObject.SetActive(true);
+	}*/
+
+    private static string FormatFtIn(float feet, float inches)
+    {
+        string inchText = inches.ToString("0.##");
+
+        return $"{feet:0.##}' - {inches:0.##}\"";
+    }
+
+    public void Show(Transform part, Bounds meshBounds, float widthFt, float widthIn, float heightFt, float heightIn, float lengthFt, float lengthIn)
     {
         SubscribeToPopupClosed();
+
         partTransform = part;
         localBounds = meshBounds;
-        partWidth = Mathf.Abs(dimensions.x);
-        partHeight = Mathf.Abs(dimensions.y);
-        partLength = Mathf.Abs(dimensions.z);
 
         if (popupObject == null)
         {
@@ -30,10 +57,52 @@ public class PopupDimensions : MonoBehaviour
         }
 
         TMP_Text text = popupObject.GetComponentInChildren<TMP_Text>();
-        text.text = $"W {partWidth:F2} m\nH {partHeight:F2} m\nL {partLength:F2} m";
+
+        text.text = $"W {FormatFtIn(widthFt, widthIn)}\n" +
+                    $"H {FormatFtIn(heightFt, heightIn)}\n" +
+                    $"L {FormatFtIn(lengthFt, lengthIn)}";
+
+        UpdatePopupTransform();
+        popupObject.SetActive(true);
+
+    }
+
+
+    public void Show(Transform part, Bounds meshBounds, PartShapeDimensionData data)
+    {
+        SubscribeToPopupClosed();
+
+        partTransform = part;
+        localBounds = meshBounds;
+
+        if (popupObject == null)
+        {
+            CreatePopup();
+        }
+
+        var sb = new StringBuilder();
+        foreach (SideDimension side in data.Sides)
+        {
+            sb.Append(side.label).Append(' ').Append(FormatFtIn(side.feet, side.inches)).Append('\n');
+        }
+        sb.Append("Thickness ").Append(FormatFtIn(data.ThicknessFeet, data.ThicknessInches));
+
+        TMP_Text text = popupObject.GetComponentInChildren<TMP_Text>();
+        text.text = sb.ToString();
+
+        // Grow popup to fit
+        text.ForceMeshUpdate();
+        const float defaultWidth = 240f;
+        const float defaultHeight = 120f;
+        float width = Mathf.Max(defaultWidth, text.preferredWidth + 24f);
+        float height = Mathf.Max(defaultHeight, text.preferredHeight + 16f);
+        popupObject.GetComponent<RectTransform>().sizeDelta = new Vector2(width, height);
+        extraOffset = (width - defaultWidth) * 0.5f * popupScale;
+
         UpdatePopupTransform();
         popupObject.SetActive(true);
     }
+
 
     private void SubscribeToPopupClosed()
     {
@@ -103,7 +172,12 @@ public class PopupDimensions : MonoBehaviour
     private void UpdatePopupTransform()
     {
         Vector3 meshCenter = partTransform.TransformPoint(localBounds.center);
-        popupObject.transform.position = meshCenter + partTransform.right * (partWidth * 0.5f + offsetRightOfPart);
+
+        // Use actual geometry to position the popup beside the part
+        float worldHalfWidth = partTransform.TransformVector(Vector3.right * localBounds.extents.x).magnitude;
+
+        popupObject.transform.position = meshCenter + partTransform.right * (worldHalfWidth + offsetRightOfPart + extraOffset);
+        //popupObject.transform.position = meshCenter + partTransform.right * (partWidth * 0.5f + offsetRightOfPart);
 
         Camera mainCamera = Camera.main;
         if (mainCamera != null)
