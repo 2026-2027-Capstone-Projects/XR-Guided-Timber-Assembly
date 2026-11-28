@@ -174,6 +174,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
+--- !u!114 &156305001 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 370816286112628393, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
+  m_PrefabInstance: {fileID: 1560227253}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &177614961 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7973316492044022884, guid: 090eaa8bf858b1a4f9fd3abd0454acc5, type: 3}
@@ -659,6 +670,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
+--- !u!1 &688440017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &691729817 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 758300863116330714, guid: 090eaa8bf858b1a4f9fd3abd0454acc5, type: 3}
@@ -714,11 +730,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c283beb24e461314a97798437d16ead7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRInspectableObject
---- !u!1 &688440017 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
-  m_PrefabInstance: {fileID: 441087506}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &756192406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,10 +1417,7 @@ PrefabInstance:
     - target: {fileID: 8948581810549867697, guid: 5db686974477eb846bae0d99f8d3daf2, type: 3}
       propertyPath: popupTextIdentifier
       value: 
-      objectReference: {fileID: 952006848}
-      propertyPath: popupScale
-      value: 0.0025
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 156305001}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
